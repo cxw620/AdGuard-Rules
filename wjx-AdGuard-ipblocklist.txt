@@ -20,3 +20,8 @@
 
 # [wechat]
 36.152.4.32$network
+
+# [PDD]
+||*/*titan*^$important
+
+
