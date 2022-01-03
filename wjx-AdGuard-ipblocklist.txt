@@ -1,4 +1,5 @@
-# AdGuard规则
+!Title: wjx-AdGuard-ipblocklist
+!Version: 20220104024739
 # [DNS]
 221.179.155.193$network
 119.29.29.29$network
