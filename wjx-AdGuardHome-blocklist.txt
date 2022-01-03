@@ -1,0 +1,101 @@
+# 【百度全家桶】
+||ug.baidu.com^$important
+||xlab.baidu.com^$important
+||activity.baidu.com^$important
+||pae.baidu.com^$important
+||udpolimeok.baidu.com^$important
+||ext.baidu.com^$important
+||mime.baidu.com^$important
+||sepro.baidu.com^$important
+||fxgate.baidu.com^$important
+||pcrec.baidu.com^$important
+||suggestion.baidu.com^$important
+||usug.baidu.com^$important
+||haoma.baidu.com^$important
+# 【高德全家桶】
+||cgicol.amap.com^$important
+||store.is.autonavi.com^$important
+# 【阿里全家桶】
+||acs.m.taobao.com^
+||ip.hellobike.com^$important
+||loggw.alipay.com^$important
+||resolver.dingtalk.com^$important
+||mum.m.alibaba.com^$important
+||ixav-cse.avlyun.com^$important
+||amdc.alipay.com^$important
+||mgw.alipay.com^$important
+||apmgw.hellobike.com^$important
+||*h-adashx*
+# 【南极贱畜全家桶】
+||dnet.mb.qq.com^$important
+||yun-hl.3g.qq.com^$important
+||dl.txcdns.com^$important
+||js.aq.qq.com^$important
+||pingma.qq.com^$important
+||tmf*.m.qq.com^$important
+# 【并夕夕专区】
+||t*.pinduoduo.com^$important
+# 【华为专区】
+||openlocation-drcn.platform.dbankcloud.com^$important
+||metrics*.hicloud.com
+# 【鼠鼠专区】
+||biligame.com^$important
+||activity.hdslb.com^$important
+||mall.bilibili.com^$important
+||club.bilibili.com^$important
+# 【恶臭通杀】
+||*collect*^$important
+||*stat*^$important
+||*game*^$important
+||*dns*
+||*dot*
+![实测cnzz误杀比较多]
+||*cnzz*
+||*analy*
+||*report*
+||*50union*
+||*polyfill*
+||*umeng*
+||*xdplt*
+||*leadstong*
+# 【杂七杂八】
+||appsflyer.com^$important
+||51downapp.cn^$important
+||hexun.com^$important
+||gdfp.gifshow.com^$important
+||msch.f.360.cn^$important
+||config.cmpassport.com^$important
+||adjust.com^$important
+||51.la^$important
+||bigfun.cn^$important
+||wts.xinwen.cn^$important
+||linkh5.xyz^$important
+||cdn-go.cn^$important
+||uc.cn^$important
+||ucweb.com^$important
+# 【误杀解除专区】
+@@||ele.me^$important
+@@||dns.wjxhub.com^$important
+@@||www.alidns.com
+@@||t*.baidu.com
+@@||dns.msftncsi.com^$important
+@@||dnspod.cn^$important
+@@||*sharepoint*^$important
+@@||windowsupdate.com^$important
+@@||office.com^$important
+@@||live.com^$important
+@@||114dns.com^$important
+@@||*pic*.bdstatic.com^$important
+@@||*img*.baidu.com^$important
+@@||pss.bdstatic.com^$important
+@@||ss*.baidu.com
+@@||maponline2.bdimg.com^$important
+@@||h5hosting.dbankcdn.com^$important
+@@||vdposter.bdstatic.com^$important
+@@||res.wx.qq.com^$important
+@@||metric.gstatic.com^$important
+@@||*adguard*^$important
+@@||mapapi.qq.com^$important
+@@||3gimg.qq.com^$important
+@@||aps.amap.com^$important
+@@||qpic.cn^$important
