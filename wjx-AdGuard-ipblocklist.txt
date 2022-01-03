@@ -1,6 +1,6 @@
 !Title: wjx-AdGuard-ipblocklist
 !Version: 20220104024739
-# [DNS]
+! [DNS]
 221.179.155.193$network
 119.29.29.29$network
 [2402:4e00::]$network
@@ -18,10 +18,10 @@
 180.76.76.76$network
 [2400:da00::6666]$network
 
-# [wechat]
+! [wechat]
 36.152.4.32$network
 
-# [PDD]
+! [PDD]
 ||*/*titan*^$important
 
 
