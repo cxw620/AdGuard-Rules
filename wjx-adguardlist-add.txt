@@ -39,7 +39,7 @@
 
 # 【华为专区】
 ||openlocation-drcn.platform.dbankcloud.com^$important
-||metrics*-drcn.*.hicloud.com
+||metrics*.hicloud.com
 
 # 【鼠鼠专区】
 ||biligame.com^$important
