@@ -1,0 +1,21 @@
+# AdGuard规则
+# [DNS]
+221.179.155.193$network
+119.29.29.29$network
+[2402:4e00::]$network
+223.5.5.5$network
+223.6.6.6$network
+[2400:3200::1]$network
+[2400:3200:baba::1]$network
+1.2.4.8$network
+210.2.4.8$network
+[2001:dc7:1000::1]$network
+117.50.10.10$network
+117.50.20.20$network
+101.6.6.6$network
+[2001:da8::666]$network
+180.76.76.76$network
+[2400:da00::6666]$network
+
+# [wechat]
+36.152.4.32$network
