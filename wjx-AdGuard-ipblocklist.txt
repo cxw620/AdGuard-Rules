@@ -16,10 +16,12 @@
 ||*xdplt*
 ||*leadstong*
 
-! [DNS]
+! [DNS]--------------------
+!! [bilibili]
 221.179.155.*$network
 !221.179.155.209$network
 !221.179.155.193$network
+!! [public]
 119.29.29.29$network
 [2402:4e00::]$network
 223.5.5.5$network
@@ -35,6 +37,7 @@
 [2001:da8::666]$network
 180.76.76.76$network
 [2400:da00::6666]$network
+! [DNS END]----------------
 
 ! 以下为HTTPDNS拦截
 !! [bilibili]
