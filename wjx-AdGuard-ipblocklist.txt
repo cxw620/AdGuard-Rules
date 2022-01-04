@@ -1,10 +1,11 @@
 !Title: wjx-AdGuard-ipblocklist
-!Version: 20220104150206
+!Version: 20220104152541
 
 ! AdGuard客户端不会根据cname拦截好像，所以下面的通杀不加important
 ! [同步通杀]
 ||*collect*
 ||*stat*
+@@||*static*
 ||*game*
 ||*track*
 ||*trace*
@@ -18,6 +19,17 @@
 ||*umeng*
 ||*xdplt*
 ||*leadstong*
+
+! [同步南极贱畜，mmTLS拦截不了也看不到内容]
+!! 【南极贱畜全家桶】
+||dnet.mb.qq.com^$important
+||yun-hl.3g.qq.com^$important
+||dl.txcdns.com^$important
+||pingma.qq.com^$important
+||tmf*.m.qq.com^$important
+||dns.weixin.qq.com^$important
+||*wxs*.qq.com^$important
+||socwxsns.video.qq.com^$important
 
 ! [DNS]--------------------
 !! [bilibili]
