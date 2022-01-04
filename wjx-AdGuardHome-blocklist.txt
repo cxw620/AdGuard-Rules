@@ -1,4 +1,4 @@
-# Last updated 2201041523
+# Last updated 220104152930
 # 原则：特征必须优先级最高，加【^$important】字样
 # 通杀的尽量不要加【^$important】
 # 【百度全家桶】
@@ -39,6 +39,7 @@
 ||*wxs*.qq.com^$important
 ||socwxsns.video.qq.com^$important
 ||tc.qq.com^$important
+||soup.v.qq.com^$important
 # 【并夕夕专区】
 ||t*.pinduoduo.com^$important
 # 【华为专区】
