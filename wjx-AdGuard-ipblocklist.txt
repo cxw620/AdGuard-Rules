@@ -38,6 +38,8 @@
 
 ! 以下为HTTPDNS拦截
 !! [bilibili]
+!!! 发现哔哩哔哩尝试打洞，拦截之
+239.255.255.250$network
 !!! 此列表需要同步拦截列表，正在编写程序自动处理
 ||*/*resolve*biligame.com*
 ||*/*resolve*activity.hdslb.com*
@@ -52,6 +54,11 @@
 ||*/*resolve*interface.bilibili.com*
 ||*/*resolve*appsflyer*
 ||*/*resolve*adjust*
+
+! [bilibili]
+!！ 感谢https://github.com/SocialSisterYi/bilibili-API-collect项目
+!!! 地址获取拦截（配合关闭定位权限食用）
+||*/x/web-interface/zone*
 
 ! [wechat]
 36.152.4.32$network
