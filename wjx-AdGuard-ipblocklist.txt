@@ -1,10 +1,13 @@
 !Title: wjx-AdGuard-ipblocklist
-!Version: 20220104131923
+!Version: 20220104150206
 
+! AdGuard客户端不会根据cname拦截好像，所以下面的通杀不加important
 ! [同步通杀]
 ||*collect*
 ||*stat*
 ||*game*
+||*track*
+||*trace*
 ||*dns*
 ||*dot*
 ||*cnzz*
@@ -60,13 +63,14 @@
 
 ! [bilibili]
 !！ 感谢https://github.com/SocialSisterYi/bilibili-API-collect项目
-!!! 地址获取拦截（配合关闭定位权限食用）
+!!! 客户端地址获取拦截（配合关闭定位权限食用）
 ||*/x/web-interface/zone*
 
 ! [wechat]
 36.152.4.32$network
 
 ! [PDD]
+!! 拼多多在后台疯狂上传数据，不知道在干什么。来个人抓个包看看
 ||*/*titan*^$important
 ||t*.pinduoduo*^$important
 
