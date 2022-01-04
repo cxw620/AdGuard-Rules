@@ -29,7 +29,6 @@
 ||tmf*.m.qq.com^$important
 ||dns.weixin.qq.com^$important
 ||*wxs*.qq.com^$important
-||socwxsns.video.qq.com^$important
 ||tc.qq.com^$important
 ||soup.v.qq.com^$important
 
