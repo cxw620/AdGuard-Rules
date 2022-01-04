@@ -1,13 +1,16 @@
 !Title: wjx-AdGuard-ipblocklist
-!Version: 20220104152541
+!Version: 20220104195000
+!补充规则（AdguardHome无法拦截的）
 
 ! AdGuard客户端不会根据cname拦截好像，所以下面的通杀不加important
-! [同步通杀]
+! [同步通杀拦截ip直连的访问]
 ||*collect*
 ||*stat*
 @@||*static*
 ||*game*
 ||*track*
+!! 解决bilibili通杀导致全部炸的问题
+@@||*live-trace*
 ||*trace*
 ||*dns*
 ||*dot*
@@ -19,18 +22,6 @@
 ||*umeng*
 ||*xdplt*
 ||*leadstong*
-
-! [同步南极贱畜，mmTLS拦截不了也看不到内容]
-!! 【南极贱畜全家桶】
-||dnet.mb.qq.com^$important
-||yun-hl.3g.qq.com^$important
-||dl.txcdns.com^$important
-||pingma.qq.com^$important
-||tmf*.m.qq.com^$important
-||dns.weixin.qq.com^$important
-||*wxs*.qq.com^$important
-||tc.qq.com^$important
-||soup.v.qq.com^$important
 
 ! [DNS]--------------------
 !! [bilibili]
@@ -59,20 +50,6 @@
 !! [bilibili]
 !!! 发现哔哩哔哩尝试打洞，拦截之
 239.255.255.250$network
-!!! 此列表需要同步拦截列表，正在编写程序自动处理
-||*/*resolve*biligame.com*
-||*/*resolve*activity.hdslb.com*
-||*/*resolve*mall.bilibili.com*
-||*/*resolve*miniapp.bilibili.com*
-||*/*resolve*club.bilibili.com*
-||*/*resolve*cm.bilibili.com*
-||*/*resolve*app.bilibili.com*
-||*/*resolve*app.bilibapi.com*
-||*/*resolve*app.bilibapi.net*
-||*/*resolve*appintl.bilibapi.com*
-||*/*resolve*interface.bilibili.com*
-||*/*resolve*appsflyer*
-||*/*resolve*adjust*
 
 ! [bilibili]
 !！ 感谢https://github.com/SocialSisterYi/bilibili-API-collect项目
@@ -85,6 +62,5 @@
 ! [PDD]
 !! 拼多多在后台疯狂上传数据，不知道在干什么。来个人抓个包看看
 ||*/*titan*^$important
-||t*.pinduoduo*^$important
 
 
