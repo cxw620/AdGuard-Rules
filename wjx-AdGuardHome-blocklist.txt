@@ -1,4 +1,4 @@
-# 【220104034213】
+# Last updated 220104131829
 # 【百度全家桶】
 ||ug.baidu.com^$important
 ||xlab.baidu.com^$important
@@ -53,6 +53,9 @@
 ![实测cnzz误杀比较多]
 ||*cnzz*
 ||*analy*
+||*trace*
+||*proxy*
+||*track*
 ||*report*
 ||*50union*
 ||*polyfill*
@@ -80,24 +83,25 @@
 @@||www.alidns.com
 @@||t*.baidu.com
 @@||dns.msftncsi.com^$important
-@@||dnspod.cn^$important
+@@||dnspod.cn^
 @@||*sharepoint*^$important
 @@||windowsupdate.com^$important
 @@||office.com^$important
 @@||live.com^$important
 @@||114dns.com^$important
-@@||*pic*.bdstatic.com^$important
-@@||*img*.baidu.com^$important
-@@||pss.bdstatic.com^$important
-@@||ss*.baidu.com
-@@||maponline2.bdimg.com^$important
-@@||h5hosting.dbankcdn.com^$important
-@@||vdposter.bdstatic.com^$important
-@@||res.wx.qq.com^$important
+@@||bdstatic.com^
+@@||baidu.com^
+@@||bdimg.com^
+@@||bdstatic.com^
+@@||dbankcdn.com^
 @@||metric.gstatic.com^$important
 @@||*adguard*^$important
-@@||mapapi.qq.com^$important
-@@||3gimg.qq.com^$important
-@@||aps.amap.com^$important
+@@||qq.com^
 @@||qpic.cn^$important
-@@||fs.microsoft.com^$important
+@@||aps.amap.com^$important
+@@||microsoft.com^
+@@||cdn.bcebos.com^
+@@||runoob.com^
+@@||msn.cn^
+@@||*.org^
+@@||cnblogs.com^
