@@ -21,6 +21,7 @@
 ||store.is.autonavi.com^$important
 # 【阿里全家桶】
 ||acs.m.taobao.com^
+||amdc.alipay.com^$important
 ||ip.hellobike.com^$important
 ||loggw.alipay.com^$important
 ||resolver.dingtalk.com^$important
