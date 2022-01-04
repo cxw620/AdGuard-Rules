@@ -1,5 +1,21 @@
 !Title: wjx-AdGuard-ipblocklist
 !Version: 20220104131923
+
+! [同步通杀]
+||*collect*
+||*stat*
+||*game*
+||*dns*
+||*dot*
+||*cnzz*
+||*analy*
+||*report*
+||*50union*
+||*polyfill*
+||*umeng*
+||*xdplt*
+||*leadstong*
+
 ! [DNS]
 221.179.155.*$network
 !221.179.155.209$network
@@ -19,9 +35,23 @@
 [2001:da8::666]$network
 180.76.76.76$network
 [2400:da00::6666]$network
+
 ! 以下为HTTPDNS拦截
 !! [bilibili]
-||*/*resolve*^$important
+!!! 此列表需要同步拦截列表，正在编写程序自动处理
+||*/*resolve*biligame.com*
+||*/*resolve*activity.hdslb.com*
+||*/*resolve*mall.bilibili.com*
+||*/*resolve*miniapp.bilibili.com*
+||*/*resolve*club.bilibili.com*
+||*/*resolve*cm.bilibili.com*
+||*/*resolve*app.bilibili.com*
+||*/*resolve*app.bilibapi.com*
+||*/*resolve*app.bilibapi.net*
+||*/*resolve*appintl.bilibapi.com*
+||*/*resolve*interface.bilibili.com*
+||*/*resolve*appsflyer*
+||*/*resolve*adjust*
 
 ! [wechat]
 36.152.4.32$network
