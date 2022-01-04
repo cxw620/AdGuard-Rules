@@ -31,6 +31,7 @@
 ||*wxs*.qq.com^$important
 ||socwxsns.video.qq.com^$important
 ||tc.qq.com^$important
+||soup.v.qq.com^$important
 
 ! [DNS]--------------------
 !! [bilibili]
