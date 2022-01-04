@@ -30,6 +30,7 @@
 ||dns.weixin.qq.com^$important
 ||*wxs*.qq.com^$important
 ||socwxsns.video.qq.com^$important
+||tc.qq.com^$important
 
 ! [DNS]--------------------
 !! [bilibili]
