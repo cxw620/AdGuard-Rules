@@ -1,4 +1,4 @@
-# Last updated 220104131829
+# Last updated 220104135616
 # 【百度全家桶】
 ||ug.baidu.com^$important
 ||xlab.baidu.com^$important
@@ -40,22 +40,29 @@
 ||openlocation-drcn.platform.dbankcloud.com^$important
 ||metrics*.hicloud.com
 # 【鼠鼠专区】
+@@||hdslb.com^$important
 ||biligame.com^$important
 ||activity.hdslb.com^$important
 ||mall.bilibili.com^$important
+||miniapp.bilibili.com^$important
 ||club.bilibili.com^$important
+||cm.bilibili.com^$important
+||app.bilibili.com^$important
+||app.biliapi.com^$important
+||app.biliapi.net^$important
+||appintl.biliapi.net^$important
+||interface.bilibili.com^$important
 # 【恶臭通杀】
-||*collect*^$important
-||*stat*^$important
-||*game*^$important
+||*collect*
+||*trace*
+||*track*
+||*stat*
+||*game*
 ||*dns*
 ||*dot*
 ![实测cnzz误杀比较多]
 ||*cnzz*
 ||*analy*
-||*trace*
-||*proxy*
-||*track*
 ||*report*
 ||*50union*
 ||*polyfill*
@@ -64,12 +71,12 @@
 ||*leadstong*
 # 【杂七杂八】
 ||appsflyer.com^$important
+||adjust.com^$important
 ||51downapp.cn^$important
 ||hexun.com^$important
 ||gdfp.gifshow.com^$important
 ||msch.f.360.cn^$important
 ||config.cmpassport.com^$important
-||adjust.com^$important
 ||51.la^$important
 ||bigfun.cn^$important
 ||wts.xinwen.cn^$important
@@ -92,13 +99,12 @@
 @@||bdstatic.com^
 @@||baidu.com^
 @@||bdimg.com^
-@@||bdstatic.com^
 @@||dbankcdn.com^
 @@||metric.gstatic.com^$important
 @@||*adguard*^$important
 @@||qq.com^
-@@||qpic.cn^$important
-@@||aps.amap.com^$important
+@@||qpic.cn^
+@@||amap.com^
 @@||microsoft.com^
 @@||cdn.bcebos.com^
 @@||runoob.com^
