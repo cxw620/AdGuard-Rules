@@ -1,4 +1,6 @@
-# Last updated 220104135616
+# Last updated 2201041456
+# 原则：特征必须优先级最高，加【^$important】字样
+# 通杀的尽量不要加【^$important】
 # 【百度全家桶】
 ||ug.baidu.com^$important
 ||xlab.baidu.com^$important
@@ -31,9 +33,9 @@
 ||dnet.mb.qq.com^$important
 ||yun-hl.3g.qq.com^$important
 ||dl.txcdns.com^$important
-||js.aq.qq.com^$important
 ||pingma.qq.com^$important
 ||tmf*.m.qq.com^$important
+||dns.weixin.qq.com^$important
 # 【并夕夕专区】
 ||t*.pinduoduo.com^$important
 # 【华为专区】
@@ -56,10 +58,13 @@
 ||*collect*^$important
 ||*trace*^$important
 ||*track*^$important
+![实测stat误杀比较多]
 ||*stat*
+@@||*static*
 ||*game*^$important
-||*dns*^$important
-||*dot*^$important
+![实测dns误杀比较多,tx的CDN就有这个字符串]
+||*dns*
+||*dot*
 ![实测cnzz误杀比较多]
 ||*cnzz*
 ||*analy*^$important
@@ -85,30 +90,41 @@
 ||uc.cn^$important
 ||ucweb.com^$important
 # 【误杀解除专区】
-@@||ele.me^$important
-@@||dns.wjxhub.com^$important
+! DNS误杀
+@@||jomodns.com
+@@||bdydns.com
+@@||*.tdnsv*.com
+@@||*.cdn.dnsv*.com
+@@||*.dsa.dnsv*.com
+@@||wjxhub.com^$important
 @@||www.alidns.com
-@@||t*.baidu.com
-@@||dns.msftncsi.com^$important
 @@||dnspod.cn^
+@@||dns.msftncsi.com^$important
+@@||114dns.com^$important
+! [饿了么]
+@@||ele.me^$important
+! [百度]
+@@||t*.baidu.com
+@@||baidu.com^
+@@||bdimg.com^
+@@||cdn.bcebos.com^
+! [微软]
 @@||*sharepoint*^$important
 @@||windowsupdate.com^$important
 @@||office.com^$important
 @@||live.com^$important
-@@||114dns.com^$important
-@@||bdstatic.com^
-@@||baidu.com^
-@@||bdimg.com^
+@@||microsoft.com^
+@@||msn.cn^
+! [华为]
 @@||dbankcdn.com^
-@@||metric.gstatic.com^$important
-@@||*adguard*^$important
+! [南极贱畜]
 @@||qq.com^
 @@||qpic.cn^
+! [高德地图]
 @@||amap.com^
-@@||microsoft.com^
-@@||cdn.bcebos.com^
+! [其他]
+@@||*adguard*^$important
 @@||runoob.com^
-@@||msn.cn^
 @@||*.org^
 @@||cnblogs.com^
-
+@@||itc.cn^$important
