@@ -1,4 +1,5 @@
-# Last updated 220104152930
+# Last updated 2201041937
+# 更新：bilibili的httpdns逃逸问题。
 # 原则：特征必须优先级最高，加【^$important】字样
 # 通杀的尽量不要加【^$important】
 # 【百度全家桶】
@@ -51,10 +52,6 @@
 ||miniapp.bilibili.com^$important
 ||club.bilibili.com^$important
 ||cm.bilibili.com^$important
-||app.bilibili.com^$important
-||app.biliapi.com^$important
-||app.biliapi.net^$important
-||appintl.biliapi.net^$important
 ||interface.bilibili.com^$important
 # 【恶臭通杀】
 ||*collect*^$important
