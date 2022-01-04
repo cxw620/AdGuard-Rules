@@ -38,7 +38,7 @@
 ||t*.pinduoduo.com^$important
 # 【华为专区】
 ||openlocation-drcn.platform.dbankcloud.com^$important
-||metrics*.hicloud.com
+||metrics*.hicloud.com^$important
 # 【鼠鼠专区】
 @@||hdslb.com^$important
 ||biligame.com^$important
@@ -53,22 +53,22 @@
 ||appintl.biliapi.net^$important
 ||interface.bilibili.com^$important
 # 【恶臭通杀】
-||*collect*
-||*trace*
-||*track*
+||*collect*^$important
+||*trace*^$important
+||*track*^$important
 ||*stat*
-||*game*
-||*dns*
-||*dot*
+||*game*^$important
+||*dns*^$important
+||*dot*^$important
 ![实测cnzz误杀比较多]
 ||*cnzz*
-||*analy*
-||*report*
-||*50union*
-||*polyfill*
-||*umeng*
-||*xdplt*
-||*leadstong*
+||*analy*^$important
+||*report*^$important
+||*50union*^$important
+||*polyfill*^$important
+||*umeng*^$important
+||*xdplt*^$important
+||*leadstong*^$important
 # 【杂七杂八】
 ||appsflyer.com^$important
 ||adjust.com^$important
@@ -111,3 +111,4 @@
 @@||msn.cn^
 @@||*.org^
 @@||cnblogs.com^
+
