@@ -1,5 +1,5 @@
-# Last updated 2201051353
-# 更新：imtt,||*ads*，JD
+# Last updated 2201051423
+# 更新：拦截imtt,*ads*，解除JD误拦截，解除QQ邮箱误拦截
 # 原则：特征必须优先级最高，加【^$important】字样
 # 通杀的尽量不要加【^$important】
 # 【百度全家桶】
@@ -39,6 +39,7 @@
 ||*wxs*.qq.com^$important
 ||tc.qq.com^$important
 ||soup.v.qq.com^$important
+@@||qqmail.com^
 # 【并夕夕专区】
 ||t*.pinduoduo.com^$important
 ||meta.pinduoduo.com^$important
