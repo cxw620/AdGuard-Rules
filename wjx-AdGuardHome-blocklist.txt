@@ -41,6 +41,7 @@
 ||soup.v.qq.com^$important
 # 【并夕夕专区】
 ||t*.pinduoduo.com^$important
+||meta.pinduoduo.com^$important
 # 【JD专区】
 ||*eid*jd*^$important
 ||*lbs*jd*^$important
