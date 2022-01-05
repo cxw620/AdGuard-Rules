@@ -69,5 +69,6 @@
 ||*/*titan*^$important
 !! PDD跟踪ID？
 ||*/d?id=*&dn=*
+||*/d?dn=*&id=*
 
 
