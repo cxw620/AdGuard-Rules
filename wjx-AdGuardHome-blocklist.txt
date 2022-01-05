@@ -1,5 +1,5 @@
-# Last updated 2201041937
-# 更新：bilibili的httpdns逃逸问题。
+# Last updated 2201051331
+# 更新：云闪付。amdc不可以拦截否则加载缓慢（似乎含htp的接口。尝试劫持http？）
 # 原则：特征必须优先级最高，加【^$important】字样
 # 通杀的尽量不要加【^$important】
 # 【百度全家桶】
@@ -21,7 +21,7 @@
 ||store.is.autonavi.com^$important
 # 【阿里全家桶】
 ||acs.m.taobao.com^
-||amdc.alipay.com^$important
+||gw.alipayobjects.com^$important
 ||ip.hellobike.com^$important
 ||loggw.alipay.com^$important
 ||resolver.dingtalk.com^$important
@@ -35,11 +35,11 @@
 ||dl.txcdns.com^$important
 ||pingma.qq.com^$important
 ||tmf*.m.qq.com^$important
-||*dns*qq.com^$important
+||dns.weixin.qq.com^$important
 ||*wxs*.qq.com^$important
+||socwxsns.video.qq.com^$important
 ||tc.qq.com^$important
 ||soup.v.qq.com^$important
-||bugly.qq.com^$important
 # 【并夕夕专区】
 ||t*.pinduoduo.com^$important
 # 【华为专区】
@@ -128,3 +128,5 @@
 @@||*.org^
 @@||cnblogs.com^
 @@||itc.cn^$important
+@@||microsoftonline.com^$important
+@@||*.95516.*^$important
