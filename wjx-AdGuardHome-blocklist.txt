@@ -129,4 +129,4 @@
 @@||cnblogs.com^
 @@||itc.cn^$important
 @@||microsoftonline.com^$important
-@@||*.95516.*^$important
+@@||*.95516.*
