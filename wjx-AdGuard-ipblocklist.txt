@@ -22,6 +22,10 @@
 ||*umeng*
 ||*xdplt*
 ||*leadstong*
+||*getui.*^$important
+||*gepush.*^$important
+||*yingyongbao*^$important
+||*imtt*^$important
 
 ! [DNS]--------------------
 !! [bilibili]
