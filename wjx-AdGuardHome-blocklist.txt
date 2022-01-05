@@ -1,5 +1,5 @@
-# Last updated 2201051342
-# 更新：两个恶臭域名
+# Last updated 2201051353
+# 更新：imtt,||*ads*
 # 原则：特征必须优先级最高，加【^$important】字样
 # 通杀的尽量不要加【^$important】
 # 【百度全家桶】
@@ -55,12 +55,14 @@
 ||cm.bilibili.com^$important
 ||interface.bilibili.com^$important
 # 【恶臭通杀】
+||*ads*
 ||*collect*^$important
 ||*trace*^$important
 ||*track*^$important
 ![实测stat误杀比较多]
 ||*stat*
 @@||*static*
+||*lbsgw*
 ||*game*^$important
 ![实测dns误杀比较多,tx的CDN就有这个字符串]
 ||*dns*
@@ -76,6 +78,8 @@
 ||*leadstong*^$important
 ||*getui.*^$important
 ||*gepush.*^$important
+||*yingyongbao*^$important
+||*imtt*^$important
 # 【杂七杂八】
 ||appsflyer.com^$important
 ||adjust.com^$important
@@ -124,6 +128,8 @@
 @@||qpic.cn^
 ! [高德地图]
 @@||amap.com^
+! [JD]
+@@||api*jd*
 ! [其他]
 @@||*adguard*^$important
 @@||runoob.com^
