@@ -1,5 +1,5 @@
-# Last updated 2201051331
-# 更新：云闪付。amdc不可以拦截否则加载缓慢（似乎含htp的接口。尝试劫持http？）
+# Last updated 2201051342
+# 更新：两个恶臭域名
 # 原则：特征必须优先级最高，加【^$important】字样
 # 通杀的尽量不要加【^$important】
 # 【百度全家桶】
@@ -74,6 +74,8 @@
 ||*umeng*^$important
 ||*xdplt*^$important
 ||*leadstong*^$important
+||*getui.*^$important
+||*gepush.*^$important
 # 【杂七杂八】
 ||appsflyer.com^$important
 ||adjust.com^$important
