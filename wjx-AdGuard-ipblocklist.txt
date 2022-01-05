@@ -7,6 +7,7 @@
 ||*collect*
 ||*stat*
 @@||*static*
+||*lbsgw*
 ||*game*
 ||*track*
 !! 解决bilibili通杀导致全部炸的问题
