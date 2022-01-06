@@ -1,8 +1,9 @@
-# Last updated 2201061204
-# 更新：误拦截华为解除
+# Last updated 2201061525
+# 更新：误拦截华为解除,更新百度2个，更新南极贱畜1个
 # 原则：特征必须优先级最高，加【^$important】字样
 # 通杀的尽量不要加【^$important】
 # 【百度全家桶】
+||hm.baidu.com^$important
 ||ug.baidu.com^$important
 ||xlab.baidu.com^$important
 ||activity.baidu.com^$important
@@ -16,6 +17,8 @@
 ||suggestion.baidu.com^$important
 ||usug.baidu.com^$important
 ||haoma.baidu.com^$important
+||eiv.baidu.com^$important
+||ada.baidu.com^$important
 # 【高德全家桶】
 ||cgicol.amap.com^$important
 ||store.is.autonavi.com^$important
@@ -29,6 +32,7 @@
 ||ixav-cse.avlyun.com^$important
 ||apmgw.hellobike.com^$important
 ||*h-adashx*
+
 # 【南极贱畜全家桶】
 ||dnet.mb.qq.com^$important
 ||yun-hl.3g.qq.com^$important
@@ -39,6 +43,7 @@
 ||*wxs*.qq.com^$important
 ||tc.qq.com^$important
 ||soup.v.qq.com^$important
+||gdt.qq.com^$important
 @@||qqmail.com^
 # 【并夕夕专区】
 ||t*.pinduoduo.com^$important
@@ -48,6 +53,7 @@
 ||*lbs*jd*^$important
 ||*perf*jd*^$important
 # 【华为专区】
+@@||*huawei*
 ||openlocation-drcn.platform.dbankcloud.com^$important
 # 【鼠鼠专区】
 @@||hdslb.com^$important
