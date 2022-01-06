@@ -1,5 +1,5 @@
-# Last updated 2201051423
-# 更新：拦截imtt,*ads*，解除JD误拦截，解除QQ邮箱误拦截
+# Last updated 2201061204
+# 更新：误拦截华为解除
 # 原则：特征必须优先级最高，加【^$important】字样
 # 通杀的尽量不要加【^$important】
 # 【百度全家桶】
@@ -49,7 +49,6 @@
 ||*perf*jd*^$important
 # 【华为专区】
 ||openlocation-drcn.platform.dbankcloud.com^$important
-||metrics*.hicloud.com^$important
 # 【鼠鼠专区】
 @@||hdslb.com^$important
 ||biligame.com^$important
