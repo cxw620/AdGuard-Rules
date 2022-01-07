@@ -29,6 +29,9 @@
 ||*gepush.*^$important
 ||*yingyongbao*^$important
 ||*imtt*^$important
+||*qvkanwen*^$important
+||*qukanwen*^$important
+||*baomihua*^$important
 
 ! [DNS]--------------------
 !! [bilibili]
