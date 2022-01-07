@@ -104,6 +104,7 @@
 ||*imtt*^$important
 ||*9liuda*^$important
 ||*qvkanwen*^$important
+||*baomihua*^$important
 # 【杂七杂八】
 ||appsflyer.com^$important
 ||adjust.com^$important
