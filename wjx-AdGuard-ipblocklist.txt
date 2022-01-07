@@ -74,4 +74,6 @@
 ||*/d?id=*&dn=*
 ||*/d?dn=*&id=*
 
+! [HUAWEI]
+||*weathercn*newslist*$important
 
