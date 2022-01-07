@@ -1,5 +1,5 @@
-# Last updated 2201071102
-# 更新：更新华为那个天气的广告（终于抓到了）
+# Last updated 2201071033
+# 更新：更新华为那个天气的广告
 # 原则：特征必须优先级最高，加【^$important】字样
 # 通杀的尽量不要加【^$important】
 # 【百度全家桶】
@@ -37,7 +37,7 @@
 ||*location-base*^$important
 @@||h5api.m.taobao.com^$important
 ||*monitor.ele.me^$important
-||*h-adashx*
+||*h-adashx*$important
 # 【南极贱畜全家桶】
 ||szminorshort*^$important
 ||dnet.mb.qq.com^$important
@@ -113,6 +113,7 @@
 ||*imtt*^$important
 ||*9liuda*^$important
 ||*qvkanwen*^$important
+||*qukanwen*^$important
 ||*baomihua*^$important
 # 【杂七杂八】
 ||appsflyer.com^$important
@@ -143,7 +144,7 @@
 @@||dns.msftncsi.com^$important
 @@||114dns.com^$important
 ! [饿了么]
-@@||ele.me^$important
+@@||ele.me^
 ! [百度]
 @@||t*.baidu.com
 @@||baidu.com^
@@ -174,5 +175,4 @@
 @@||microsoftonline.com^$important
 @@||*.95516.*
 @@||growingio.com^$important
-# @@||res.servicewechat.com^$important
-
+@@||res.servicewechat.com^$important
