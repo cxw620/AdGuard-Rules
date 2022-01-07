@@ -1,5 +1,5 @@
 !Title: wjx-AdGuard-ipblocklist
-!Version: 20220107103655
+!Version: 20220107231000
 !补充规则（AdguardHome无法拦截的）
 
 ! AdGuard客户端不会根据cname拦截好像，所以下面的通杀不加important
@@ -10,6 +10,14 @@
 ||*mmstat*^$important
 @@||*static*
 ||*lbsgw*
+||*logapi*
+||*log-*
+||*-log*
+@@||*login*
+!! 解决百度网盘下载误拦截
+@@||*baidupcs*
+||*apilog*
+||*log.*
 ||*game*
 ||*track*
 !! 解决bilibili通杀导致全部炸的问题
