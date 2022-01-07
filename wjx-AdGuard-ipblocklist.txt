@@ -1,5 +1,5 @@
 !Title: wjx-AdGuard-ipblocklist
-!Version: 20220104195000
+!Version: 20220107103655
 !补充规则（AdguardHome无法拦截的）
 
 ! AdGuard客户端不会根据cname拦截好像，所以下面的通杀不加important
