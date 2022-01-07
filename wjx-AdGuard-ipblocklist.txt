@@ -79,4 +79,4 @@
 
 ! [HUAWEI]
 ||*weathercn*newslist*$important
-
+||*weathercn*qukan*$important
