@@ -4,8 +4,10 @@
 
 ! AdGuard客户端不会根据cname拦截好像，所以下面的通杀不加important
 ! [同步通杀拦截ip直连的访问]
+||*ads*
 ||*collect*
 ||*stat*
+||*mmstat*^$important
 @@||*static*
 ||*lbsgw*
 ||*game*
@@ -34,6 +36,7 @@
 !221.179.155.209$network
 !221.179.155.193$network
 !! [public]
+198.18.53.53$network
 119.29.29.29$network
 [2402:4e00::]$network
 223.5.5.5$network
