@@ -134,6 +134,7 @@
 # 【误杀解除专区】
 ! DNS误杀
 @@||*ceair*
+@@||*castdns.net*
 @@||jomodns.com
 @@||bdydns.com
 @@||*.tdnsv*.com
