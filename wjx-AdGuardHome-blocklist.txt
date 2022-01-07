@@ -1,5 +1,5 @@
-# Last updated 2201071040
-# 更新：更新华为那个天气的广告
+# Last updated 2201071102
+# 更新：更新华为那个天气的广告（终于抓到了）
 # 原则：特征必须优先级最高，加【^$important】字样
 # 通杀的尽量不要加【^$important】
 # 【百度全家桶】
@@ -64,6 +64,12 @@
 @@||*huawei*
 ||openlocation-drcn.platform.dbankcloud.com^$important
 ||*metric*hicloud*^$important
+||*event*hicloud*^$important
+||*simage*weathercn*^$important
+||*club*weathercn*^$important
+||term*hicloud*^$important
+||uc*hicloud*^$important
+||uc*dbankcloud*^$important
 # 【鼠鼠专区】
 @@||hdslb.com^$important
 ||biligame.com^$important
