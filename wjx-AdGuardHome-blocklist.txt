@@ -84,6 +84,7 @@
 @@||*static*
 ||*lbsgw*
 ||*log*
+@@||*login*
 ||*game*^$important
 ![实测dns误杀比较多,tx的CDN就有这个字符串]
 ||*dns*
