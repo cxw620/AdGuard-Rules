@@ -1,5 +1,5 @@
-# Last updated 2201072109
-# 更新：更新华为那个天气的广告，tweet误拦截解除
+# Last updated 2201081304
+# 更新：误拦截解除，更新QQ音乐相关
 # 原则：特征必须优先级最高，加【^$important】字样
 # 通杀的尽量不要加【^$important】
 # 【百度全家桶】
@@ -24,7 +24,6 @@
 ||store.is.autonavi.com^$important
 # 【阿里全家桶】
 ||acs.m.taobao.com^
-||gw.alipayobjects.com^$important
 ||ip.hellobike.com^$important
 ||loggw.alipay.com^$important
 ||resolver.dingtalk.com^$important
@@ -50,6 +49,7 @@
 ||tc.qq.com^$important
 ||soup.v.qq.com^$important
 ||gdt.qq.com^$important
+||*stat*.qq*^$important
 ||*overseactrl*^$important
 @@||qqmail.com^
 # 【并夕夕专区】
@@ -178,3 +178,4 @@
 @@||*.95516.*
 @@||growingio.com^$important
 @@||res.servicewechat.com^$important
+@@||*.edu.cn^$important
