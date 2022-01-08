@@ -148,6 +148,7 @@
 @@||*.dsa.dnsv*.*
 @@||*ecdns.*
 @@||*.*alibabadns.*
+@@||*-adns*.*
 @@||wjxhub.com^$important
 @@||www.alidns.com
 @@||dnspod.cn^
