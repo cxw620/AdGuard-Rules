@@ -68,8 +68,8 @@
 ||*club*weathercn*^$important
 ||*term*hicloud*^$important
 ||uc*hicloud*^$important
-||uc*dbankcloud*^$important
-||*pps*dbankcloud*^$important
+||uc*dbank*.*^$important
+||*pps*dbank*.*^$important
 # 【鼠鼠专区】
 @@||hdslb.com^$important
 ||biligame.com^$important
@@ -116,6 +116,11 @@
 ||*qvkanwen*^$important
 ||*qukanwen*^$important
 ||*baomihua*^$important
+! 下面非常重要
+||*bizport*^$important
+||*biz-port*^$important
+||*5gimos*^$important
+||*policefountain*^$important
 # 【杂七杂八】
 ||appsflyer.com^$important
 ||adjust.com^$important
@@ -134,13 +139,14 @@
 # 【误杀解除专区】
 ! DNS误杀
 @@||*ceair*
-@@||*castdns.net*
-@@||jomodns.com
-@@||bdydns.com
-@@||*.tdnsv*.com
-@@||*.cdn.dnsv*.com
-@@||*.dsa.dnsv*.com
-@@||ecdns.net^
+@@||*castdns*.*
+@@||*wscdns*.*
+@@||*jomodns*.*
+@@||*bdydns*.*
+@@||*.tdnsv*.*
+@@||*.cdn.dnsv*.*
+@@||*.dsa.dnsv*.*
+@@||*ecdns.*
 @@||wjxhub.com^$important
 @@||www.alidns.com
 @@||dnspod.cn^
