@@ -1,8 +1,15 @@
 !Title: wjx-AdGuard-ipblocklist
 !Version: 20220107231000
 !补充规则（AdguardHome无法拦截的）
-
+! --------------------------------------------------------
+! 腾讯，阿里旗下及哔哩哔哩软件都有httpdns，单纯DNS拦截是无效的。但是不能拦截httpdns，否则会影响程序功能
+! 似乎强制走httpdns了
+! 点名批评bilibili
+! 微信的mmTLS非常麻烦目前没有解决方案
 ! AdGuard客户端不会根据cname拦截好像，所以下面的通杀不加important
+! --------------------------------------------------------
+! [新增未确定用途]
+||*/amdc/mobileDispatch*
 ! [同步通杀拦截ip直连的访问]
 ||*ads*
 ||*collect*
