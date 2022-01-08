@@ -23,7 +23,6 @@
 ||cgicol.amap.com^$important
 ||store.is.autonavi.com^$important
 # 【阿里全家桶】
-||acs.m.taobao.com^
 ||ip.hellobike.com^$important
 ||loggw.alipay.com^$important
 ||resolver.dingtalk.com^$important
