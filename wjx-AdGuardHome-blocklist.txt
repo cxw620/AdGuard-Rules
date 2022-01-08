@@ -155,6 +155,7 @@
 @@||*ecdns.*
 @@||*.*alibabadns.*
 @@||*-adns*.*
+@@||*alipaydns.*
 @@||wjxhub.com^$important
 @@||www.alidns.com
 @@||dnspod.cn^
