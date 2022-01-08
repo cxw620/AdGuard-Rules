@@ -54,6 +54,7 @@
 !221.179.155.209$network
 !221.179.155.193$network
 !! [public]
+114.114.114.114$network
 198.18.53.53$network
 119.29.29.29$network
 [2402:4e00::]$network
