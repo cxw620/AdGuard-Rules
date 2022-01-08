@@ -140,6 +140,7 @@
 @@||*.tdnsv*.com
 @@||*.cdn.dnsv*.com
 @@||*.dsa.dnsv*.com
+@@||ecdns.net^
 @@||wjxhub.com^$important
 @@||www.alidns.com
 @@||dnspod.cn^
