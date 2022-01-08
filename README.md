@@ -1,7 +1,11 @@
 # AdGuard-Rules
 AdGuard适用规则（自用补充收集）
 
-本规则为BlueSkyXN补充规则（BlueSkyXN自行站内搜索），BlueSkyXN拦截的主要是电脑端的广告，手机端拦截效果不佳。故自己维护此补充列表，配合之食用最佳
+本规则为BlueSkyXN补充规则（BlueSkyXN自行站内搜索）
+
+BlueSkyXN拦截的主要是电脑端的广告，手机端拦截效果不佳。故自己维护此补充列表，配合之食用最佳
+
+AdGuardHome那个是给AdGuardHome用的。AdGuard那个是AdGuard客户端补充用的，使用客户端的两个都得订阅，效果最佳。
 
 欢迎大家提issue补充。一定要注明发现广告域名的方法，如查看AdGuardHome日志等。
 
