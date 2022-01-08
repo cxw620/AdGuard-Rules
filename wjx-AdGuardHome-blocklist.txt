@@ -29,7 +29,6 @@
 ||mum.m.alibaba.com^$important
 ||ixav-cse.avlyun.com^$important
 ||apmgw.hellobike.com^$important
-||mobilegw.alipay*^$important
 ||abapi.hellobike.com^$important
 ||moment*hellobike*^$important
 ||*location-base*^$important
