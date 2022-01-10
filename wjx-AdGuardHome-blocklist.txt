@@ -1,5 +1,5 @@
-# Last updated 220110180726
-# 更新：误拦截解除
+# Last updated 220111001023
+# 更新：12306误拦截解除
 # 原则：特征必须优先级最高，加【^$important】字样
 # 通杀的尽量不要加【^$important】
 # 【百度全家桶】
@@ -147,6 +147,7 @@
 @@||*wscdns*.*
 @@||*jomodns*.*
 @@||*qiniudns*.*
+@@||*lxdns*.*
 @@||*bdydns*.*
 @@||*.tdnsv*.*
 @@||*.cdn.dnsv*.*
@@ -184,7 +185,7 @@
 ! [JD]
 @@||api*jd*
 ! [其他]
-@@||*csdn.*
+@@||*csdn*.*
 @@||*adguard*^$important
 @@||runoob.com^
 @@||*.org^
