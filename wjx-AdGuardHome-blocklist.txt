@@ -1,5 +1,5 @@
-# Last updated 220111001023
-# 更新：12306误拦截解除
+# Last updated 20220111201943
+# 更新：误拦截解除
 # 原则：特征必须优先级最高，加【^$important】字样
 # 通杀的尽量不要加【^$important】
 # 【百度全家桶】
@@ -49,6 +49,7 @@
 ||gdt.qq.com^$important
 ||*stat*.qq*^$important
 ||*overseactrl*^$important
+||beacon.qq.com^$important
 @@||qqmail.com^
 # 【并夕夕专区】
 ||t*.pinduoduo.com^$important
@@ -143,6 +144,7 @@
 # 【误杀解除专区】
 ! DNS误杀
 @@||*ceair*
+@@||*bytecdn*.*
 @@||*castdns*.*
 @@||*wscdns*.*
 @@||*jomodns*.*
@@ -196,3 +198,12 @@
 @@||growingio.com^$important
 @@||res.servicewechat.com^$important
 @@||*.edu.cn^$important
+@@||wx.gtimg.com^
+@@||pstatp.com^
+@@||sourceforge.net^$important
+@@||collectd.org^$important
+@@||es.net^$important
+@@||qcloud.com^
+@@||4dm.cc^
+@@||dmla.cc^
+@@||agefans.tw^
