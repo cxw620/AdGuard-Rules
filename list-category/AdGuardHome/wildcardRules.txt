@@ -1,0 +1,110 @@
+! Title: AdGuardHome分类规则 通配符拦截
+! Update Time: 20220114-170105
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含误杀大量通杀规则及对应的白名单规则
+!! 注意，误杀会有，但影响暂时不打
+!! 采用本强力拦截规则的欢迎提issue报告误拦截，感激不尽
+!! --------------------
+!! [信息采集统计、日志常用]
+||*collect*^$important
+||*mmstat*^$important
+||*report*^$important
+||*lbsgw*
+||*logapi*
+||*log-*
+||*-log*
+||*apilog*
+
+!! [互联网追踪]
+||*trace*^$important
+||*track*^$important
+
+!! [DNS相关（DoT）]
+||*dot*
+
+!! [信息搜集分析]
+||*analy*^$important
+
+!! [广告域名（根据工信部备案查询得到所有相关域名）]
+!!! [360联盟、360推广]
+||*50union*^$important
+||*qhtui*^$important
+||*360src*^$important
+||*kouxin*^$important
+||**^$important
+||**^$important
+||**^$important
+||**^$important
+
+!!! [友盟推广]
+||*umtrack*^$important
+||*whalecloud*^$important
+||*uyunad*^$important
+||*dratio*^$important
+||*umv*.com^$important
+||*eshiqi*^$important
+||*umsns*^$important
+||*mobmore*^$important
+||*puata*^$important
+||*wrating*^$important
+||*umeng*^$important
+
+!!! [腾云]
+||*talkinggame*^$important
+||*tengyun*^$important
+||*talkingdata*^$important
+||*appcpa*^$important
+||*lnk8*^$important
+||*mpush*^$important
+||*jielou*^$important
+||*doudouknot*^$important
+||*tendcloud*^$important
+||*xdrig*^$important
+||*tddmp*^$important
+||*myzhongguojie*^$important
+
+!!! [数爆]
+||*0lk*^$important
+||*1lk*^$important
+||*9lk*^$important
+||*likeinstall*^$important
+||*xinstall*^$important
+||*toinstall*^$important
+
+!! [baidu]
+||*91.com*^$important
+||*swan*.com^$important
+||*snguows*^$important
+||*popin*^$important
+||*mipplan.org^$important
+||*hongmeiti*^$important
+||*duapps*^$important
+||*bdeceimg*^$important
+||*vplay8*^$important
+||*fhldns*^$important
+||*mtj*^$important
+||**^$important
+||**^$important
+||**^$important
+
+
+||*polyfill*^$important
+||*xdplt*^$important
+||*leadstong*^$important
+||*getui.*^$important
+||*gepush.*^$important
+||*yingyongbao*^$important
+||*imtt*^$important
+||*9liuda*^$important
+||*qvkanwen*^$important
+||*qukanwen*^$important
+||*baomihua*^$important
+||*bizport*^$important
+||*biz-port*^$important
+||*5gimos*^$important
+||*policefountain*^$important
