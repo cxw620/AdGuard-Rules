@@ -11,6 +11,6 @@ AdGuardHome那个是给AdGuardHome用的。AdGuard那个是AdGuard客户端补�
 
 凡是频繁出现的域名基本可以打死。不确定也可以提issue。
 
-有误拦截的欢迎提issue。
+有误拦截的欢迎提issue，pr。
 
 破坏性更新ing，误杀有点多，目前谨慎采用。预计一个月内可以稳定下来。
