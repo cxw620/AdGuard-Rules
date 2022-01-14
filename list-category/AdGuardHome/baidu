@@ -1,3 +1,13 @@
+! Title: AdGuardHome分类规则 百度
+! Update Time: 20220114-170105
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含百度相关的
+!! --------------------
 ||hm*.baidu.com^$important
 ||hectorstatic.baidu.com^$important
 ||ug.baidu.com^$important
