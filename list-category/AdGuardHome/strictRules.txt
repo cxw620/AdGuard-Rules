@@ -1,0 +1,62 @@
+! Title: AdGuardHome分类规则 最严格
+! Update Time: 20220114-170105
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含误杀严重的通杀规则及对应的白名单规则
+!! 由于误杀过于严重，我本人又有需要，故单列之
+!! 采用本强力拦截规则的欢迎提issue报告误拦截，感激不尽
+!! --------------------
+
+! [Blocklist]
+!! --------------------
+||*ads*
+||*dns*
+||*log.*
+||*stat*
+!! --------------------
+
+![Whitelist]
+!! --------------------
+@@||*.org
+@@||*captcha*
+@@||*qpic*
+!! [*ads*]误杀
+@@||*loads*
+!! [*dns*]误杀
+@@||*ceair*
+@@||*akadns*
+@@||*bytecdn*.*
+@@||*castdns*.*
+@@||*wscdns*.*
+@@||*jomodns*.*
+@@||*qiniudns*.*
+@@||*lxdns*.*
+@@||*bdydns*.*
+@@||*.tdnsv*.*
+@@||*.cdn.dnsv*.*
+@@||*.dsa.dnsv*.*
+@@||*ecdns.*
+@@||*.*alibabadns.*
+@@||*-adns*.*
+@@||*alipaydns.*
+@@||www.alidns.com
+@@||dnspod.cn^
+@@||dns.msftncsi.com^$important
+@@||114dns.com^$important
+@@||cdn.bcebos.com^
+@@||dns-family.adguard.com
+!! [*log.*]误杀
+@@||*blog*
+
+!! [*stat*]误杀
+@@||*statistic*
+@@||*static*
+@@||*pstatp*.*
+
+!! 误杀解除后逃逸
+||staticsns.cdn.bcebos.com^$important
+!! --------------------
