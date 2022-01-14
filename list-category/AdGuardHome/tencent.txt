@@ -9,6 +9,8 @@
 !! 本规则包含腾讯相关的规则。
 !! 腾讯相关的软件存在HTTPDNS，需要结合AdGuard使用
 !! --------------------
+||*yingyongbao*^$important
+||*imtt*^$important
 ||*bugly*qq*^$important
 ||dnet.mb.qq.com^$important
 ||yun-hl.3g.qq.com^$important
