@@ -1,0 +1,23 @@
+! Title: AdGuardHome分类规则 哔哩哔哩
+! Update Time: 20220114-170105
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含哔哩哔哩相关的广告
+!! --------------------
+# hdslb.com是blibili的相关api关键网址
+@@||hdslb.com^
+# 隐私追踪
+||activity.hdslb.com^$important
+||interface.bilibili.com^$important
+# 哔哩哔哩游戏相关，会涉及到一部分的广告
+||biligame.com^$important
+# 会员购相关
+||mall.bilibili.com^$important
+||club.bilibili.com^$important
+||miniapp.bilibili.com^$important
+# 广告推送通用，不过会有误杀
+||cm.bilibili.com^$important
