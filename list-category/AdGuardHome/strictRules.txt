@@ -49,8 +49,9 @@
 @@||114dns.com^$important
 @@||cdn.bcebos.com^
 @@||dns-family.adguard.com
-!! [*log.*]误杀
+!! [*log*]误杀
 @@||*blog*
+@@||*login*
 
 !! [*stat*]误杀
 @@||*statistic*
