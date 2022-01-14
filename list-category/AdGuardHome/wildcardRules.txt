@@ -36,10 +36,6 @@
 ||*qhtui*^$important
 ||*360src*^$important
 ||*kouxin*^$important
-||**^$important
-||**^$important
-||**^$important
-||**^$important
 
 !!! [友盟推广]
 ||*umtrack*^$important
@@ -151,6 +147,8 @@
 ||826103.com^$important
 ||*pxtadmin*^$important
 
+!! [其他]
+||*polyfill*^$important
 
 ||**^$important
 ||**^$important
