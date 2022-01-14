@@ -1,0 +1,26 @@
+! Title: AdGuardHome分类规则 华为
+! Update Time: 20220114-170105
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含华为相关的拦截
+!! 华为存在htpdns，需要配合AdGuard使用
+!! --------------------
+@@||*huawei*
+||openlocation-drcn.platform.dbankcloud.com^$important
+||*event*hicloud*^$important
+||*simage*weathercn*^$important
+||*club*weathercn*^$important
+||uc*hicloud*^$important
+||uc*dbank*.*^$important
+||*pps*dbank*.*^$important
+||*acd*hicloud.*^$important
+||*term*.*hicloud*.*^$important
+||*term*.*dbank*.*^$important
+||*metric*.*.*hicloud*.*^$important
+||*metric*.*.*dbank*.*^$important
+||*dnkeeper*.*^$important
+||*store*.*.*hicloud*.*^$important
