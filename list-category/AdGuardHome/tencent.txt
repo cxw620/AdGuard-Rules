@@ -1,0 +1,24 @@
+! Title: AdGuardHome分类规则 南极贱畜
+! Update Time: 20220114-170105
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含腾讯相关的规则。
+!! 腾讯相关的软件存在HTTPDNS，需要结合AdGuard使用
+!! --------------------
+||*bugly*qq*^$important
+||dnet.mb.qq.com^$important
+||yun-hl.3g.qq.com^$important
+||dl.txcdns.com^$important
+||pingma.qq.com^$important
+||tmf*.m.qq.com^$important
+||dns.weixin.qq.com^$important
+||*wxs*.qq.com^$important
+||soup.v.qq.com^$important
+||gdt.qq.com^$important
+||*stat*.qq*^$important
+||*overseactrl*^$important
+||beacon.qq.com^$important
