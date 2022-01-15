@@ -1,0 +1,403 @@
+! Title: AdGuardHome拦截补充规则（白名单版本）
+! Update Time: 2022-01-15 19:39:10
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含了存在大量误杀的若干规则，目前正在维护白名单。
+!! 需要极致拦截效果的选择这个
+!! AdGuardHome适用，AdGuard客户端请也补充订阅另外一个AdGuard专用规则
+!! --------------------
+
+#---------------------------------------------------------------
+
+! Title: AdGuardHome分类规则 最严格
+! Update Time: 20220114-170105
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含误杀严重的通杀规则及对应的白名单规则
+!! 由于误杀过于严重，我本人又有需要，故单列之
+!! 采用本强力拦截规则的欢迎提issue报告误拦截，感激不尽
+!! --------------------
+
+! [Blocklist]
+!! --------------------
+||*ads*
+||*dns*
+||*log*
+||*stat*
+!! --------------------
+
+![Whitelist]
+!! --------------------
+@@||*.org
+@@||*captcha*
+@@||*qpic*
+!! [*ads*]误杀
+@@||*loads*
+!! [*dns*]误杀
+@@||*ceair*
+@@||*akadns*
+@@||*bytecdn*.*
+@@||*castdns*.*
+@@||*wscdns*.*
+@@||*jomodns*.*
+@@||*qiniudns*.*
+@@||*lxdns*.*
+@@||*bdydns*.*
+@@||*.tdnsv*.*
+@@||*.cdn.dnsv*.*
+@@||*.dsa.dnsv*.*
+@@||*ecdns.*
+@@||*.*alibabadns.*
+@@||*-adns*.*
+@@||*alipaydns.*
+@@||www.alidns.com
+@@||dnspod.cn^
+@@||dns.msftncsi.com^$important
+@@||114dns.com^$important
+@@||cdn.bcebos.com^
+@@||dns-family.adguard.com
+!! [*log*]误杀
+@@||*blog*
+@@||*login*
+
+!! [*stat*]误杀
+@@||*statistic*
+@@||*static*
+@@||*pstatp*.*
+
+!! 误杀解除后逃逸
+||staticsns.cdn.bcebos.com^$important
+!! --------------------
+
+#---------------------------------------------------------------
+
+! Title: AdGuardHome分类规则 通配符拦截
+! Update Time: 20220114-170105
+! Update Details
+!! --------------------
+!! 根据ICP备案进行大面积的主动拦截
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含误杀大量通杀规则及对应的白名单规则
+!! 注意，误杀会有，但影响暂时不打
+!! 采用本强力拦截规则的欢迎提issue报告误拦截，感激不尽
+!! --------------------
+!! [信息采集统计、日志常用]
+||*collect*^$important
+||*mmstat*^$important
+||*report*^$important
+||*lbsgw*
+||*logapi*
+||*log-*
+||*-log*
+||*apilog*
+
+!! [互联网追踪]
+||*trace*^$important
+||*track*^$important
+
+!! [DNS相关（DoT）]
+||*dot*
+
+!! [信息搜集分析]
+||*analy*^$important
+
+!! [广告域名（根据工信部备案查询得到所有相关域名）]
+!!! [360联盟、360推广]
+||*50union*^$important
+||*qhtui*^$important
+||*360src*^$important
+||*kouxin*^$important
+
+!!! [友盟推广]
+||*umtrack*^$important
+||*whalecloud*^$important
+||*uyunad*^$important
+||*dratio*^$important
+||*umv*.com^$important
+||*eshiqi*^$important
+||*umsns*^$important
+||*mobmore*^$important
+||*puata*^$important
+||*wrating*^$important
+||*umeng*^$important
+
+!!! [腾云]
+||*talkinggame*^$important
+||*tengyun*^$important
+||*talkingdata*^$important
+||*appcpa*^$important
+||*lnk8*^$important
+||*mpush*^$important
+||*jielou*^$important
+||*doudouknot*^$important
+||*tendcloud*^$important
+||*xdrig*^$important
+||*tddmp*^$important
+||*myzhongguojie*^$important
+
+!!! [数爆]
+||*0lk*^$important
+||*1lk*^$important
+||*9lk*^$important
+||*likeinstall*^$important
+||*xinstall*^$important
+||*toinstall*^$important
+
+!! [baidu]
+||*91.com*^$important
+||*swan*.com^$important
+||*snguows*^$important
+||*popin*^$important
+||*mipplan.org^$important
+||*hongmeiti*^$important
+||*duapps*^$important
+||*bdeceimg*^$important
+||*vplay8*^$important
+||*fhldns*^$important
+||*mtj*js*^$important
+
+!! [新度博望]
+||*xdplt*^$important
+||*juwinmedia*^$important
+
+!! [每日互动]
+||*getui.*^$important
+||*gepush.*^$important
+||*geatmap*^$important
+||*geindex*^$important
+||*gl.ink^$important
+||*1322app*^$important
+||*pusure*^$important
+||*applk*^$important
+
+!! [小源科技]
+||*bizport*^$important
+||*biz-port*^$important
+||*5gimos*^$important
+||*policefountain*^$important
+
+!![甜橙世纪]
+||*leadsvip*^$important
+||*leadstong*^$important
+||*orange-tec*^$important
+
+!![上海采拾]
+||*wuchuh*^$important
+||*9liuda*^$important
+||*7mah2*^$important
+||*zhongddi*^$important
+||*365liuda*^$important
+||*yaokqi*^$important
+
+!![中广在线（北京）]
+||*wisdompublish*^$important
+||*luntianqi*^$important
+||*tianqicha*^$important
+||*youtuji*^$important
+||*bestpublish*^$important
+||*qvpublish*^$important
+||*qvwen*^$important
+||*qvkan*^$important
+||*zgzxnet*^$important
+||*girltuji*^$important
+||*xiusetu*^$important
+||*youtuku*^$important
+
+!! [杭州爆米花科技股份有限公司(重点关注)]
+||*baomihua*^$important
+||921346.com^$important
+||401191.com^$important
+||171679.com^$important
+||734122.com^$important
+||162681.com^$important
+||251674.com^$important
+||29293.com^$important
+||489167.com^$important
+||045328.com^$important
+||611892.com^$important
+||826103.com^$important
+||*pxtadmin*^$important
+
+!! [其他]
+||*polyfil*^$important
+
+!! [误拦截解除]
+@@||*baidupcs*
+@@||*live-trace*
+
+#---------------------------------------------------------------
+
+! Title: AdGuardHome分类规则 阿里相关
+! Update Time: 20220114-170105
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含阿里相关的规则
+!! --------------------
+# 【哈罗单车】
+||ip.hellobike.com^$important
+||apmgw.hellobike.com^$important
+||abapi.hellobike.com^$important
+||moment*hellobike*^$important
+# 【支付宝】
+||loggw.alipay.com^$important
+# 【淘宝】
+@@||h5api.m.taobao.com^$important
+# 【高德地图】
+||cgicol.amap.com^$important
+||store.is.autonavi.com^$important
+# 【饿了么】
+||*monitor.ele.me^$important
+# 【钉钉】
+||resolver.dingtalk.com^$important
+# 【其他】
+||mum.m.alibaba.com^$important
+||ixav-cse.avlyun.com^$important
+||*h-adashx*$important
+
+#---------------------------------------------------------------
+
+! Title: AdGuardHome分类规则 百度
+! Update Time: 20220115-192016
+! Update Details
+!! --------------------
+!! 更新mbd.baidu.com
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含百度相关的
+!! --------------------
+||activity.baidu.com^$important
+||ada.baidu.com^$important
+||ext.baidu.com^$important
+||eiv.baidu.com^$important
+||fxgate.baidu.com^$important
+||hm*.baidu.com^$important
+||haoma.baidu.com^$important
+||hectorstatic.baidu.com^$important
+||mime.baidu.com^$important
+||pae.baidu.com^$important
+||pcrec.baidu.com^$important
+||sepro.baidu.com^$important
+||suggestion.baidu.com^$important
+||ug.baidu.com^$important
+||usug.baidu.com^$important
+||udpolimeok.baidu.com^$important
+||xlab.baidu.com^$important
+
+#---------------------------------------------------------------
+
+! Title: AdGuardHome分类规则 哔哩哔哩
+! Update Time: 20220114-170105
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含哔哩哔哩相关的广告
+!! --------------------
+# hdslb.com是blibili的相关api关键网址
+@@||hdslb.com^
+# 隐私追踪
+||activity.hdslb.com^$important
+||interface.bilibili.com^$important
+# 哔哩哔哩游戏相关，会涉及到一部分的广告
+||biligame.com^$important
+# 会员购相关
+||mall.bilibili.com^$important
+||club.bilibili.com^$important
+||miniapp.bilibili.com^$important
+# 广告推送通用，不过会有误杀
+||cm.bilibili.com^$important
+
+#---------------------------------------------------------------
+
+! Title: AdGuardHome分类规则 华为
+! Update Time: 20220114-170105
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含华为相关的拦截
+!! 华为存在htpdns，需要配合AdGuard使用
+!! --------------------
+@@||*huawei*
+||openlocation-drcn.platform.dbankcloud.com^$important
+||*event*hicloud*^$important
+||*simage*weathercn*^$important
+||*club*weathercn*^$important
+||uc*hicloud*^$important
+||uc*dbank*.*^$important
+||*pps*dbank*.*^$important
+||*acd*hicloud.*^$important
+||*term*.*hicloud*.*^$important
+||*term*.*dbank*.*^$important
+||*metric*.*.*hicloud*.*^$important
+||*metric*.*.*dbank*.*^$important
+||*dnkeeper*.*^$important
+||*store*.*.*hicloud*.*^$important
+
+#---------------------------------------------------------------
+
+! Title: AdGuardHome分类规则 南极贱畜
+! Update Time: 20220114-170105
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含腾讯相关的规则。
+!! 腾讯相关的软件存在HTTPDNS，需要结合AdGuard使用
+!! --------------------
+||*yingyongbao*^$important
+||*imtt*^$important
+||*bugly*qq*^$important
+||dnet.mb.qq.com^$important
+||yun-hl.3g.qq.com^$important
+||dl.txcdns.com^$important
+||pingma.qq.com^$important
+||tmf*.m.qq.com^$important
+||dns.weixin.qq.com^$important
+||*wxs*.qq.com^$important
+||soup.v.qq.com^$important
+||gdt.qq.com^$important
+||*stat*.qq*^$important
+||*overseactrl*^$important
+||beacon.qq.com^$important
+
+#---------------------------------------------------------------
+
+! Title: AdGuardHome分类规则 其他
+! Update Time: 20220114-170105
+! Update Details
+!! --------------------
+!! 其他
+!! --------------------
+! Notes
+!! --------------------
+!! 包含其他规则
+!! --------------------
+# 【并夕夕专区】
+||t*.pinduoduo.com^$important
+||meta.pinduoduo.com^$important
+# 【JD专区】
+||*eid*jd*^$important
+||*lbs*jd*^$important
+||*perf*jd*^$important
