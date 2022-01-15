@@ -1,16 +1,18 @@
 ! Title: AdGuardHome分类规则 通配符拦截
-! Update Time: 20220114-170105
+! Update Time: 20220115-200737
 ! Update Details
 !! --------------------
-!! 根据ICP备案进行大面积的主动拦截
+!! 更新*monitor*。正在进行后续观察。
 !! --------------------
 ! Notes
 !! --------------------
+!! 根据ICP备案进行大面积的主动拦截
 !! 本规则包含误杀大量通杀规则及对应的白名单规则
 !! 注意，误杀会有，但影响暂时不打
 !! 采用本强力拦截规则的欢迎提issue报告误拦截，感激不尽
 !! --------------------
 !! [信息采集统计、日志常用]
+||*monitor*^$important
 ||*collect*^$important
 ||*mmstat*^$important
 ||*report*^$important
