@@ -50,7 +50,9 @@
 ! [bilibili]
 !！ 感谢https://github.com/SocialSisterYi/bilibili-API-collect项目
 !!! 客户端地址获取拦截（配合关闭定位权限食用）
-||*/x/web-interface/zone*
+||*/x/web-interface/zone*$important
+||*hdslb*report*$important
+||*hdslb*cm*$important
 
 ! [wechat]
 36.152.4.32$network
