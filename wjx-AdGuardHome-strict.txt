@@ -75,6 +75,7 @@
 @@||*static*
 @@||*pstatp*.*
 @@||*station*
+@@||digitalcertvalidation.com^
 
 !! 误杀解除后逃逸
 ||staticsns.cdn.bcebos.com^$important
