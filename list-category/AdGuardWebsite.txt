@@ -1,0 +1,13 @@
+! Title: AdGuard浏览器拦截补充规则
+! Update Time: 20220115-192409
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则为浏览器拦截的规则。
+!! --------------------
+baidu.com###content_left > div:first-child
+baidu.com##.opr-recommends-merge-content
+bilibili.com##.ad-report, .video-card-ad-small
