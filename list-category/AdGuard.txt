@@ -1,51 +1,18 @@
-!Title: AdGuard补充拦截规则
-!Version: 20220115-192727
-! --------------------------------------------------------
-! 腾讯，阿里旗下及哔哩哔哩软件都有httpdns，单纯DNS拦截是无效的。但是不能拦截httpdns，否则会影响程序功能
-! 似乎强制走httpdns了
-! 点名批评bilibili
-! 微信的mmTLS非常麻烦目前没有解决方案
-! AdGuard客户端不会根据cname拦截好像，所以下面的通杀不加important
-! --------------------------------------------------------
-! [新增未确定用途]
-! None
-! [同步通杀拦截ip直连的访问]
-||*ads*
-||*collect*
-||*stat*
-||*mmstat*^$important
-@@||*static*
-||*lbsgw*
-||*logapi*
-||*log-*
-||*-log*
-@@||*login*
-!! 解决百度网盘下载误拦截
-@@||*baidupcs*
-||*apilog*
-||*log.*
-||*game*
-||*track*
-!! 解决bilibili通杀导致全部炸的问题
-@@||*live-trace*
-||*trace*
-||*dns*
-||*dot*
-||*cnzz*
-||*analy*
-||*report*
-||*50union*
-||*polyfill*
-||*umeng*
-||*xdplt*
-||*leadstong*
-||*getui.*^$important
-||*gepush.*^$important
-||*yingyongbao*^$important
-||*imtt*^$important
-||*qvkanwen*^$important
-||*qukanwen*^$important
-||*baomihua*^$important
+! Title: AdGuard拦截补充规则
+! Update Time: 20220115-192409
+! Update Details
+!! --------------------
+!! 全新
+!! --------------------
+! Notes
+!! --------------------
+!! 腾讯，阿里旗下及哔哩哔哩软件都有httpdns，单纯DNS拦截是无效的。但是不能拦截httpdns，否则会影响程序功能
+!! 似乎强制走httpdns了
+!! 点名批评bilibili
+!! 微信不信任证书导致无法拦截非常麻烦，目前没有解决方案
+!! AdGuard客户端不会根据cname拦截好像，所以下面的通杀不加important
+!! 这个规则不兼容AdGuardHome，注意。只支持AdGuard客户端。
+!! --------------------
 
 ! [DNS]--------------------
 !! [bilibili]
