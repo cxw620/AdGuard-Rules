@@ -66,6 +66,7 @@
 @@||cdn.bcebos.com^
 @@||dns-family.adguard.com
 !! [*log*]误杀
+@@||*logo*
 @@||*blog*
 @@||*login*
 
