@@ -1,0 +1,101 @@
+!Title: AdGuard补充拦截规则
+!Version: 20220115-192727
+! --------------------------------------------------------
+! 腾讯，阿里旗下及哔哩哔哩软件都有httpdns，单纯DNS拦截是无效的。但是不能拦截httpdns，否则会影响程序功能
+! 似乎强制走httpdns了
+! 点名批评bilibili
+! 微信的mmTLS非常麻烦目前没有解决方案
+! AdGuard客户端不会根据cname拦截好像，所以下面的通杀不加important
+! --------------------------------------------------------
+! [新增未确定用途]
+! None
+! [同步通杀拦截ip直连的访问]
+||*ads*
+||*collect*
+||*stat*
+||*mmstat*^$important
+@@||*static*
+||*lbsgw*
+||*logapi*
+||*log-*
+||*-log*
+@@||*login*
+!! 解决百度网盘下载误拦截
+@@||*baidupcs*
+||*apilog*
+||*log.*
+||*game*
+||*track*
+!! 解决bilibili通杀导致全部炸的问题
+@@||*live-trace*
+||*trace*
+||*dns*
+||*dot*
+||*cnzz*
+||*analy*
+||*report*
+||*50union*
+||*polyfill*
+||*umeng*
+||*xdplt*
+||*leadstong*
+||*getui.*^$important
+||*gepush.*^$important
+||*yingyongbao*^$important
+||*imtt*^$important
+||*qvkanwen*^$important
+||*qukanwen*^$important
+||*baomihua*^$important
+
+! [DNS]--------------------
+!! [bilibili]
+221.179.155.*$network
+!221.179.155.209$network
+!221.179.155.193$network
+!! [public]
+114.114.114.114$network
+198.18.53.53$network
+119.29.29.29$network
+[2402:4e00::]$network
+223.5.5.5$network
+223.6.6.6$network
+[2400:3200::1]$network
+[2400:3200:baba::1]$network
+[2409:8000:2000:0:*::1]$network
+[2409:8000:2000:0:370::1]$network
+[2409:8000:2000:0:270::1]$network
+1.2.4.8$network
+210.2.4.8$network
+[2001:dc7:1000::1]$network
+117.50.10.10$network
+117.50.20.20$network
+101.6.6.6$network
+[2001:da8::666]$network
+180.76.76.76$network
+[2400:da00::6666]$network
+! [DNS END]----------------
+
+! 以下为HTTPDNS拦截
+!! [bilibili]
+!!! 发现哔哩哔哩尝试打洞，拦截之
+239.255.255.250$network
+
+! [bilibili]
+!！ 感谢https://github.com/SocialSisterYi/bilibili-API-collect项目
+!!! 客户端地址获取拦截（配合关闭定位权限食用）
+||*/x/web-interface/zone*
+
+! [wechat]
+36.152.4.32$network
+
+! [PDD]
+!! 拼多多在后台疯狂上传数据，不知道在干什么。来个人抓个包看看
+||*/*titan*^$important
+!! PDD跟踪ID？
+||*/d?id=*&dn=*
+||*/d?dn=*&id=*
+
+! [HUAWEI]
+||*weathercn*newslist*$important
+||*weathercn*qukan*$important
+||*weathercn*swiper*$important
