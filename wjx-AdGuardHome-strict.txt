@@ -1,8 +1,8 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2022-01-15 20:15:36
+! Update Time: 2022-01-15 20:18:54
 ! Update Details
 !! --------------------
-!! 全新
+!! 更新若干规则
 !! --------------------
 ! Notes
 !! --------------------
@@ -14,10 +14,10 @@
 #---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 最严格
-! Update Time: 20220115-200737
+! Update Time: 20220115-201815
 ! Update Details
 !! --------------------
-!! 全新
+!! 更新@@||*station*
 !! --------------------
 ! Notes
 !! --------------------
@@ -41,6 +41,7 @@
 @@||*qpic*
 !! [*ads*]误杀
 @@||*loads*
+@@||playstation
 !! [*dns*]误杀
 @@||*ceair*
 @@||*akadns*
@@ -72,6 +73,7 @@
 @@||*statistic*
 @@||*static*
 @@||*pstatp*.*
+@@||*station*
 
 !! 误杀解除后逃逸
 ||staticsns.cdn.bcebos.com^$important
