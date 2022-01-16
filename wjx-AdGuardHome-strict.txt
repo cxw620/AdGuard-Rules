@@ -776,6 +776,7 @@
 ||zp1133.com$important
 
 !! [其他]
+||*appsflyer*^$important
 ||*polyfil*^$important
 ||01net.com$important
 ||starlizard.com.cn$important
