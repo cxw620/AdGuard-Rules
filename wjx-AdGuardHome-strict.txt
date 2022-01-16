@@ -956,6 +956,8 @@
 !! 华为存在htpdns，需要配合AdGuard使用
 !! --------------------
 @@||*huawei*
+@@||res-static*.huaweicloud.com^$important
+@@||cloud.huawei.com^$important
 ||openlocation-drcn.platform.dbankcloud.com^$important
 ||*event*hicloud*^$important
 ||*simage*weathercn*^$important
