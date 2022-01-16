@@ -1,8 +1,9 @@
 ! Title: AdGuardHome拦截补充规则
-! Update Time: 2022-01-15 23:35:56
+! Update Time: 2022-01-16 14:12:45
 ! Update Details
 !! --------------------
-!! 更新若干规则
+!! 更新Appsflyer ip拦截(好像不支持CIDR)
+!! 更新report的误拦截
 !! --------------------
 ! Notes
 !! --------------------
@@ -26,7 +27,6 @@
 !! 采用本强力拦截规则的欢迎提issue报告误拦截，感激不尽
 !! --------------------
 !! [信息采集统计、日志常用]
-||*monitor*^$important
 ||*collect*^$important
 ||*mmstat*^$important
 ||*report*^$important
@@ -46,12 +46,33 @@
 !! [信息搜集分析]
 ||*analy*^$important
 
+!!! [appsflyer ip]
+!!! [https://support.appsflyer.com/hc/zh-cn/articles/207447093-AppsFlyer-IPs-for-Whitelisting]
+45.92.116.0/22
+194.28.46.0/23
+
 !! [广告域名（根据工信部备案查询得到所有相关域名）]
 !!! [360联盟、360推广]
 ||*50union*^$important
 ||*qhtui*^$important
 ||*360src*^$important
 ||*kouxin*^$important
+
+!!! [北京球球趣玩科技有限公司]
+||*adhelper*^$important
+
+!!! [北京深演智能科技股份有限公司]
+||ideepzero.com$important
+||chinartb.cn$important
+||deepzero.com$important
+||audiencechina.com$important
+||ipinyou.com$important
+||folo8.com.cn$important
+||userback.com.cn$important
+||jiceyun.com$important
+||deepzero.com.cn$important
+||folo8.com$important
+||pinyouad.com$important
 
 !!! [友盟推广]
 ||*umtrack*^$important
@@ -705,12 +726,12 @@
 ||zp1133.com$important
 
 !! [其他]
-||*appflyer*^$important
-||*polyfil*^$important
+||*appsflyer*^$important
 ||01net.com$important
 ||starlizard.com.cn$important
 
 !! [误拦截解除]
+@@||mail.qq.com*report*
 @@||*baidupcs*
 @@||*live-trace*
 
@@ -802,6 +823,9 @@
 ||miniapp.bilibili.com^$important
 # 广告推送通用，不过会有误杀
 ||cm.bilibili.com^$important
+# 未知，不过应该不是关键的
+||data.bilibili.com^$important
+||dataflow.bilibili.com^$important
 
 #---------------------------------------------------------------
 
