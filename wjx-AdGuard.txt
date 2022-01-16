@@ -68,3 +68,8 @@
 ||*weathercn*newslist*$important
 ||*weathercn*qukan*$important
 ||*weathercn*swiper*$important
+
+!! [appsflyer ip]
+!! [https://support.appsflyer.com/hc/zh-cn/articles/207447093-AppsFlyer-IPs-for-Whitelisting]
+45.92.116.0/22$network
+194.28.46.0/23$network
