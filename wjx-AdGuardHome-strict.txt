@@ -1,5 +1,5 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2022-01-16 14:12:45
+! Update Time: 2022-01-16 14:57:59
 ! Update Details
 !! --------------------
 !! 更新Appsflyer ip拦截(好像不支持CIDR)
@@ -15,10 +15,10 @@
 #---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 最严格
-! Update Time: 20220115-201815
+! Update Time: 20220116-145512
 ! Update Details
 !! --------------------
-!! 更新@@||*station*
+!! 更新通杀规则
 !! --------------------
 ! Notes
 !! --------------------
@@ -29,15 +29,40 @@
 
 ! [Blocklist]
 !! --------------------
-||*ads*.*
-||*dns*.*
-||*log*.*
-||*stat*.*
-||*monitor*.*
+||*ads*.com
+||*ads*.net
+||*ads*.cn
+||*ads*.cc
+||*ads*.com.cn
+
+||*dns*.com
+||*dns*.net
+||*dns*.cn
+||*dns*.cc
+||*dns*.com.cn
+
+||*log*.com
+||*log*.net
+||*log*.cn
+||*log*.cc
+||*log*.com.cn
+
+||*stat*.com
+||*stat*.com.cn
+||*stat*.net
+||*stat*.cn
+||*stat*.cc
+
+||*monitor*.com
+||*monitor*.com.cn
+||*monitor*.net
+||*monitor*.cn
+||*monitor*.cc
 !! --------------------
 
 ![Whitelist]
 !! --------------------
+@@||*.gov.cn^$important
 @@||*.org
 @@||*captcha*
 @@||*qpic*
@@ -933,10 +958,10 @@
 #---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 南极贱畜
-! Update Time: 20220115-201536
+! Update Time: 20220116-145736
 ! Update Details
 !! --------------------
-!! 更新||log.tbs.qq.com^$important
+!! 更新wx.qlogo.cn误拦截解除
 !! --------------------
 ! Notes
 !! --------------------
@@ -959,6 +984,7 @@
 ||*stat*.qq*^$important
 ||*overseactrl*^$important
 ||beacon.qq.com^$important
+@@||wx.qlogo.cn^$important
 
 #---------------------------------------------------------------
 
