@@ -896,7 +896,22 @@
 ||usug.baidu.com^$important
 ||udpolimeok.baidu.com^$important
 ||xlab.baidu.com^$important
-
+@@||t0.baidu.com
+@@||t1.baidu.com
+@@||t2.baidu.com
+@@||t3.baidu.com
+@@||t4.baidu.com
+@@||t5.baidu.com
+@@||t6.baidu.com
+@@||t7.baidu.com
+@@||t8.baidu.com
+@@||t9.baidu.com
+@@||t10.baidu.com
+@@||t11.baidu.com
+@@||t12.baidu.com
+@@||t13.baidu.com
+@@||t14.baidu.com
+@@||t15.baidu.com
 #---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 哔哩哔哩
