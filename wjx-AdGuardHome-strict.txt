@@ -2,7 +2,8 @@
 ! Update Time: 2022-01-16 14:12:45
 ! Update Details
 !! --------------------
-!! 更新若干规则
+!! 更新Appsflyer ip拦截
+!! 更新report的误拦截
 !! --------------------
 ! Notes
 !! --------------------
@@ -789,6 +790,7 @@
 ||starlizard.com.cn$important
 
 !! [误拦截解除]
+@@||mail.qq.com*report*
 @@||*baidupcs*
 @@||*live-trace*
 
