@@ -65,6 +65,8 @@
 @@||114dns.com^$important
 @@||cdn.bcebos.com^
 @@||dns-family.adguard.com
+@@||maoyundns.com
+
 !! [*log*]误杀
 @@||*logo*
 @@||*blog*
@@ -116,6 +118,11 @@
 
 !! [信息搜集分析]
 ||*analy*^$important
+
+!!! [appsflyer ip]
+!!! [https://support.appsflyer.com/hc/zh-cn/articles/207447093-AppsFlyer-IPs-for-Whitelisting]
+45.92.116.0/22
+194.28.46.0/23
 
 !! [广告域名（根据工信部备案查询得到所有相关域名）]
 !!! [360联盟、360推广]
