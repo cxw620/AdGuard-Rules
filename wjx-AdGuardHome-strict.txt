@@ -2,7 +2,7 @@
 ! Update Time: 2022-01-16 14:12:45
 ! Update Details
 !! --------------------
-!! 更新Appsflyer ip拦截
+!! 更新Appsflyer ip拦截(好像不支持CIDR)
 !! 更新report的误拦截
 !! --------------------
 ! Notes
@@ -31,8 +31,9 @@
 !! --------------------
 ||*ads*.*
 ||*dns*.*
-||*log*
-||*stat*
+||*log*.*
+||*stat*.*
+||*monitor*.*
 !! --------------------
 
 ![Whitelist]
@@ -100,7 +101,6 @@
 !! 采用本强力拦截规则的欢迎提issue报告误拦截，感激不尽
 !! --------------------
 !! [信息采集统计、日志常用]
-||*monitor*^$important
 ||*collect*^$important
 ||*mmstat*^$important
 ||*report*^$important
@@ -131,6 +131,22 @@
 ||*qhtui*^$important
 ||*360src*^$important
 ||*kouxin*^$important
+
+!!! [北京球球趣玩科技有限公司]
+||*adhelper*^$important
+
+!!! [北京深演智能科技股份有限公司]
+||ideepzero.com$important
+||chinartb.cn$important
+||deepzero.com$important
+||audiencechina.com$important
+||ipinyou.com$important
+||folo8.com.cn$important
+||userback.com.cn$important
+||jiceyun.com$important
+||deepzero.com.cn$important
+||folo8.com$important
+||pinyouad.com$important
 
 !!! [友盟推广]
 ||*umtrack*^$important
@@ -785,7 +801,6 @@
 
 !! [其他]
 ||*appsflyer*^$important
-||*polyfil*^$important
 ||01net.com$important
 ||starlizard.com.cn$important
 
@@ -882,6 +897,9 @@
 ||miniapp.bilibili.com^$important
 # 广告推送通用，不过会有误杀
 ||cm.bilibili.com^$important
+# 未知，不过应该不是关键的
+||data.bilibili.com^$important
+||dataflow.bilibili.com^$important
 
 #---------------------------------------------------------------
 
