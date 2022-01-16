@@ -73,6 +73,7 @@
 @@||*ceair*
 @@||*akadns*
 @@||*bytecdn*.*
+@@||*bytedns1.*
 @@||*castdns*.*
 @@||*wscdns*.*
 @@||*jomodns*.*
