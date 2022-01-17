@@ -1,8 +1,8 @@
 ! Title: AdGuard拦截补充规则
-! Update Time: 20220115-192409
+! Update Time: 20220117 16:02:09
 ! Update Details
 !! --------------------
-!! 全新
+!! 更新华为
 !! --------------------
 ! Notes
 !! --------------------
@@ -68,6 +68,7 @@
 ||*weathercn*newslist*$important
 ||*weathercn*qukan*$important
 ||*weathercn*swiper*$important
+||*httpdns*huawei*$important
 
 !! [appsflyer ip]
 !! [https://support.appsflyer.com/hc/zh-cn/articles/207447093-AppsFlyer-IPs-for-Whitelisting]
