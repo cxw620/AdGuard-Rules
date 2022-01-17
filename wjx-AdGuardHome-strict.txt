@@ -106,6 +106,7 @@
 @@||*static*
 @@||*pstatp*.*
 @@||*station*
+@@||*status*.*
 @@||digitalcertvalidation.com^
 
 !! 误杀解除后逃逸
@@ -835,6 +836,7 @@
 @@||mail.qq.com*report*
 @@||*baidupcs*
 @@||*live-trace*
+@@||alipayobjects.com^$important
 
 #---------------------------------------------------------------
 
