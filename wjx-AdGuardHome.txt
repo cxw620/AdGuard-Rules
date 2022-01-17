@@ -1,5 +1,5 @@
-! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2022-01-16 14:57:59
+! Title: AdGuardHome拦截补充规则
+! Update Time: 2022-01-17 13:06:30
 ! Update Details
 !! --------------------
 !! 更新Appsflyer ip拦截(好像不支持CIDR)
@@ -8,7 +8,6 @@
 ! Notes
 !! --------------------
 !! 本规则包含了存在大量误杀的若干规则，目前正在维护白名单。
-!! 需要极致拦截效果的选择这个
 !! AdGuardHome适用，AdGuard客户端请也补充订阅另外一个AdGuard专用规则
 !! --------------------
 
@@ -18,7 +17,7 @@
 ! Update Time: 20220114-170105
 ! Update Details
 !! --------------------
-!! 更新
+!! 更新*monitor*。正在进行后续观察。
 !! --------------------
 ! Notes
 !! --------------------
@@ -735,6 +734,7 @@
 @@||mail.qq.com*report*
 @@||*baidupcs*
 @@||*live-trace*
+@@||alipayobjects.com^$important
 
 #---------------------------------------------------------------
 
@@ -798,7 +798,22 @@
 ||usug.baidu.com^$important
 ||udpolimeok.baidu.com^$important
 ||xlab.baidu.com^$important
-
+@@||t0.baidu.com
+@@||t1.baidu.com
+@@||t2.baidu.com
+@@||t3.baidu.com
+@@||t4.baidu.com
+@@||t5.baidu.com
+@@||t6.baidu.com
+@@||t7.baidu.com
+@@||t8.baidu.com
+@@||t9.baidu.com
+@@||t10.baidu.com
+@@||t11.baidu.com
+@@||t12.baidu.com
+@@||t13.baidu.com
+@@||t14.baidu.com
+@@||t15.baidu.com
 #---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 哔哩哔哩
@@ -842,6 +857,9 @@
 !! 华为存在htpdns，需要配合AdGuard使用
 !! --------------------
 @@||*huawei*
+@@||res-static*.huaweicloud.com^$important
+@@||cloud.huawei.com^$important
+||*httpdns*huawei*$important
 ||openlocation-drcn.platform.dbankcloud.com^$important
 ||*event*hicloud*^$important
 ||*simage*weathercn*^$important
@@ -907,5 +925,3 @@
 ||*eid*jd*^$important
 ||*lbs*jd*^$important
 ||*perf*jd*^$important
-# 【其他】
-@@||*.gov.cn^$important
