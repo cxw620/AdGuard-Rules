@@ -961,6 +961,7 @@
 @@||*huawei*
 @@||res-static*.huaweicloud.com^$important
 @@||cloud.huawei.com^$important
+||*httpdns*huawei*$important
 ||openlocation-drcn.platform.dbankcloud.com^$important
 ||*event*hicloud*^$important
 ||*simage*weathercn*^$important
