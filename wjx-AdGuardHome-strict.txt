@@ -1,5 +1,5 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2022-01-16 14:57:59
+! Update Time: 2022-01-17 13:06:30
 ! Update Details
 !! --------------------
 !! 更新Appsflyer ip拦截(好像不支持CIDR)
@@ -15,10 +15,10 @@
 #---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 最严格
-! Update Time: 20220116-145512
+! Update Time: 20220117-130608
 ! Update Details
 !! --------------------
-!! 更新通杀规则
+!! 更新狗云
 !! --------------------
 ! Notes
 !! --------------------
@@ -92,8 +92,9 @@
 @@||dns.msftncsi.com^$important
 @@||114dns.com^$important
 @@||cdn.bcebos.com^
-@@||dns-family.adguard.com
-@@||maoyundns.com
+@@||dns-family.adguard.com^
+@@||maoyundns.com^
+@@||dogedns.com^
 
 !! [*log*]误杀
 @@||*logo*
