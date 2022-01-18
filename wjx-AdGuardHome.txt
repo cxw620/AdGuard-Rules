@@ -1,9 +1,8 @@
 ! Title: AdGuardHome拦截补充规则
-! Update Time: 2022-01-17 13:06:30
+! Update Time: 2022-01-18 14:20:00
 ! Update Details
 !! --------------------
-!! 更新Appsflyer ip拦截(好像不支持CIDR)
-!! 更新report的误拦截
+!! 更新若干误拦截
 !! --------------------
 ! Notes
 !! --------------------
@@ -846,10 +845,10 @@
 #---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 华为
-! Update Time: 20220114-170105
+! Update Time: 2022-01-18 14:15:21
 ! Update Details
 !! --------------------
-!! 全新
+!! 更新华为云相关
 !! --------------------
 ! Notes
 !! --------------------
@@ -857,6 +856,8 @@
 !! 华为存在htpdns，需要配合AdGuard使用
 !! --------------------
 @@||*huawei*
+@@||console.huaweicloud.com^$important
+@@||res.hc-cdn.com^$important
 @@||res-static*.huaweicloud.com^$important
 @@||cloud.huawei.com^$important
 ||*httpdns*huawei*$important
