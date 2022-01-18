@@ -155,6 +155,12 @@
 194.28.46.0/23
 
 !! [广告域名（根据工信部备案查询得到所有相关域名）]
+!!! [乐播]
+||lebo.com.cn^$important
+||lebo.cn^$important
+||hpplay.cn^$important
+||乐播.com^$important
+
 !!! [360联盟、360推广]
 ||*50union*^$important
 ||*qhtui*^$important
@@ -1023,6 +1029,55 @@
 !! --------------------
 !! 包含其他规则
 !! --------------------
+# 【ip及DNS专区】
+221.179.155.*
+221.179.155.209
+221.179.155.193
+114.114.114.114
+198.18.53.53
+119.29.29.29
+[2402:4e00::]
+223.5.5.5
+223.6.6.6
+[2400:3200::1]
+[2400:3200:baba::1]
+[2409:8000:2000:0:*::1]
+[2409:8000:2000:0:370::1]
+[2409:8000:2000:0:270::1]
+1.2.4.8
+210.2.4.8
+[2001:dc7:1000::1]
+117.50.10.10
+117.50.20.20
+101.6.6.6
+[2001:da8::666]
+180.76.76.76
+[2400:da00::6666]
+221.179.38.7
+120.196.165.7
+36.152.4.32
+
+||dnsapi.cn
+||nsv5.cn
+||urlpod.cn
+||todolist.center
+||todolist.team
+||todolist.plus
+||httpdns.gold
+||httpdns.host
+||httpdns.plus
+||httpdns.pub
+||httpdns.pro
+||httpdns.run
+||igtm-a101.com
+||igtm-c101.com
+||igtm-d101.com
+||nsv2.cn
+||dns.pub
+||doh.pub
+||dot.pub
+||doh.plus
+
 # 【并夕夕专区】
 ||t*.pinduoduo.com^$important
 ||meta.pinduoduo.com^$important
