@@ -14,3 +14,14 @@ AdGuardHome那个是给AdGuardHome用的。AdGuard那个是AdGuard客户端补�
 有误拦截的欢迎提issue，pr。
 
 破坏性更新ing，误杀有点多，目前谨慎采用。预计一个月内可以稳定下来。
+
+推荐在AdGuardHome配合使用的拦截库：
+
+最近找到的一个，这个好像非常全。
+https://github.com/Potterli20/hosts
+
+BlueSkyXN的规则库也很全。
+
+还有Anti-AD的库，比较高效而且每天更新。
+
+再启用AdGuardHome内置的所有库就行了。
