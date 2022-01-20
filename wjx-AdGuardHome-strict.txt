@@ -15,7 +15,7 @@
 !! 第三位表示常规更新。
 !! --------------------
 
-#---------------------------------------------------------------
+!---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 最严格
 ! Update Time: 2022-01-18 14:40:59
@@ -32,10 +32,10 @@
 
 ! [Blocklist]
 !! --------------------
-||*ads*.com
-||*ads*.net
-||*ads*.cn
-||*ads*.cc
+||*ads*.com^
+||*ads*.net^
+||*ads*.cn^
+||*ads*.cc^
 ||*ads*.com.cn
 
 ||*dns*.com
@@ -66,6 +66,7 @@
 ![Whitelist]
 !! --------------------
 @@||*.gov.cn^$important
+@@||*.edu.cn^$important
 @@||*.org
 @@||*captcha*
 @@||*qpic*
@@ -101,6 +102,7 @@
 @@||ctdns.cn^
 @@||cdnst.net^
 @@||fclouddns.net^
+@@||cdns.cn
 
 !! [*log*]误杀
 @@||*logo*
@@ -119,7 +121,7 @@
 ||staticsns.cdn.bcebos.com^$important
 !! --------------------
 
-#---------------------------------------------------------------
+!---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 通配符拦截
 ! Update Time: 20220114-170105
@@ -850,7 +852,7 @@
 @@||*live-trace*
 @@||alipayobjects.com^$important
 
-#---------------------------------------------------------------
+!---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 阿里相关
 ! Update Time: 20220114-170105
@@ -862,28 +864,28 @@
 !! --------------------
 !! 本规则包含阿里相关的规则
 !! --------------------
-# 【哈罗单车】
+! 【哈罗单车】
 ||ip.hellobike.com^$important
 ||apmgw.hellobike.com^$important
 ||abapi.hellobike.com^$important
 ||moment*hellobike*^$important
-# 【支付宝】
+! 【支付宝】
 ||loggw.alipay.com^$important
-# 【淘宝】
+! 【淘宝】
 @@||h5api.m.taobao.com^$important
-# 【高德地图】
+! 【高德地图】
 ||cgicol.amap.com^$important
 ||store.is.autonavi.com^$important
-# 【饿了么】
+! 【饿了么】
 ||*monitor.ele.me^$important
-# 【钉钉】
+! 【钉钉】
 ||resolver.dingtalk.com^$important
-# 【其他】
+! 【其他】
 ||mum.m.alibaba.com^$important
 ||ixav-cse.avlyun.com^$important
 ||*h-adashx*$important
 
-#---------------------------------------------------------------
+!---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 百度
 ! Update Time: 20220115-192016
@@ -928,7 +930,7 @@
 @@||t13.baidu.com
 @@||t14.baidu.com
 @@||t15.baidu.com
-#---------------------------------------------------------------
+!---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 哔哩哔哩
 ! Update Time: 20220114-170105
@@ -940,24 +942,24 @@
 !! --------------------
 !! 本规则包含哔哩哔哩相关的广告
 !! --------------------
-# hdslb.com是blibili的相关api关键网址
+! hdslb.com是blibili的相关api关键网址
 @@||hdslb.com^
-# 隐私追踪
+! 隐私追踪
 ||activity.hdslb.com^$important
 ||interface.bilibili.com^$important
-# 哔哩哔哩游戏相关，会涉及到一部分的广告
+! 哔哩哔哩游戏相关，会涉及到一部分的广告
 ||biligame.com^$important
-# 会员购相关
+! 会员购相关
 ||mall.bilibili.com^$important
 ||club.bilibili.com^$important
 ||miniapp.bilibili.com^$important
-# 广告推送通用，不过会有误杀
+! 广告推送通用，不过会有误杀
 ||cm.bilibili.com^$important
-# 未知，不过应该不是关键的
+! 未知，不过应该不是关键的
 ||data.bilibili.com^$important
 ||dataflow.bilibili.com^$important
 
-#---------------------------------------------------------------
+!---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 华为
 ! Update Time: 2022-01-18 14:15:21
@@ -991,7 +993,7 @@
 ||*dnkeeper*.*^$important
 ||*store*.*.*hicloud*.*^$important
 
-#---------------------------------------------------------------
+!---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 南极贱畜
 ! Update Time: 20220116-145736
@@ -1022,19 +1024,26 @@
 ||beacon.qq.com^$important
 @@||wx.qlogo.cn^$important
 
-#---------------------------------------------------------------
+!---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 其他
-! Update Time: 2022-01-18 14:40:59
+! Update Time: 2022-01-20 21:43:49
 ! Update Details
 !! --------------------
-!! 更新ip拦截
+!! 更新trli规则误杀解除
 !! --------------------
 ! Notes
 !! --------------------
 !! 包含其他规则
 !! --------------------
-# 【ip及DNS专区】
+! 【trli规则误杀】
+@@||passport.baidu.com^$important
+@@||oneocsp.microsoft.com^$important
+@@||office365.com^
+@@||microsoft.com^
+@@||office.net^
+
+! 【ip及DNS专区】
 221.179.155.*
 221.179.155.209
 221.179.155.193
@@ -1083,10 +1092,13 @@
 ||dot.pub
 ||doh.plus
 
-# 【并夕夕专区】
+! 【并夕夕专区】
 ||t*.pinduoduo.com^$important
 ||meta.pinduoduo.com^$important
-# 【JD专区】
+! 【JD专区】
 ||*eid*jd*^$important
 ||*lbs*jd*^$important
 ||*perf*jd*^$important
+
+! 【自用】
+@@||*wjxhub*
