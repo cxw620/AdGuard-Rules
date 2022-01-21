@@ -1,6 +1,6 @@
 ! Title: 浏览器补充规则
 ! Update Time: 2022-01-21 23:00:00
-! Ver.: 1.0.1
+! Ver.: 1.0.2
 ! Update Details
 !! --------------------
 !! 首次更新
@@ -16,16 +16,23 @@
 
 !! --------------------
 ! [URL跟踪规则]
-!！ [Baidu]
+! [Baidu]
 $removeparam=rsv_sug*
+$removeparam=rsv_cq
+$removeparam=rsv_dl
+$removeparam=rsv_bp
+$removeparam=rsv_pq
+$removeparam=rsv_enter
+$removeparam=rsv_*
+$removeparam=rsv*
+$removeparam=rqlang
 $removeparam=oq
 $removeparam=rqid
 $removeparam=rsf
 $removeparam=sa
-$removeparam=rsv_dl
+$removeparam=bs
 $removeparam=usm
 $removeparam=tn
-$removeparam=rsv_cq
 $removeparam=dyTabStr
 $removeparam=euri
 $removeparam=lm
@@ -36,7 +43,7 @@ $removeparam=nc
 $removeparam=wrsv_spt
 @@||image.baidu.com$removeparam=tn
 
-!! [Google]
+! [Google]
 $removeparam=iflsig
 $removeparam=ved
 $removeparam=uact
