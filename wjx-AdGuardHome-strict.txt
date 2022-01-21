@@ -1,6 +1,6 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2022-01-21 15:47:30
-! Ver.: 3.2.1
+! Update Time: 2022-01-21 15:54:49
+! Ver.: 3.2.2
 ! Update Details
 !! --------------------
 !! 更新微软相关隐私收集
@@ -986,10 +986,10 @@
 !---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 其他
-! Update Time: 2022-01-20 21:43:49
+! Update Time: 2022-01-21 15:54:49
 ! Update Details
 !! --------------------
-!! 更新trli规则误杀解除
+!! 更新微软规则（待观察）
 !! --------------------
 ! Notes
 !! --------------------
@@ -1005,6 +1005,8 @@
 ||evoke-windowsservices-tas.msedge.net^$important
 ||cxcs.microsoft.net^$important
 ||config.edge.skype.com^$important
+||web.vortex.data.microsoft.com^$important
+||browser.pipe.aria.microsoft.com^$important
 
 ! 【ip及DNS专区】
 221.179.155.*
