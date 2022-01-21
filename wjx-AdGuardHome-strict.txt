@@ -30,37 +30,9 @@
 !! 采用本强力拦截规则的欢迎提issue报告误拦截，感激不尽
 !! --------------------
 
-! [Blocklist]
+! [Blocklist 正则匹配]
 !! --------------------
-||*ads*.com^
-||*ads*.net^
-||*ads*.cn^
-||*ads*.cc^
-||*ads*.com.cn
-
-||*dns*.com
-||*dns*.net
-||*dns*.cn
-||*dns*.cc
-||*dns*.com.cn
-
-||*log*.com
-||*log*.net
-||*log*.cn
-||*log*.cc
-||*log*.com.cn
-
-||*stat*.com
-||*stat*.com.cn
-||*stat*.net
-||*stat*.cn
-||*stat*.cc
-
-||*monitor*.com
-||*monitor*.com.cn
-||*monitor*.net
-||*monitor*.cn
-||*monitor*.cc
+/^.*(ads|dns|log|stat|monitor).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/
 !! --------------------
 
 ![Whitelist]
@@ -158,8 +130,9 @@
 
 !!! [appsflyer ip]
 !!! [https://support.appsflyer.com/hc/zh-cn/articles/207447093-AppsFlyer-IPs-for-Whitelisting]
-45.92.116.0/22
-194.28.46.0/23
+
+/^45\.92\.11(6|7|8|9)\.\d{0,}$/$important
+/^194\.28\.4(6|7)\.\d{0,}$/$important
 
 !! [广告域名（根据工信部备案查询得到所有相关域名）]
 !!! [乐播]
@@ -888,7 +861,7 @@
 !---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 百度
-! Update Time: 20220115-192016
+! Update Time: 2022-01-21 15:37:56
 ! Update Details
 !! --------------------
 !! 更新mbd.baidu.com
@@ -914,22 +887,8 @@
 ||usug.baidu.com^$important
 ||udpolimeok.baidu.com^$important
 ||xlab.baidu.com^$important
-@@||t0.baidu.com
-@@||t1.baidu.com
-@@||t2.baidu.com
-@@||t3.baidu.com
-@@||t4.baidu.com
-@@||t5.baidu.com
-@@||t6.baidu.com
-@@||t7.baidu.com
-@@||t8.baidu.com
-@@||t9.baidu.com
-@@||t10.baidu.com
-@@||t11.baidu.com
-@@||t12.baidu.com
-@@||t13.baidu.com
-@@||t14.baidu.com
-@@||t15.baidu.com
+/^sp\d{0,2}\.baidu\.com$/$important
+@@/^t\d{1,2}\.baidu\.com$/
 !---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 哔哩哔哩
@@ -1039,9 +998,7 @@
 ! 【trli规则误杀】
 @@||passport.baidu.com^$important
 @@||oneocsp.microsoft.com^$important
-@@||office365.com^
-@@||microsoft.com^
-@@||office.net^
+
 
 ! 【ip及DNS专区】
 221.179.155.*
