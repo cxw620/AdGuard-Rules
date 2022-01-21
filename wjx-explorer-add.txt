@@ -1,4 +1,22 @@
-! [Baidu]
+! Title: 浏览器补充规则
+! Update Time: 2022-01-21 23:00:00
+! Ver.: 1.0.1
+! Update Details
+!! --------------------
+!! 首次更新
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含了浏览器规则，适合ADB，AdGuard，ublock使用
+!! --------------------
+
+!! --------------------
+! [页面规则]
+
+
+!! --------------------
+! [URL跟踪规则]
+!！ [Baidu]
 $removeparam=rsv_sug*
 $removeparam=oq
 $removeparam=rqid
@@ -18,7 +36,7 @@ $removeparam=nc
 $removeparam=wrsv_spt
 @@||image.baidu.com$removeparam=tn
 
-! [Google]
+!! [Google]
 $removeparam=iflsig
 $removeparam=ved
 $removeparam=uact
