@@ -1,0 +1,25 @@
+! [Baidu]
+$removeparam=rsv_sug*
+$removeparam=oq
+$removeparam=rqid
+$removeparam=rsf
+$removeparam=sa
+$removeparam=rsv_dl
+$removeparam=usm
+$removeparam=tn
+$removeparam=rsv_cq
+$removeparam=dyTabStr
+$removeparam=euri
+$removeparam=lm
+$removeparam=ps
+$removeparam=ct
+$removeparam=cl
+$removeparam=nc
+$removeparam=wrsv_spt
+@@||image.baidu.com$removeparam=tn
+
+! [Google]
+$removeparam=iflsig
+$removeparam=ved
+$removeparam=uact
+$removeparam=sclient
