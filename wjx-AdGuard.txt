@@ -1,5 +1,5 @@
 ! Title: AdGuard拦截补充规则
-! Update Time: 20220117 16:02:09
+! Update Time: 2022-01-21 21:20:30
 ! Update Details
 !! --------------------
 !! 更新华为
@@ -13,6 +13,8 @@
 !! AdGuard客户端不会根据cname拦截好像，所以下面的通杀不加important
 !! 这个规则不兼容AdGuardHome，注意。只支持AdGuard客户端。
 !! --------------------
+! [百度]
+||*baidu*sugrec?*$important
 
 ! [DNS]--------------------
 !! [bilibili]
