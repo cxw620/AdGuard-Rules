@@ -1,6 +1,6 @@
 ! Title: 浏览器补充规则
-! Update Time: 2022-01-21 23:00:00
-! Ver.: 1.0.2
+! Update Time: 2022-01-21 23:05:00
+! Ver.: 1.0.3
 ! Update Details
 !! --------------------
 !! 首次更新
@@ -12,39 +12,43 @@
 
 !! --------------------
 ! [页面规则]
-
-
-!! --------------------
-! [URL跟踪规则]
-! [Baidu]
-$removeparam=rsv_sug*
-$removeparam=rsv_cq
-$removeparam=rsv_dl
-$removeparam=rsv_bp
-$removeparam=rsv_pq
-$removeparam=rsv_enter
-$removeparam=rsv_*
-$removeparam=rsv*
-$removeparam=rqlang
-$removeparam=oq
-$removeparam=rqid
-$removeparam=rsf
-$removeparam=sa
-$removeparam=bs
-$removeparam=usm
-$removeparam=tn
-$removeparam=dyTabStr
-$removeparam=euri
-$removeparam=lm
-$removeparam=ps
-$removeparam=ct
-$removeparam=cl
-$removeparam=nc
-$removeparam=wrsv_spt
+!! 以下为url参数拦截
+!! [Baidu]
+||*baidu*$removeparam=rsv_sug*
+||*baidu*$removeparam=rsv_cq
+||*baidu*$removeparam=rsv_dl
+||*baidu*$removeparam=rsv_bp
+||*baidu*$removeparam=rsv_pq
+||*baidu*$removeparam=rsv_enter
+||*baidu*$removeparam=rsv_*
+||*baidu*$removeparam=rsv*
+||*baidu*$removeparam=rqlang
+||*baidu*$removeparam=oq
+||*baidu*$removeparam=rqid
+||*baidu*$removeparam=rsf
+||*baidu*$removeparam=sa
+||*baidu*$removeparam=bs
+||*baidu*$removeparam=usm
+||*baidu*$removeparam=tn
+||*baidu*$removeparam=dyTabStr
+||*baidu*$removeparam=euri
+||*baidu*$removeparam=lm
+||*baidu*$removeparam=ps
+||*baidu*$removeparam=ct
+||*baidu*$removeparam=cl
+||*baidu*$removeparam=nc
+||*baidu*$removeparam=wrsv_spt
 @@||image.baidu.com$removeparam=tn
-
-! [Google]
+||zhidao.baidu.com$removeparam=pn
+||zhidao.baidu.com$removeparam=rn
+||*baidu*$removeparam=rtt
+||*baidu*$removeparam=bsst
+||*baidu*$removeparam=s
+||*baidu*$removeparam=fr
+!! [Google]
 $removeparam=iflsig
 $removeparam=ved
 $removeparam=uact
 $removeparam=sclient
+!! --------------------
+!! 以下为广告拦截
