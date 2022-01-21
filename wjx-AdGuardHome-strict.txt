@@ -1,9 +1,9 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2022-01-18 14:40:59
-! Ver.: 3.1.1
+! Update Time: 2022-01-21 15:47:30
+! Ver.: 3.2.1
 ! Update Details
 !! --------------------
-!! 更新若干误拦截
+!! 更新微软相关隐私收集
 !! --------------------
 ! Notes
 !! --------------------
@@ -999,6 +999,12 @@
 @@||passport.baidu.com^$important
 @@||oneocsp.microsoft.com^$important
 
+! 【微软】
+||settings.data.microsoft.com^$important
+||self.events.data.microsoft.com^$important
+||evoke-windowsservices-tas.msedge.net^$important
+||cxcs.microsoft.net^$important
+||config.edge.skype.com^$important
 
 ! 【ip及DNS专区】
 221.179.155.*
