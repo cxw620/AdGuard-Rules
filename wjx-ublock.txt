@@ -1,0 +1,61 @@
+{
+  "timeStamp": 1642777679467,
+  "version": "1.40.8",
+  "userSettings": {
+    "cloudStorageEnabled": true,
+    "externalLists": "https://anti-ad.net/adguard.txt\nhttps://raw.githubusercontent.com/cxw620/AdGuard-Rules/main/wjx-AdGuard.txt\nhttps://raw.githubusercontent.com/cxw620/AdGuard-Rules/main/wjx-AdGuardHome-strict.txt",
+    "importedLists": [
+      "https://anti-ad.net/adguard.txt",
+      "https://raw.githubusercontent.com/cxw620/AdGuard-Rules/main/wjx-AdGuard.txt",
+      "https://raw.githubusercontent.com/cxw620/AdGuard-Rules/main/wjx-AdGuardHome-strict.txt"
+    ],
+    "popupPanelSections": 31
+  },
+  "selectedFilterLists": [
+    "user-filters",
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-abuse",
+    "ublock-unbreak",
+    "adguard-generic",
+    "adguard-mobile",
+    "easylist",
+    "adguard-spyware",
+    "adguard-spyware-url",
+    "block-lan",
+    "easyprivacy",
+    "urlhaus-1",
+    "curben-phishing",
+    "curben-pup",
+    "adguard-annoyance",
+    "adguard-social",
+    "fanboy-thirdparty_social",
+    "fanboy-cookiemonster",
+    "fanboy-annoyance",
+    "fanboy-social",
+    "ublock-annoyances",
+    "dpollock-0",
+    "mvps-0",
+    "plowe-0",
+    "CHN-0",
+    "https://raw.githubusercontent.com/cxw620/AdGuard-Rules/main/wjx-AdGuard.txt",
+    "https://raw.githubusercontent.com/cxw620/AdGuard-Rules/main/wjx-AdGuardHome-strict.txt",
+    "https://anti-ad.net/adguard.txt"
+  ],
+  "hiddenSettings": {},
+  "whitelist": [
+    "about-scheme",
+    "chrome-extension-scheme",
+    "chrome-scheme",
+    "edge-scheme",
+    "moz-extension-scheme",
+    "opera-scheme",
+    "vivaldi-scheme",
+    "wyciwyg-scheme"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
+  "userFilters": "! Title: 浏览器补充规则\n! Update Time: 2022-01-21 23:05:00\n! Ver.: 1.0.3\n! Update Details\n!! --------------------\n!! 首次更新\n!! --------------------\n! Notes\n!! --------------------\n!! 本规则包含了浏览器规则，适合ADB，AdGuard，ublock使用\n!! --------------------\n\n!! --------------------\n! [页面规则]\n!! 以下为url参数拦截\n!! [Baidu]\n||*baidu*$removeparam=rsv_sug*\n||*baidu*$removeparam=rsv_cq\n||*baidu*$removeparam=rsv_dl\n||*baidu*$removeparam=rsv_bp\n||*baidu*$removeparam=rsv_pq\n||*baidu*$removeparam=rsv_enter\n||*baidu*$removeparam=rsv_*\n||*baidu*$removeparam=rsv*\n||*baidu*$removeparam=rqlang\n||*baidu*$removeparam=oq\n||*baidu*$removeparam=rqid\n||*baidu*$removeparam=rsf\n||*baidu*$removeparam=sa\n||*baidu*$removeparam=bs\n||*baidu*$removeparam=usm\n||*baidu*$removeparam=tn\n||*baidu*$removeparam=dyTabStr\n||*baidu*$removeparam=euri\n||*baidu*$removeparam=lm\n||*baidu*$removeparam=ps\n||*baidu*$removeparam=ct\n||*baidu*$removeparam=cl\n||*baidu*$removeparam=nc\n||*baidu*$removeparam=wrsv_spt\n@@||image.baidu.com$removeparam=tn\n||zhidao.baidu.com$removeparam=pn\n||zhidao.baidu.com$removeparam=rn\n||*baidu*$removeparam=rtt\n||*baidu*$removeparam=bsst\n||*baidu*$removeparam=s\n||*baidu*$removeparam=fr\n!! [Google]\n$removeparam=iflsig\n$removeparam=ved\n$removeparam=uact\n$removeparam=sclient\n!! --------------------\n!! 以下为广告拦截\n"
+}
