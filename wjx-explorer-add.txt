@@ -1,6 +1,6 @@
 ! Title: 浏览器补充规则
-! Update Time: 2022-01-21 23:05:00
-! Ver.: 1.0.3
+! Update Time: 2022-01-21 23:39:00
+! Ver.: 1.0.9
 ! Update Details
 !! --------------------
 !! 首次更新
@@ -14,14 +14,18 @@
 ! [页面规则]
 !! 以下为url参数拦截
 !! [Baidu]
-||*baidu*$removeparam=rsv_sug*
+||*baidu*$removeparam=rsv_sug1
+||*baidu*$removeparam=rsv_sug2
+||*baidu*$removeparam=rsv_sug3
+||*baidu*$removeparam=rsv_sug4
+||*baidu*$removeparam=rsv_sug5
 ||*baidu*$removeparam=rsv_cq
 ||*baidu*$removeparam=rsv_dl
 ||*baidu*$removeparam=rsv_bp
 ||*baidu*$removeparam=rsv_pq
 ||*baidu*$removeparam=rsv_enter
-||*baidu*$removeparam=rsv_*
-||*baidu*$removeparam=rsv*
+||*baidu*$removeparam=rsv_jmp
+||*baidu*$removeparam=rsv_btype
 ||*baidu*$removeparam=rqlang
 ||*baidu*$removeparam=oq
 ||*baidu*$removeparam=rqid
@@ -39,12 +43,28 @@
 ||*baidu*$removeparam=nc
 ||*baidu*$removeparam=wrsv_spt
 @@||image.baidu.com$removeparam=tn
-||zhidao.baidu.com$removeparam=pn
-||zhidao.baidu.com$removeparam=rn
+||*baidu*$removeparam=pn
+||*baidu*$removeparam=rn
 ||*baidu*$removeparam=rtt
 ||*baidu*$removeparam=bsst
 ||*baidu*$removeparam=s
 ||*baidu*$removeparam=fr
+||*baidu*$removeparam=inputT
+||*baidu*$removeparam=aptstamp
+||*baidu*$removeparam=top
+||*baidu*$removeparam=total_res_num
+||*baidu*$removeparam=frsrcid
+||*baidu*$removeparam=frorder
+||*baidu*$removeparam=lid
+||*baidu*$removeparam=sf_ref
+||*baidu*$removeparam=pcEqid
+||*baidu*$removeparam=fromtitle
+||*baidu*$removeparam=fromid
+||*baidu*$removeparam=ala
+||*baidu*$removeparam=alatpl
+||*baidu*$removeparam=pos
+||*baidu*$removeparam=wfr
+||*baidu*$removeparam=for
 !! [Google]
 $removeparam=iflsig
 $removeparam=ved
@@ -52,3 +72,6 @@ $removeparam=uact
 $removeparam=sclient
 !! --------------------
 !! 以下为广告拦截
+
+
+
