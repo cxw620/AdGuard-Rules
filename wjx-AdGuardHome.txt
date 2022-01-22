@@ -1,6 +1,6 @@
 ! Title: AdGuardHome拦截补充规则
-! Update Time: 2022-01-21 15:47:30
-! Ver.: 3.2.1
+! Update Time: 2021-01-22 15:33:28
+! Ver.: 3.3.1
 ! Update Details
 !! --------------------
 !! 更新微软相关隐私收集
@@ -8,6 +8,7 @@
 ! Notes
 !! --------------------
 !! 本规则包含了存在大量误杀的若干规则，目前正在维护白名单。
+!! 本规则不完全兼容ublock origin
 !! AdGuardHome适用，AdGuard客户端请也补充订阅另外一个AdGuard专用规则
 !! 版本说明中，第一位表示重大更新，及对规则表进行全面更新才会变动
 !! 第二位表示大范围更新，一般是扩充或删减规则超过10条以上的才会变动。
@@ -17,10 +18,10 @@
 !---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 通配符拦截
-! Update Time: 20220114-170105
+! Update Time: 2021-01-22 15:27:41
 ! Update Details
 !! --------------------
-!! 更新*monitor*。正在进行后续观察。
+!! 更新通杀规则
 !! --------------------
 ! Notes
 !! --------------------
@@ -30,9 +31,7 @@
 !! 采用本强力拦截规则的欢迎提issue报告误拦截，感激不尽
 !! --------------------
 !! [信息采集统计、日志常用]
-||*collect*^$important
-||*mmstat*^$important
-||*report*^$important
+/^.*(collect|mmstat|report).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/$important
 ||*lbsgw*
 ||*logapi*
 ||*log-*
@@ -782,15 +781,16 @@
 !---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 百度
-! Update Time: 2022-01-21 15:37:56
+! Update Time: 2022-01-22 14:37:56
 ! Update Details
 !! --------------------
-!! 更新mbd.baidu.com
+!! 更新误拦截
 !! --------------------
 ! Notes
 !! --------------------
 !! 本规则包含百度相关的
 !! --------------------
+||edu-ad*.cdn.bcebos.com^$important
 ||activity.baidu.com^$important
 ||ada.baidu.com^$important
 ||ext.baidu.com^$important
@@ -813,7 +813,7 @@
 !---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 哔哩哔哩
-! Update Time: 20220114-170105
+! Update Time: 2022-01-22 14:37:56
 ! Update Details
 !! --------------------
 !! 全新
@@ -826,6 +826,8 @@
 @@||hdslb.com^
 ! 隐私追踪
 ||activity.hdslb.com^$important
+@@||activity.hdslb.com/*/room-player.min.js^$important
+@@||activity.hdslb.com/*/room-player.min.css^$important
 ||interface.bilibili.com^$important
 ! 哔哩哔哩游戏相关，会涉及到一部分的广告
 ||biligame.com^$important
@@ -907,10 +909,10 @@
 !---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 其他
-! Update Time: 2022-01-20 21:43:49
+! Update Time: 2022-01-22 15:32:49
 ! Update Details
 !! --------------------
-!! 更新trli规则误杀解除
+!! 更新微软规则，更新trli误拦截
 !! --------------------
 ! Notes
 !! --------------------
@@ -919,6 +921,11 @@
 ! 【trli规则误杀】
 @@||passport.baidu.com^$important
 @@||oneocsp.microsoft.com^$important
+@@||officehomeblobs.blob.core.windows.net^$important
+@@||nexusrules.officeapps.live.com^$important
+@@||edge.microsoft.com^$important
+@@||cloudcache.tencentcs.com^$important
+@@||aliyuncs.com^
 
 ! 【微软】
 ||settings.data.microsoft.com^$important
@@ -926,6 +933,11 @@
 ||evoke-windowsservices-tas.msedge.net^$important
 ||cxcs.microsoft.net^$important
 ||config.edge.skype.com^$important
+||web.vortex.data.microsoft.com^$important
+||browser.pipe.aria.microsoft.com^$important
+||v10.events.data.microsoft.com^$important
+||watson.*.microsoft.com^$important
+||manage.devcenter.microsoft.com^$important
 
 ! 【ip及DNS专区】
 221.179.155.*
