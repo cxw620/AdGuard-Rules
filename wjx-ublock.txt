@@ -1,7 +1,8 @@
 {
-  "timeStamp": 1642777679467,
+  "timeStamp": 1642833560866,
   "version": "1.40.8",
   "userSettings": {
+    "advancedUserEnabled": true,
     "cloudStorageEnabled": true,
     "externalLists": "https://anti-ad.net/adguard.txt\nhttps://raw.githubusercontent.com/cxw620/AdGuard-Rules/main/wjx-AdGuard.txt\nhttps://raw.githubusercontent.com/cxw620/AdGuard-Rules/main/wjx-AdGuardHome-strict.txt",
     "importedLists": [
@@ -51,11 +52,12 @@
     "edge-scheme",
     "moz-extension-scheme",
     "opera-scheme",
+    "portal.office.com",
     "vivaldi-scheme",
     "wyciwyg-scheme"
   ],
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
-  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
-  "userFilters": "! Title: 浏览器补充规则\n! Update Time: 2022-01-21 23:05:00\n! Ver.: 1.0.3\n! Update Details\n!! --------------------\n!! 首次更新\n!! --------------------\n! Notes\n!! --------------------\n!! 本规则包含了浏览器规则，适合ADB，AdGuard，ublock使用\n!! --------------------\n\n!! --------------------\n! [页面规则]\n!! 以下为url参数拦截\n!! [Baidu]\n||*baidu*$removeparam=rsv_sug*\n||*baidu*$removeparam=rsv_cq\n||*baidu*$removeparam=rsv_dl\n||*baidu*$removeparam=rsv_bp\n||*baidu*$removeparam=rsv_pq\n||*baidu*$removeparam=rsv_enter\n||*baidu*$removeparam=rsv_*\n||*baidu*$removeparam=rsv*\n||*baidu*$removeparam=rqlang\n||*baidu*$removeparam=oq\n||*baidu*$removeparam=rqid\n||*baidu*$removeparam=rsf\n||*baidu*$removeparam=sa\n||*baidu*$removeparam=bs\n||*baidu*$removeparam=usm\n||*baidu*$removeparam=tn\n||*baidu*$removeparam=dyTabStr\n||*baidu*$removeparam=euri\n||*baidu*$removeparam=lm\n||*baidu*$removeparam=ps\n||*baidu*$removeparam=ct\n||*baidu*$removeparam=cl\n||*baidu*$removeparam=nc\n||*baidu*$removeparam=wrsv_spt\n@@||image.baidu.com$removeparam=tn\n||zhidao.baidu.com$removeparam=pn\n||zhidao.baidu.com$removeparam=rn\n||*baidu*$removeparam=rtt\n||*baidu*$removeparam=bsst\n||*baidu*$removeparam=s\n||*baidu*$removeparam=fr\n!! [Google]\n$removeparam=iflsig\n$removeparam=ved\n$removeparam=uact\n$removeparam=sclient\n!! --------------------\n!! 以下为广告拦截\n"
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true\nno-strict-blocking: passport.biligame.com true",
+  "userFilters": "! Title: 浏览器补充规则\n! Update Time: 2022-01-21 23:39:00\n! Ver.: 1.0.9\n! Update Details\n!! --------------------\n!! 首次更新\n!! --------------------\n! Notes\n!! --------------------\n!! 本规则包含了浏览器规则，适合ADB，AdGuard，ublock使用\n!! --------------------\n\n!! --------------------\n! [页面规则]\n!! 以下为url参数拦截\n!! [Baidu]\n||*baidu*$removeparam=rsv_sug1\n||*baidu*$removeparam=rsv_sug2\n||*baidu*$removeparam=rsv_sug3\n||*baidu*$removeparam=rsv_sug4\n||*baidu*$removeparam=rsv_sug5\n||*baidu*$removeparam=rsv_cq\n||*baidu*$removeparam=rsv_dl\n||*baidu*$removeparam=rsv_bp\n||*baidu*$removeparam=rsv_pq\n||*baidu*$removeparam=rsv_enter\n||*baidu*$removeparam=rsv_jmp\n||*baidu*$removeparam=rsv_btype\n||*baidu*$removeparam=rqlang\n||*baidu*$removeparam=oq\n||*baidu*$removeparam=rqid\n||*baidu*$removeparam=rsf\n||*baidu*$removeparam=sa\n||*baidu*$removeparam=bs\n||*baidu*$removeparam=usm\n||*baidu*$removeparam=tn\n||*baidu*$removeparam=dyTabStr\n||*baidu*$removeparam=euri\n||*baidu*$removeparam=lm\n||*baidu*$removeparam=ps\n||*baidu*$removeparam=ct\n||*baidu*$removeparam=cl\n||*baidu*$removeparam=nc\n||*baidu*$removeparam=wrsv_spt\n@@||image.baidu.com$removeparam=tn\n||*baidu*$removeparam=pn\n||*baidu*$removeparam=rn\n||*baidu*$removeparam=rtt\n||*baidu*$removeparam=bsst\n||*baidu*$removeparam=s\n||*baidu*$removeparam=fr\n||*baidu*$removeparam=inputT\n||*baidu*$removeparam=aptstamp\n||*baidu*$removeparam=top\n||*baidu*$removeparam=total_res_num\n||*baidu*$removeparam=frsrcid\n||*baidu*$removeparam=frorder\n||*baidu*$removeparam=lid\n||*baidu*$removeparam=sf_ref\n||*baidu*$removeparam=pcEqid\n||*baidu*$removeparam=fromtitle\n||*baidu*$removeparam=fromid\n||*baidu*$removeparam=ala\n||*baidu*$removeparam=alatpl\n||*baidu*$removeparam=pos\n||*baidu*$removeparam=wfr\n||*baidu*$removeparam=for\n!! [Google]\n$removeparam=iflsig\n$removeparam=ved\n$removeparam=uact\n$removeparam=sclient\n!! --------------------\n!! 以下为广告拦截\n"
 }
