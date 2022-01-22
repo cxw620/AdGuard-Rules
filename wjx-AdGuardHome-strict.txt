@@ -1,6 +1,6 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2022-01-21 15:54:49
-! Ver.: 3.2.2
+! Update Time: 2022-01-22 14:36:25
+! Ver.: 3.2.3
 ! Update Details
 !! --------------------
 !! 更新微软相关隐私收集
@@ -861,10 +861,10 @@
 !---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 百度
-! Update Time: 2022-01-21 15:37:56
+! Update Time: 2022-01-22 14:37:56
 ! Update Details
 !! --------------------
-!! 更新mbd.baidu.com
+!! 更新误拦截
 !! --------------------
 ! Notes
 !! --------------------
@@ -889,10 +889,11 @@
 ||xlab.baidu.com^$important
 /^sp\d{0,2}\.baidu\.com$/$important
 @@/^t\d{1,2}\.baidu\.com$/
+@@||passport.baidu.com^$important
 !---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 哔哩哔哩
-! Update Time: 20220114-170105
+! Update Time: 2022-01-22 14:37:56
 ! Update Details
 !! --------------------
 !! 全新
@@ -905,6 +906,8 @@
 @@||hdslb.com^
 ! 隐私追踪
 ||activity.hdslb.com^$important
+@@||activity.hdslb.com/*/room-player.min.js^$important
+@@||activity.hdslb.com/*/room-player.min.css^$important
 ||interface.bilibili.com^$important
 ! 哔哩哔哩游戏相关，会涉及到一部分的广告
 ||biligame.com^$important
