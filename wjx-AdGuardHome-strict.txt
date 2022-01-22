@@ -870,6 +870,7 @@
 !! --------------------
 !! 本规则包含百度相关的
 !! --------------------
+||edu-ad*.cdn.bcebos.com^$important
 ||activity.baidu.com^$important
 ||ada.baidu.com^$important
 ||ext.baidu.com^$important
