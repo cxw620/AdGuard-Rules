@@ -1,6 +1,6 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2021-01-24 17:15:00
-! Ver.: 3.3.2
+! Update Time: 2021-01-24 23:15:00
+! Ver.: 3.3.3
 ! Update Details
 !! --------------------
 !! 更新通杀规则
@@ -19,7 +19,7 @@
 !---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 最严格
-! Update Time: 2022-01-18 14:40:59
+! Update Time: 2021-01-24 23:15:00
 ! Update Details
 !! --------------------
 !! 更新天翼云等
@@ -49,6 +49,7 @@
 !! [*dns*]误杀
 @@||*ceair*
 @@||*akadns*
+@@||*cdnsvc*
 @@||*bytecdn*.*
 @@||*bytedns1.*
 @@||*castdns*.*
@@ -829,7 +830,7 @@
 !---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 阿里相关
-! Update Time: 20220114-170105
+! Update Time: 2021-01-24 23:15:00
 ! Update Details
 !! --------------------
 !! 全新
@@ -858,6 +859,7 @@
 ||mum.m.alibaba.com^$important
 ||ixav-cse.avlyun.com^$important
 ||*h-adashx*$important
+@@||report.aliyun.com^$important
 
 !---------------------------------------------------------------
 
