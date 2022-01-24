@@ -1,9 +1,9 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2021-01-22 15:33:28
-! Ver.: 3.3.1
+! Update Time: 2021-01-24 17:15:00
+! Ver.: 3.3.2
 ! Update Details
 !! --------------------
-!! 更新微软相关隐私收集
+!! 更新通杀规则
 !! --------------------
 ! Notes
 !! --------------------
@@ -97,10 +97,10 @@
 !---------------------------------------------------------------
 
 ! Title: AdGuardHome分类规则 通配符拦截
-! Update Time: 2021-01-22 15:27:41
+! Update Time: 2021-01-24 17:14:00
 ! Update Details
 !! --------------------
-!! 更新通杀规则
+!! 优化通杀规则
 !! --------------------
 ! Notes
 !! --------------------
@@ -118,14 +118,16 @@
 ||*apilog*
 
 !! [互联网追踪]
-||*trace*^$important,denyallow=res-static1.huaweicloud.com
-||*track*^$important
+/^.*(trace|track).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/$important
+||*trace*^
+||*track*^
 
 !! [DNS相关（DoT）]
 ||*dot*
 
 !! [信息搜集分析]
-||*analy*^$important
+/^.*(analy).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/$important
+||*analy*
 
 !!! [appsflyer ip]
 !!! [https://support.appsflyer.com/hc/zh-cn/articles/207447093-AppsFlyer-IPs-for-Whitelisting]
