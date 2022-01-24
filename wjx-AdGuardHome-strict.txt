@@ -118,7 +118,7 @@
 ||*apilog*
 
 !! [互联网追踪]
-||*trace*^$important
+||*trace*^$important,denyallow=res-static1.huaweicloud.com
 ||*track*^$important
 
 !! [DNS相关（DoT）]
