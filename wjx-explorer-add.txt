@@ -49,6 +49,9 @@
 ||*baidu*$removeparam=bsst
 ||*baidu*$removeparam=s
 ||*baidu*$removeparam=fr
+||*baidu*$removeparam=f
+||*baidu*$removeparam=ch
+||*baidu*$removeparam=bar
 ||*baidu*$removeparam=inputT
 ||*baidu*$removeparam=aptstamp
 ||*baidu*$removeparam=top
