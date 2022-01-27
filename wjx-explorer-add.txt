@@ -1,9 +1,9 @@
 ! Title: 浏览器补充规则
-! Update Time: 2022-01-21 23:39:00
-! Ver.: 1.0.9
+! Update Time: 2022-01-27 13:30:00
+! Ver.: 1.1.2
 ! Update Details
 !! --------------------
-!! 首次更新
+!! 大版本更新
 !! --------------------
 ! Notes
 !! --------------------
@@ -14,67 +14,59 @@
 ! [页面规则]
 !! 以下为url参数拦截
 !! [Baidu]
-||*baidu*$removeparam=rsv_sug1
-||*baidu*$removeparam=rsv_sug2
-||*baidu*$removeparam=rsv_sug3
-||*baidu*$removeparam=rsv_sug4
-||*baidu*$removeparam=rsv_sug5
-||*baidu*$removeparam=rsv_cq
-||*baidu*$removeparam=rsv_dl
-||*baidu*$removeparam=rsv_bp
-||*baidu*$removeparam=rsv_pq
-||*baidu*$removeparam=rsv_enter
-||*baidu*$removeparam=rsv_jmp
-||*baidu*$removeparam=rsv_btype
-||*baidu*$removeparam=rqlang
+||*baidu*$removeparam=/^r.*$/
+||*baidu*$removeparam=/from/
+||*baidu*$removeparam=/usm/
+||*baidu*$removeparam=/ref/
+||*baidu*$removeparam=/ala/
+||www.baidu.com$removeparam=/id/
+||*baidu*$removeparam=/(b|p)s/
+
+||*baidu*$removeparam=inputT
+||*baidu*$removeparam=aptstamp
 ||*baidu*$removeparam=oq
-||*baidu*$removeparam=rqid
-||*baidu*$removeparam=rsf
 ||*baidu*$removeparam=sa
-||*baidu*$removeparam=bs
-||*baidu*$removeparam=usm
 ||*baidu*$removeparam=tn
+@@||image.baidu.com$removeparam=tn
+@@||baijiahao.baidu.com$removeparam=id
 ||*baidu*$removeparam=dyTabStr
 ||*baidu*$removeparam=euri
 ||*baidu*$removeparam=lm
-||*baidu*$removeparam=ps
 ||*baidu*$removeparam=ct
 ||*baidu*$removeparam=cl
 ||*baidu*$removeparam=nc
 ||*baidu*$removeparam=wrsv_spt
-@@||image.baidu.com$removeparam=tn
 ||*baidu*$removeparam=pn
-||*baidu*$removeparam=rn
-||*baidu*$removeparam=rtt
-||*baidu*$removeparam=bsst
 ||*baidu*$removeparam=s
 ||*baidu*$removeparam=fr
-||*baidu*$removeparam=f
-||*baidu*$removeparam=ch
-||*baidu*$removeparam=bar
-||*baidu*$removeparam=inputT
-||*baidu*$removeparam=aptstamp
 ||*baidu*$removeparam=top
 ||*baidu*$removeparam=total_res_num
-||*baidu*$removeparam=frsrcid
 ||*baidu*$removeparam=frorder
-||*baidu*$removeparam=lid
-||*baidu*$removeparam=sf_ref
-||*baidu*$removeparam=pcEqid
-||*baidu*$removeparam=fromtitle
-||*baidu*$removeparam=fromid
-||*baidu*$removeparam=ala
-||*baidu*$removeparam=alatpl
 ||*baidu*$removeparam=pos
 ||*baidu*$removeparam=wfr
 ||*baidu*$removeparam=for
+
+||*baidu*$removeparam=f
+||*baidu*$removeparam=ch
+||*baidu*$removeparam=bar
+
 !! [Google]
 $removeparam=iflsig
 $removeparam=ved
 $removeparam=uact
 $removeparam=sclient
+!! [bing]
+||*bing*$removeparam=form
+||*bing*$removeparam=FORM
+||*bing*$removeparam=sp
+||*bing*$removeparam=pq
+||*bing*$removeparam=sc
+||*bing*$removeparam=qs
+||*bing*$removeparam=sk
+||*bing*$removeparam=cvid
 !! --------------------
 !! 以下为广告拦截
 
-
+! 2022-01-26 https://www.baidu.com
+www.baidu.com##*.ask-doctor-card
 
