@@ -1,9 +1,10 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2021-01-24 23:15:00
-! Ver.: 3.3.3
+! Update Time: 2022-01-30 22:45:00
+! Ver.: 3.3.4
 ! Update Details
 !! --------------------
-!! 更新通杀规则
+!! 更新trli误拦截
+!! 新年快乐!
 !! --------------------
 ! Notes
 !! --------------------
@@ -85,6 +86,8 @@
 @@||*station*
 @@||*status*.*
 @@||digitalcertvalidation.com^
+!! [*monitor*]误杀
+@@||geetest.com^
 !! 误杀解除后逃逸
 ||staticsns.cdn.bcebos.com^$important
 !! --------------------
@@ -936,7 +939,7 @@
 @@||wx.qlogo.cn^$important
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 其他
-! Update Time: 2022-01-22 15:32:49
+! Update Time: 2022-01-30 22:45:00
 ! Update Details
 !! --------------------
 !! 更新微软规则，更新trli误拦截
@@ -945,6 +948,7 @@
 !! --------------------
 !! 包含其他规则
 !! --------------------
+||*.uds.lenovo.com^$important
 ! 【trli规则误杀】
 @@||passport.baidu.com^$important
 @@||oneocsp.microsoft.com^$important
@@ -955,6 +959,9 @@
 @@||aliyuncs.com^
 @@||cdn.bootcdn.net^
 @@||image.wjx.com^
+@@||downloadmirror.intel.com^$important
+@@||message.bilibili.com^$important
+@@||wappass.baidu.com^$important
 ! 【微软】
 ||settings.data.microsoft.com^$important
 ||self.events.data.microsoft.com^$important
