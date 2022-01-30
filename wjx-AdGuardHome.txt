@@ -1,14 +1,16 @@
-! Title: AdGuardHome拦截补充规则
-! Update Time: 2021-01-22 15:33:28
-! Ver.: 3.3.1
+! Title: AdGuardHome拦截补充规则（白名单版本）
+! Update Time: 2022-01-30 22:45:00
+! Ver.: 3.3.4
 ! Update Details
 !! --------------------
-!! 更新微软相关隐私收集
+!! 更新trli误拦截
+!! 新年快乐!
 !! --------------------
 ! Notes
 !! --------------------
 !! 本规则包含了存在大量误杀的若干规则，目前正在维护白名单。
 !! 本规则不完全兼容ublock origin
+!! 需要极致拦截效果的选择这个
 !! AdGuardHome适用，AdGuard客户端请也补充订阅另外一个AdGuard专用规则
 !! 版本说明中，第一位表示重大更新，及对规则表进行全面更新才会变动
 !! 第二位表示大范围更新，一般是扩充或删减规则超过10条以上的才会变动。
@@ -16,12 +18,11 @@
 !! --------------------
 
 !---------------------------------------------------------------
-
 ! Title: AdGuardHome分类规则 通配符拦截
-! Update Time: 2021-01-22 15:27:41
+! Update Time: 2021-01-24 17:14:00
 ! Update Details
 !! --------------------
-!! 更新通杀规则
+!! 优化通杀规则
 !! --------------------
 ! Notes
 !! --------------------
@@ -37,39 +38,32 @@
 ||*log-*
 ||*-log*
 ||*apilog*
-
 !! [互联网追踪]
-||*trace*^$important
-||*track*^$important
-
+/^.*(trace|track).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/$important
+||*trace*^
+||*track*^
 !! [DNS相关（DoT）]
 ||*dot*
-
 !! [信息搜集分析]
-||*analy*^$important
-
+/^.*(analy).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/$important
+||*analy*
 !!! [appsflyer ip]
 !!! [https://support.appsflyer.com/hc/zh-cn/articles/207447093-AppsFlyer-IPs-for-Whitelisting]
-
 /^45\.92\.11(6|7|8|9)\.\d{0,}$/$important
 /^194\.28\.4(6|7)\.\d{0,}$/$important
-
 !! [广告域名（根据工信部备案查询得到所有相关域名）]
 !!! [乐播]
 ||lebo.com.cn^$important
 ||lebo.cn^$important
 ||hpplay.cn^$important
 ||乐播.com^$important
-
 !!! [360联盟、360推广]
 ||*50union*^$important
 ||*qhtui*^$important
 ||*360src*^$important
 ||*kouxin*^$important
-
 !!! [北京球球趣玩科技有限公司]
 ||*adhelper*^$important
-
 !!! [北京深演智能科技股份有限公司]
 ||ideepzero.com$important
 ||chinartb.cn$important
@@ -82,7 +76,6 @@
 ||deepzero.com.cn$important
 ||folo8.com$important
 ||pinyouad.com$important
-
 !!! [友盟推广]
 ||*umtrack*^$important
 ||*whalecloud*^$important
@@ -95,7 +88,6 @@
 ||*puata*^$important
 ||*wrating*^$important
 ||*umeng*^$important
-
 !!! [腾云]
 ||*talkinggame*^$important
 ||*tengyun*^$important
@@ -109,7 +101,6 @@
 ||*xdrig*^$important
 ||*tddmp*^$important
 ||*myzhongguojie*^$important
-
 !!! [数爆]
 ||*0lk*^$important
 ||*1lk*^$important
@@ -117,7 +108,6 @@
 ||*likeinstall*^$important
 ||*xinstall*^$important
 ||*toinstall*^$important
-
 !! [baidu]
 ||*91.com*^$important
 ||*swan*.com^$important
@@ -130,11 +120,9 @@
 ||*vplay8*^$important
 ||*fhldns*^$important
 ||*mtj*js*^$important
-
 !! [新度博望]
 ||*xdplt*^$important
 ||*juwinmedia*^$important
-
 !! [每日互动]
 ||*getui.*^$important
 ||*gepush.*^$important
@@ -144,18 +132,15 @@
 ||*1322app*^$important
 ||*pusure*^$important
 ||*applk*^$important
-
 !! [小源科技]
 ||*bizport*^$important
 ||*biz-port*^$important
 ||*5gimos*^$important
 ||*policefountain*^$important
-
 !![甜橙世纪]
 ||*leadsvip*^$important
 ||*leadstong*^$important
 ||*orange-tec*^$important
-
 !![上海采拾]
 ||*wuchuh*^$important
 ||*9liuda*^$important
@@ -163,7 +148,6 @@
 ||*zhongddi*^$important
 ||*365liuda*^$important
 ||*yaokqi*^$important
-
 !![中广在线（北京）]
 ||*wisdompublish*^$important
 ||*luntianqi*^$important
@@ -177,7 +161,6 @@
 ||*girltuji*^$important
 ||*xiusetu*^$important
 ||*youtuku*^$important
-
 !! [杭州爆米花科技股份有限公司(重点关注)]
 ||*baomihua*^$important
 ||921346.com^$important
@@ -192,23 +175,19 @@
 ||611892.com^$important
 ||826103.com^$important
 ||*pxtadmin*^$important
-
 ! [广东雨林木风计算机科技有限公司]
 ||114la.com$important
 ||111g.com$important
-
 ! [深圳市顺企网络科技有限公司]
 ||qicou.com$important
 ||icqiye.com$important
 ||shunqiwang.com$important
 ||11467.com$important
-
 ! [上海游光网络科技有限公司]
 ||zwwla.com$important
 ||wxavu.com$important
 ||vutimes.com$important
 ||h5yg.com$important
-
 ! 泰德无限（北京）科技有限公司
 ||jieshuidashi.net$important
 ||k4k8.com$important
@@ -217,7 +196,6 @@
 ||7kqj.com$important
 ||exinyun.net$important
 ||7k7.com.cn$important
-
 ! [51.la family]
 ||51.la$important
 ||publishmail.net$important
@@ -231,7 +209,6 @@
 ||shsent.net$important
 ||bxuser.net$important
 ||bankuser.net$important
-
 ! [有米科技股份有限公司]
 ||umiplus.cn$important
 ||91doujin.com$important
@@ -256,7 +233,6 @@
 ||alertover.com$important
 ||youcloud.com$important
 ||youmiad.com$important
-
 ! [UC(广州市动景计算机科技有限公司)]
 ||u-mob.cn$important
 ||ucweb.com$important
@@ -278,8 +254,6 @@
 ||open-uc.cn$important
 ||tinyppa.cn$important
 ||uflowx.com$important
-
-
 ! [东阳市晴皓网络科技有限公司(重点关注)]
 ||wxsss.top$important
 ||y9o.cn$important
@@ -301,8 +275,6 @@
 ||l3i.cn$important
 ||12i.cn$important
 ||54k.cn$important
-
-
 ! [上海益世界信息技术集团有限公司]
 ||17papapa.com$important
 ||3gu6.com$important
@@ -324,14 +296,11 @@
 ||23you.net$important
 ||ewansdk.net$important
 ||ewansdk.cn$important
-
-
 ! [浙江同花顺网络科技有限公司]
 ||thsnetwork.com$important
 ||0033cas.cn$important
 ||8tqame.com$important
 ||10jqka.com.cn$important
-
 ! [广州锦城贸易有限公司]
 ||01ts.cn$important
 ||01tn.cn$important
@@ -340,7 +309,6 @@
 ||01ra.cn$important
 ||01wc.cn$important
 ||01tp.cn$important
-
 ! [长沙联晶网络科技有限公司]
 ||dushuji.com$important
 ||cslj.cn$important
@@ -733,22 +701,18 @@
 ||zlme0.com$important
 ||zmz6or.com$important
 ||zp1133.com$important
-
 !! [其他]
 ||*appsflyer*^$important
 ||01net.com$important
 ||starlizard.com.cn$important
-
 !! [误拦截解除]
 @@||mail.qq.com*report*
 @@||*baidupcs*
 @@||*live-trace*
 @@||alipayobjects.com^$important
-
 !---------------------------------------------------------------
-
 ! Title: AdGuardHome分类规则 阿里相关
-! Update Time: 20220114-170105
+! Update Time: 2021-01-24 23:15:00
 ! Update Details
 !! --------------------
 !! 全新
@@ -777,9 +741,8 @@
 ||mum.m.alibaba.com^$important
 ||ixav-cse.avlyun.com^$important
 ||*h-adashx*$important
-
+@@||report.aliyun.com^$important
 !---------------------------------------------------------------
-
 ! Title: AdGuardHome分类规则 百度
 ! Update Time: 2022-01-22 14:37:56
 ! Update Details
@@ -811,7 +774,6 @@
 /^sp\d{0,2}\.baidu\.com$/$important
 @@/^t\d{1,2}\.baidu\.com$/
 !---------------------------------------------------------------
-
 ! Title: AdGuardHome分类规则 哔哩哔哩
 ! Update Time: 2022-01-22 14:37:56
 ! Update Details
@@ -840,9 +802,7 @@
 ! 未知，不过应该不是关键的
 ||data.bilibili.com^$important
 ||dataflow.bilibili.com^$important
-
 !---------------------------------------------------------------
-
 ! Title: AdGuardHome分类规则 华为
 ! Update Time: 2022-01-18 14:15:21
 ! Update Details
@@ -874,9 +834,7 @@
 ||*metric*.*.*dbank*.*^$important
 ||*dnkeeper*.*^$important
 ||*store*.*.*hicloud*.*^$important
-
 !---------------------------------------------------------------
-
 ! Title: AdGuardHome分类规则 南极贱畜
 ! Update Time: 20220116-145736
 ! Update Details
@@ -905,11 +863,9 @@
 ||*overseactrl*^$important
 ||beacon.qq.com^$important
 @@||wx.qlogo.cn^$important
-
 !---------------------------------------------------------------
-
 ! Title: AdGuardHome分类规则 其他
-! Update Time: 2022-01-22 15:32:49
+! Update Time: 2022-01-30 22:45:00
 ! Update Details
 !! --------------------
 !! 更新微软规则，更新trli误拦截
@@ -918,6 +874,7 @@
 !! --------------------
 !! 包含其他规则
 !! --------------------
+||*.uds.lenovo.com^$important
 ! 【trli规则误杀】
 @@||passport.baidu.com^$important
 @@||oneocsp.microsoft.com^$important
@@ -926,7 +883,11 @@
 @@||edge.microsoft.com^$important
 @@||cloudcache.tencentcs.com^$important
 @@||aliyuncs.com^
-
+@@||cdn.bootcdn.net^
+@@||image.wjx.com^
+@@||downloadmirror.intel.com^$important
+@@||message.bilibili.com^$important
+@@||wappass.baidu.com^$important
 ! 【微软】
 ||settings.data.microsoft.com^$important
 ||self.events.data.microsoft.com^$important
@@ -938,7 +899,6 @@
 ||v10.events.data.microsoft.com^$important
 ||watson.*.microsoft.com^$important
 ||manage.devcenter.microsoft.com^$important
-
 ! 【ip及DNS专区】
 221.179.155.*
 221.179.155.209
@@ -966,7 +926,6 @@
 221.179.38.7
 120.196.165.7
 36.152.4.32
-
 ||dnsapi.cn
 ||nsv5.cn
 ||urlpod.cn
@@ -987,7 +946,6 @@
 ||doh.pub
 ||dot.pub
 ||doh.plus
-
 ! 【并夕夕专区】
 ||t*.pinduoduo.com^$important
 ||meta.pinduoduo.com^$important
@@ -995,6 +953,5 @@
 ||*eid*jd*^$important
 ||*lbs*jd*^$important
 ||*perf*jd*^$important
-
 ! 【自用】
 @@||*wjxhub*
