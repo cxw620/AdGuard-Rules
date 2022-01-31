@@ -1,8 +1,8 @@
 ! Title: AdGuard拦截补充规则
-! Update Time: 2022-01-21 21:20:30
+! Update Time: 2022-02-01 04:59:00
 ! Update Details
 !! --------------------
-!! 更新华为
+!! 更新大量
 !! --------------------
 ! Notes
 !! --------------------
@@ -51,12 +51,36 @@
 !!! 发现哔哩哔哩尝试打洞，拦截之
 239.255.255.250$network
 
+! [阿里]
+||collect.alipay.com^
+||alipaylog.com^
+||crm-eve.b2b.alibaba-inc.com^
+||click.alibaba.com^
+||hydra.alibaba.com^
+||marketing.alibaba.com^
+||abtest.alibaba.com^
+||dmtracking.alibaba.com^
+||dmtracking2.alibaba.com^
+||p4psearch.china.alibaba.com^
+||fourier.alibaba.com^
+||alimama.alicdn.com^
+||alimama.cn^
+||alimama.com^
+||alimama.link^
+@@||track.aliexpress.com^
+
 ! [bilibili]
 !！ 感谢https://github.com/SocialSisterYi/bilibili-API-collect项目
 !!! 客户端地址获取拦截（配合关闭定位权限食用）
 ||*/x/web-interface/zone*$important
 ||*hdslb*report*$important
 ||*hdslb*cm*$important
+||dataflow.biliapi.com^
+||web-player-tracker.biliapi.net^
+||live-trace.bilibili.com^
+||miniapp.bilibili.com^
+||cm.bilibili.com^
+||biligame.net^
 
 ! [wechat]
 36.152.4.32$network
@@ -73,8 +97,25 @@
 ||*weathercn*qukan*$important
 ||*weathercn*swiper*$important
 ||*httpdns*huawei*$important
+||analyse.weather.com.cn^
+||ctc.weather.com.cn^
+||e.weather.com.cn^
+||mc.weather.com.cn^
+||poster.weather.com.cn^
+||swc.weather.com.cn^
+||baidu1.weather.com.cn^
+||bima.weathercn.com^
+||cbdm.weathercn.com^
+||log-stats.weathercn.com^
+||zgzxs.weathercn.com^
+||aima.weathercn.com^
+||mbd.weathercn.com^
+||mbs.weathercn.com^
+
 
 !! [appsflyer ip]
 !! [https://support.appsflyer.com/hc/zh-cn/articles/207447093-AppsFlyer-IPs-for-Whitelisting]
 45.92.116.0/22$network
 194.28.46.0/23$network
+
+111.177.11.118$network
