@@ -1,9 +1,9 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2022-01-30 22:45:00
-! Ver.: 3.3.4
+! Update Time: 2022-02-01 04:45:00
+! Ver.: 4.0.0.beta
 ! Update Details
 !! --------------------
-!! 更新trli误拦截
+!! 加入P2P及恶心流氓软件的拦截
 !! 新年快乐!
 !! --------------------
 ! Notes
@@ -16,7 +16,6 @@
 !! 第二位表示大范围更新，一般是扩充或删减规则超过10条以上的才会变动。
 !! 第三位表示常规更新。
 !! --------------------
-
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 通配符拦截
 ! Update Time: 2021-01-24 17:14:00
@@ -58,6 +57,7 @@
 ||hpplay.cn^$important
 ||乐播.com^$important
 !!! [360联盟、360推广]
+||qhtui.com^$important
 ||*50union*^$important
 ||*qhtui*^$important
 ||*360src*^$important
@@ -711,6 +711,338 @@
 @@||*live-trace*
 @@||alipayobjects.com^$important
 !---------------------------------------------------------------
+! Title: AdGuardHome分类规则  P2P下崽器等恶心网站
+! Update Time: 2022-02-01 04:45:00
+! Update Details
+!! --------------------
+!! 全新出发, 干碎流氓!
+!! --------------------
+! Notes
+!! --------------------
+!! 本规则包含P2P下崽器等恶心网站相关的规则
+!! --------------------
+!! [广东风起科技有限公司 P2P下崽器]
+/^.*\.(fq|yd).*(xiazai|down|wz).*\.(com|cn)?$/$important
+!! [南京云智合一网络科技有限公司 P2P下崽器]
+||2234.cn^$important
+||5119.cn^$important
+||yzhy*.cn^$important
+||huajunxiazai.com^$important
+||miiyun.com^$important
+!! [武汉卡丽纳网络科技有限公司 P2P下崽器]
+||whkln*.cn^$important
+||xnkl*.cn^$important
+||zjzyke*.cn^$important
+!! [金山全系列拦截]
+||duba.net$important
+||duba.com$important
+||iduba.com$important
+/^.*jinshan.*\.(com|cn|top)$/$important
+||dfgjk.top$important
+||liebao.cn$important
+||zhhainiao.com$important
+||kingpdf.cn$important
+||kpdf.cn$important
+||jgpdf.cn$important
+||fatherai.com$important
+/^.*kingsoft.*\.com$/$important
+/^.*aida(no|tr|kg).*)\.com$/$important
+!!! [北京猎豹网络科技有限公司]
+||t79d6.com$important
+||ileopard.com$important
+||cheetahmobile.com$important
+||93trf.com$important
+||78h34.com$important
+||liebao.org.cn$important
+||quandduo.com$important
+||cheetahgames.com$important
+||ishengdian.cn$important
+||cmcm.com$important
+||cmcmcdn.com$important
+||kshwtj.com$important
+!!! [海南猎豹网络科技有限公司]
+||lbmobi.cn$important
+!!! [南京擎盾信息科技有限公司]
+||aegis-info.com$important
+||yu-qing.com$important
+||zhifa-ai.com$important
+||aegis-data.cn$important
+||sense.law$important
+||xiaofa.cc$important
+61.132.75.97$important
+||fasoso.net$important
+||fasoso.cn$important
+||ai-risk.cn$important
+||xiaofa-app.cn$important
+||shilvlaw.cn$important
+||xiaofa-ai.cn$important
+!! [合肥听风雨网络科技有限公司]
+||tfyxz.com$important
+||fengbf.cn$important
+!! [朱晓君 SB开发者]
+||chnetadmin.club^$important
+||anxiu.com^$important
+||yxdown.cn^$important
+!! [段向千 SB开发者]
+||duote.com^$important
+||duote.com.cn^$important
+||dh818.com^$important
+||ghost64.com^$important
+||51ct.cn^$important
+||xp666.com^$important
+!! [茉柏枘（上海）软件科技有限公司]
+||52pcfree.com^$important
+!! [上海永楚网络科技有限公司]
+||fengyun*.com^$important
+||fysoft*.com^$important
+||zjzzmm.com^$important
+||quxiu55.com^$important
+||kaobeitu.com^$important
+!! [上海剑姬网络科技有限公司]
+/^.*\.\d\d\dintn\.cn$/$important
+||pdf000.cn^$important
+||pdf00.com^$important
+||ppt118.com^$important
+||doumaibiji.cn^$important
+||doumai.com^$important
+/^.*bs(r|k|c)(r|b|d)t\.com$/$important
+||cad111.com^$important
+||weiyinwang.cn^$important
+||cfcpe.com.cn^$important
+||mathplus.com.cn^$important
+||uxiaobai.cn^$important
+||tgjkbx.cn^$important
+||feiyurili.com.cn^$important
+||yutoutiao.com^$important
+||jlbtcg.cn^$important
+!! [上海茵寇网络科技有限公司]
+||yywzzh.com^$important
+||in3721.cn^$important
+||smwocr.com^$important
+||caihongbox.cn^$important
+||shyinkou.com^$important
+||caihongoffice.cn^$important
+||caihongoffice.com^$important
+!! [成都奇鲁科技有限公司]
+||monidashi.com.cn^$important
+||taojike.cn^$important
+||superlitetech.com^$important
+||easyclean.fun^$important
+||ludan.cn^$important
+||youhua.com^$important
+||ludashi.cn^$important
+||ludashi.com^$important
+||dualspace.com^$important
+||dualspacetech.com^$important
+! [上海硬通网络科技有限公司]
+||37.com
+/^.*37(api|gam|ops|wan).*\.(com|cn|net)$/$important
+||3pwg.com^$important
+||52d5d.com^$important
+||5dfsd2.com^$important
+||5jli.com^$important
+||5ooq.com^$important
+||5ypy.com^$important
+||5zmp.com^$important
+||60hx.com^$important
+||60ou.com^$important
+||6d4d5.com^$important
+||6ght.com^$important
+||6wtx.com^$important
+||915pk.com^$important
+||993h.com^$important
+||996a.com^$important
+||api6711.com^$important
+||gamepk37.com^$important
+||jh8k.com^$important
+||osqwsf07.com^$important
+||ytongnet.com^$important
+||zuihi.com^$important
+!! [上海黑桃互动网络科技股份有限公司]
+||361yx.cn^$important
+||51.com^$important
+||5151yx.com^$important
+||51heitao.com^$important
+||51img3.com^$important
+||5251game.com^$important
+||5251yx.com^$important
+||5399vr.com^$important
+||ccsakura-game.cn^$important
+||ccsakura-game.com^$important
+||ccsakura-game.com.cn^$important
+||datealive.com^$important
+||datealive.com.cn^$important
+||entenforce.com^$important
+||eva001.com^$important
+||heitao.com^$important
+||heitao2014.com^$important
+||ht55.cn^$important
+||qq8.com.cn^$important
+||spadesdk.com^$important
+!! [上海幻界信息科技有限公司]
+||51phanta.com^$important
+!! [上海月球漫步游戏网络有限公司]
+||yqmb001.com^$important
+||jyqxz2015.com^$important
+!! [上海研游网络科技有限公司]
+||yanyounet.com^$important
+!! [上海银月网络科技有限公司]
+||rcool100.com^$important
+!! [上海迅鱼网络科技有限公司]
+||speedyfish.cn^$important
+!! [上海月螺信息技术有限公司]
+||lunara.net^$important
+!! [上海熊猫客网络科技有限公司]
+||dabaitu.com^$important
+||wuming.com^$important
+||4dwan.com^$important
+||179.com^$important
+!! [深圳扑雷猫网络科技有限公司]
+||phantagame.com^$important
+!! [安徽冠宇文化传媒有限公司]
+||guan-yu.com.cn^$important
+!! [杭州/武汉诸相网络科技有限公司]
+||hezuge.com^$important
+/^.*xubei.*(cpm|sto|vip|org)$/$important
+||stmaide.cn^$important
+!! [上海莎纪网络科技有限公司]
+||ahhxwavi.cn^$important
+!! [重庆重橙网络科技有限公司]
+||flash.cn
+||fnews.cn
+||1234ff.com
+||ffzww.com
+||ffcool.cn
+||ffzixun.com
+||izhongcheng.cn
+||zhongcheng818.com
+||fftoutiao.com
+!! [深圳市重诚知随科技有限公司]
+||kfollow.com
+!! [上海重岂网络科技有限公司]
+||xnwallpaper.com
+||flashoffice.cn
+!! [上海广乐网络科技有限公司]
+||kpzip.net^$important
+||hwhdym.icu^$important
+||haojijiaban.top^$important
+||ytprrb4.top^$important
+||xxfwpb1.top^$important
+||hjojob1.top^$important
+||ytnscr.wang^$important
+||udashi.pro^$important
+||glzip.com^$important
+||toutiaobus.com^$important
+||hhrspb7.top^$important
+||c0zpmk.fun^$important
+||xxwuka.wang^$important
+||btiiny.fun^$important
+||bnpp.wang^$important
+||oorrzz.com^$important
+||newgp.fun^$important
+||hwpmeg.fun^$important
+||hwt7wz.fun^$important
+||ohb2zg.fun^$important
+||mmmudb3.top^$important
+||hwdi.cn^$important
+||hjhhhb7.top^$important
+||wfvrz.top^$important
+||bbbz.wang^$important
+||ssgf.fun^$important
+||hwcp.wang^$important
+||tt6jeb.fun^$important
+||hjuuub5.top^$important
+||mtsyzm.fun^$important
+||txpaf.top^$important
+||abckantu.com^$important
+||hwsj.xyz^$important
+!! [上海合梦网络科技有限公司]
+||hemeng.ltd^$important
+||otjkjyp.top^$important
+||zfrpith.cn^$important
+||wifipal.top^$important
+||tyftgtu.xyz^$important
+||njpaxao.top^$important
+||uivntlf.icu^$important
+||zsrckcg.xyz^$important
+||ybzvbvt.site^$important
+||enoofyu.top^$important
+||yiqiwitv.icu^$important
+!! [上海苋見网络科技有限公司]
+||mmzl.top^$important
+||miaomiaozl.top^$important
+||mmzoulu.top^$important
+||mmzoulu.xyz^$important
+||miaomiaozoulu.top^$important
+||miaomiaozoulu.cn^$important
+!! [上海桔柚网络科技有限公司]
+||ijuyou.top^$important
+||ajuyou.fun^$important
+||ijuyou.xyz^$important
+||ajuyou.top^$important
+||ajuyou.xyz^$important
+||ijuyou.fun^$important
+!! [上海二三四五网络科技有限公司]
+||2345.com^$important
+||777ge.com^$important
+||xinxiliusdk.wang^$important
+||ruichuang.net^$important
+||2345cdn.cn^$important
+||2345cdn.net^$important
+||cc62.com^$important
+||2345ii.com^$important
+||qingqiulm.com^$important
+||banmyonghu.cn^$important
+||keyingapp.cn^$important
+||tongcha.com^$important
+||2345soso.com^$important
+||zhangyu.com^$important
+||kzdh.com^$important
+||www9991.com^$important
+||xinxiliusdk2.com^$important
+||222i.net^$important
+||4585.com^$important
+||xinxiliusdk.cn^$important
+||hao184.com^$important
+||2345inc.cn^$important
+||2345inc.com^$important
+||2345inc.com.cn^$important
+||xingqiuwz.com^$important
+||2345cdn.com^$important
+||yl234.cn^$important
+||6781.com^$important
+||2345.net^$important
+||ab365.com^$important
+||2345tianqi.cn^$important
+||50bangzh.com^$important
+||zhuanqiansj.com^$important
+||d1wz.com^$important
+!! [上海二三四五移动科技有限公司]
+||gongmingy.com^$important
+||2345.cc^$important
+||shanhu99.com^$important
+||2345.cn^$important
+||2345mbrowser.com^$important
+||xinglm.cn^$important
+||ciweiyh.wang^$important
+||cycyh.wang^$important
+||game6677.com^$important
+||2345download.com^$important
+||haishun.org^$important
+!! [宁波坤达智能科技有限公司]
+||to128.com^$important
+||yes115.com^$important
+!! [广东鑫锘影视文化传播有限公司]
+||keyingapp.com^$important
+!! [威胁ip]
+111.177.11.118
+|| [其他]
+||appzt.cn^$important
+||59dument.cn^$important
+||15111223344.com^$important
+||pdfer.cn^$important
+||shiwan1688.cn^$important
+!---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 阿里相关
 ! Update Time: 2021-01-24 23:15:00
 ! Update Details
@@ -888,6 +1220,7 @@
 @@||downloadmirror.intel.com^$important
 @@||message.bilibili.com^$important
 @@||wappass.baidu.com^$important
+@@||mp.weixin.qq.com^$important
 ! 【微软】
 ||settings.data.microsoft.com^$important
 ||self.events.data.microsoft.com^$important
