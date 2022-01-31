@@ -137,6 +137,14 @@
 ||*qhtui*^$important
 ||*360src*^$important
 ||*kouxin*^$important
+||360kuai.com^$important
+||wows.360.cn^$important
+||360chou.com^$important
+||wot.360.cn^$important
+||u.360.cn^$important
+||yasuo.360.cn^$important
+||yule.360.com^$important
+||360shuke.com^$important
 !!! [北京球球趣玩科技有限公司]
 ||*adhelper*^$important
 !!! [北京深演智能科技股份有限公司]
