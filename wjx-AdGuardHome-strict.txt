@@ -1,10 +1,9 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2022-02-01 04:45:00
-! Ver.: 4.0.0.beta
+! Update Time: 2022-02-04 20:41:00
+! Ver.: 4.0.1
 ! Update Details
 !! --------------------
-!! 加入P2P及恶心流氓软件的拦截
-!! 新年快乐!
+!! 更新误拦截
 !! --------------------
 ! Notes
 !! --------------------
@@ -793,6 +792,7 @@
 @@||*baidupcs*
 @@||*live-trace*
 @@||alipayobjects.com^$important
+
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则  P2P下崽器等恶心网站
 ! Update Time: 2022-02-01 04:45:00
@@ -802,8 +802,9 @@
 !! --------------------
 ! Notes
 !! --------------------
-!! 本规则包含P2P下崽器等恶心网站相关的规则
+!! 本规则包含P2P下崽器等恶心网站相关的规则. 屏蔽下载站
 !! --------------------
+||pc6a.com^$important
 !! [广东风起科技有限公司 P2P下崽器]
 /^.*\.(fq|yd).*(xiazai|down|wz).*\.(com|cn)?$/$important
 !! [南京云智合一网络科技有限公司 P2P下崽器]
@@ -1280,10 +1281,10 @@
 @@||wx.qlogo.cn^$important
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 其他
-! Update Time: 2022-01-30 22:45:00
+! Update Time: 2022-02-04 20:41:00
 ! Update Details
 !! --------------------
-!! 更新微软规则，更新trli误拦截
+!! 更新trli误拦截
 !! --------------------
 ! Notes
 !! --------------------
@@ -1304,6 +1305,11 @@
 @@||message.bilibili.com^$important
 @@||wappass.baidu.com^$important
 @@||mp.weixin.qq.com^$important
+@@||hitokoto.cn^$important
+@@||cloudflareinsights.com^$important
+@@||a.nel.cloudflare.com^$important
+@@||cnnic.net.cn^$important
+@@||api.dmzj.com^$important
 ! 【微软】
 ||settings.data.microsoft.com^$important
 ||self.events.data.microsoft.com^$important
@@ -1369,5 +1375,6 @@
 ||*eid*jd*^$important
 ||*lbs*jd*^$important
 ||*perf*jd*^$important
+@@||mars.jd.com^$important
 ! 【自用】
 @@||*wjxhub*
