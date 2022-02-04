@@ -1372,9 +1372,9 @@
 ||t*.pinduoduo.com^$important
 ||meta.pinduoduo.com^$important
 ! 【JD专区】
-||*eid*jd*^$important
-||*lbs*jd*^$important
-||*perf*jd*^$important
+/^.*eid.*jd\.com$/$important
+/^.*lbs.*jd\.com$/$important
+/^.*perf.*jd\.com$/$important
 @@||mars.jd.com^$important
 ! 【自用】
 @@||*wjxhub*
