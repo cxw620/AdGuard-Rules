@@ -73,6 +73,7 @@
 !！ 感谢https://github.com/SocialSisterYi/bilibili-API-collect项目
 !!! 客户端地址获取拦截（配合关闭定位权限食用）
 ||*/x/web-interface/zone*$important
+||api.bilibili.com/x/v2/dm/ad*$important
 ||*hdslb*report*$important
 ||*hdslb*cm*$important
 ||dataflow.biliapi.com^
