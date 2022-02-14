@@ -88,6 +88,7 @@
 ||biligame.net^$important
 ||broadcast.chat.bilibili.com$important
 ||proxy-tf-all-ws.bilivideo.com
+/.*xy_ip*/
 /^.*\/.*\/resolve\?host=.*\.biligame\.net$/$important
 /^.*\/.*\/resolve\?host=dataflow\.biliapi\.com$/$important
 /^.*\/.*\/resolve\?host=live-trace\.bilibili\.com$/$important
@@ -95,6 +96,7 @@
 /^.*\/.*\/resolve\?host=web-player-tracker\.biliapi\.com$/$important
 /^.*\/.*\/resolve\?host=cm\.bilibili\.com$/$important
 /^.*\/.*\/resolve\?host=broadcast\.chat\.bilibili\.com$/$important
+
 
 ! [wechat]
 36.152.4.32$network
