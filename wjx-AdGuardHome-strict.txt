@@ -1,6 +1,6 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2022-02-04 20:41:00
-! Ver.: 4.0.1
+! Update Time: 2022-02-14 21:10:00
+! Ver.: 4.1.1
 ! Update Details
 !! --------------------
 !! 更新误拦截
@@ -41,7 +41,7 @@
 @@||*qpic*
 !! [*ads*]误杀
 @@||*loads*
-@@||playstation
+@@||*playstation.*
 !! [*dns*]误杀
 @@||*ceair*
 @@||*akadns*
@@ -792,7 +792,6 @@
 @@||*baidupcs*
 @@||*live-trace*
 @@||alipayobjects.com^$important
-
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则  P2P下崽器等恶心网站
 ! Update Time: 2022-02-01 04:45:00
@@ -1118,9 +1117,94 @@
 ||yes115.com^$important
 !! [广东鑫锘影视文化传播有限公司]
 ||keyingapp.com^$important
+!! [马鞍山微光网络科技有限公司]
+||zhongguohao123.com^$important
+||dataangel.cn^$important
+||bingaq.cn^$important
+||softvv.cn^$important
+||daque20.cn^$important
+||wuseng.net^$important
+||softqg.cn^$important
+||honggun.cn^$important
+||fengdb.cn^$important
+||ylclock.net^$important
+||fengbp.cn^$important
+||17yyba.com^$important
+||fengck.cn^$important
+||fengaw.cn^$important
+||fengax.cn^$important
+||softbd.cn^$important
+||moyundesk.cn^$important
+||jubo8.cn^$important
+||wbj24.com^$important
+||gdown.net^$important
+||zdown.net^$important
+||zeread.com^$important
+||tieguai.cn^$important
+||fengbv.cn^$important
+||ibaizhu.net^$important
+||choujue.net^$important
+||fengbn.cn^$important
+||fengaj.cn^$important
+||ibaizhu.cn^$important
+||fengae.cn^$important
+||k70k.com^$important
+||bingyong.net^$important
+||bingal.cn^$important
+||bingap.cn^$important
+||vdd62.com^$important
+||udown.net^$important
+||mdown.net^$important
+||ydown.net^$important
+||rdown.net^$important
+||08an.com^$important
+||fengbj.cn^$important
+||bingam.cn^$important
+||hao12355.com^$important
+||fengcv.cn^$important
+||fengab.cn^$important
+||huaigan.net^$important
+||nanweng.cn^$important
+||softda.cn^$important
+||ibaizhu.com^$important
+||fengbs.cn^$important
+||fengaz.cn^$important
+||moyundesk.com^$important
+||ujz66.com^$important
+||wam85.com^$important
+!! [上海新数科技发展有限公司]
+||wisemedia.com.cn^$important
+!! [上海新数网络科技股份有限公司]
+||wisemedia.cn^$important
+||renwozhe.com^$important
+||woso100.com^$important
+||wisedsp.net^$important
+||kejet.com^$important
+||youhow.net^$important
+||renwogo.com^$important
+||wiseimp.com^$important
+||datamaster.cn^$important
+!! [上海得词信息科技有限公司]
+||baobiaoge.com^$important
+||appying.com^$important
+||wanmeiyuangong.com^$important
+||rpapal.com^$important
+||decimob.com^$important
+!! [杭州阿里巴巴广告有限公司]
+||laiwang.com^$important
+||imwukong.com^$important
+||mifenlife.com^$important
+||mifenlife.cn^$important
+||icbuscrm.com^$important
+||lstyouxuan.com^$important
+||mefenlife.com^$important
+||mefenlife.com^$important
+!! [疑似诈骗木马]
+||xunlong.tech^$important
 !! [威胁ip]
 111.177.11.118
 || [其他]
+||myapp.com^$important
 ||appzt.cn^$important
 ||59dument.cn^$important
 ||15111223344.com^$important
@@ -1204,8 +1288,6 @@
 @@||hdslb.com^
 ! 隐私追踪
 ||activity.hdslb.com^$important
-@@||activity.hdslb.com/*/room-player.min.js^$important
-@@||activity.hdslb.com/*/room-player.min.css^$important
 ||interface.bilibili.com^$important
 ! 哔哩哔哩游戏相关，会涉及到一部分的广告
 ||biligame.com^$important
@@ -1218,6 +1300,8 @@
 ! 未知，不过应该不是关键的
 ||data.bilibili.com^$important
 ||dataflow.bilibili.com^$important
+||broadcast.chat.bilibili.com
+||web-player-tracker.biliapi.net
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 华为
 ! Update Time: 2022-01-18 14:15:21
@@ -1252,10 +1336,10 @@
 ||*store*.*.*hicloud*.*^$important
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 南极贱畜
-! Update Time: 20220116-145736
+! Update Time: 2022-02-14 20:50:00
 ! Update Details
 !! --------------------
-!! 更新wx.qlogo.cn误拦截解除
+!! 更新新域名
 !! --------------------
 ! Notes
 !! --------------------
@@ -1272,6 +1356,7 @@
 ||pingma.qq.com^$important
 ||tmf*.m.qq.com^$important
 ||dns.weixin.qq.com^$important
+||dns.weixin.qq.com.cn^$important
 ||*wxs*.qq.com^$important
 ||soup.v.qq.com^$important
 ||gdt.qq.com^$important
@@ -1281,10 +1366,10 @@
 @@||wx.qlogo.cn^$important
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 其他
-! Update Time: 2022-02-04 20:41:00
+! Update Time: 2022-02-14 21:00:00
 ! Update Details
 !! --------------------
-!! 更新trli误拦截
+!! 更新P2P拦截
 !! --------------------
 ! Notes
 !! --------------------
@@ -1348,6 +1433,10 @@
 221.179.38.7
 120.196.165.7
 36.152.4.32
+!! [Ali HTTPDNS]
+/203\.107\.1\.\d/
+/203\.107\.1\.\d\d/
+/203\.107\.1\.\d\d\d/
 ||dnsapi.cn
 ||nsv5.cn
 ||urlpod.cn
@@ -1372,9 +1461,67 @@
 ||t*.pinduoduo.com^$important
 ||meta.pinduoduo.com^$important
 ! 【JD专区】
-/^.*eid.*jd\.com$/$important
-/^.*lbs.*jd\.com$/$important
-/^.*perf.*jd\.com$/$important
+||*eid*jd*^$important
+||*lbs*jd*^$important
+||*perf*jd*^$important
 @@||mars.jd.com^$important
 ! 【自用】
 @@||*wjxhub*
+@@||yangmao.info^$important
+@@||img.t.sinajs.cn^$important
+@@||js.t.sinajs.cn^$important
+@@||js2.t.sinajs.cn^$important
+@@||rm.api.weibo.com^$important
+@@||js1.t.sinajs.cn^$important
+@@||rs.sinajs.cn^$important
+@@||dc.services.visualstudio.com^$important
+@@||bugreport.huorong.cn^$important
+@@||ip-api.com^$important
+||spo.nel.measure.office.net^$important
+@@||mrodevicemgr.officeapps.live.com^$important
+@@||officecdn.microsoft.com^$important
+@@||monitor.tencentcloudapi.com^$important
+@@||weixin.qq.com^$important
+! P2P拦截
+||swarmcloud.net^$important
+||hdtvcloud.com^$important
+||cdnbye.com^$important
+||p2pengine.net^$important
+||pcdn.aliyuncs.com^$important
+||proxy-tel-s.alicdn.com^$important
+/trk-([0-9\-]+)\.douyucdn\.cn/
+||signal.qvb.qcloud.com
+||szbdyd.com^$important
+@@||v1d.szbdyd.com^$important
+||pkoplink.com^$important
+||snodehome.*$important
+||snv1.com^$important
+!! [网心云PCDN]
+||wezhibo.tv^$important
+||onethingcloud.com^$important
+||onethingn.com^$important
+||onethingcloud.cn^$important
+||0101cdn.com^$important
+||onething.net^$important
+||xunleioa.com^$important
+||miuapp.com.cn^$important
+||xycdn.com^$important
+||onethingtech.com.cn^$important
+||ionecloud.cn^$important
+||walk-live.com^$important
+||xycloud.com^$important
+||kuiniuca.com^$important
+||hiveshared.com^$important
+||peiluyou.com^$important
+||onethingc.com^$important
+||onethingd.com^$important
+||seekr.com.cn^$important
+||onethingtech.net^$important
+||onethingpcs.com^$important
+||uhabo.com^$important
+!! [迅雷PCDN]
+||00cdn.com^$important
+||88cdn.com^$important
+!! [深圳聚网优速科技有限公司]
+||chinanetcdn.com^$important
+||galaxyclouds.*$important
