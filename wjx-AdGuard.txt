@@ -1,8 +1,8 @@
 ! Title: AdGuard拦截补充规则
-! Update Time: 2022-02-13 21:55:00
+! Update Time: 2022-02-14 21:00:00
 ! Update Details
 !! --------------------
-!! 更新httpdns
+!! 阶段更新
 !! --------------------
 ! Notes
 !! --------------------
@@ -14,7 +14,7 @@
 !! 这个规则不兼容AdGuardHome，注意。只支持AdGuard客户端。
 !! --------------------
 ! [百度]
-||*baidu*sugrec?*$important
+/.*baidu*sugrec\?.*/$important
 
 ! [DNS]--------------------
 !! [bilibili]
@@ -44,29 +44,33 @@
 [2400:da00::6666]$network
 221.179.38.7$network
 120.196.165.7$network
+!! [Ali HTTPDNS]
+203.107.1.1/24$network
 ! [DNS END]----------------
 
-! 以下为HTTPDNS拦截
+! 以下包含HTTPDNS拦截
 !! [bilibili]
 !!! 发现哔哩哔哩尝试打洞，拦截之
 239.255.255.250$network
+||*/*upnpdev.xml$important
+
 
 ! [阿里]
-||collect.alipay.com^
-||alipaylog.com^
-||crm-eve.b2b.alibaba-inc.com^
-||click.alibaba.com^
-||hydra.alibaba.com^
-||marketing.alibaba.com^
-||abtest.alibaba.com^
-||dmtracking.alibaba.com^
-||dmtracking2.alibaba.com^
-||p4psearch.china.alibaba.com^
-||fourier.alibaba.com^
-||alimama.alicdn.com^
-||alimama.cn^
-||alimama.com^
-||alimama.link^
+/collect\.alipay\.com/
+/alipaylog\.com/
+/crm-eve\.b2b\.alibaba-inc\.com/
+/click\.alibaba\.com/
+/hydra\.alibaba\.com/
+/marketing\.alibaba\.com/
+/abtest\.alibaba\.com/
+/dmtracking\.alibaba\.com/
+/dmtracking2\.alibaba\.com/
+/p4psearch\.china\.alibaba\.com/
+/fourier\.alibaba\.com/
+/alimama\.alicdn\.com/
+/alimama\.cn/
+/alimama\.com/
+/alimama\.link/
 @@||track.aliexpress.com^
 
 ! [bilibili]
@@ -76,12 +80,21 @@
 ||api.bilibili.com/x/v2/dm/ad*$important
 ||*hdslb*report*$important
 ||*hdslb*cm*$important
-||dataflow.biliapi.com^
-||web-player-tracker.biliapi.net^
-||live-trace.bilibili.com^
-||miniapp.bilibili.com^
-||cm.bilibili.com^
-||biligame.net^
+||dataflow.biliapi.com^$important
+||web-player-tracker.biliapi.net^$important
+||live-trace.bilibili.com^$important
+||miniapp.bilibili.com^$important
+||cm.bilibili.com^$important
+||biligame.net^$important
+||broadcast.chat.bilibili.com$important
+||proxy-tf-all-ws.bilivideo.com
+/^.*\/.*\/resolve\?host=.*\.biligame\.net$/$important
+/^.*\/.*\/resolve\?host=dataflow\.biliapi\.com$/$important
+/^.*\/.*\/resolve\?host=live-trace\.bilibili\.com$/$important
+/^.*\/.*\/resolve\?host=miniapp\.bilibili\.com$/$important
+/^.*\/.*\/resolve\?host=web-player-tracker\.biliapi\.com$/$important
+/^.*\/.*\/resolve\?host=cm\.bilibili\.com$/$important
+/^.*\/.*\/resolve\?host=broadcast\.chat\.bilibili\.com$/$important
 
 ! [wechat]
 36.152.4.32$network
@@ -120,5 +133,3 @@
 194.28.46.0/23$network
 
 111.177.11.118$network
-!! [Ali HTTPDNS]
-203.107.1.1/24$network
