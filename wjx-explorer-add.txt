@@ -1,9 +1,9 @@
 ! Title: 浏览器补充规则
-! Update Time: 2022-01-27 13:30:00
-! Ver.: 1.1.2
+! Update Time: 2022-02-15 21:50:00
+! Ver.: 1.1.3
 ! Update Details
 !! --------------------
-!! 大版本更新
+!! 更新若干
 !! --------------------
 ! Notes
 !! --------------------
@@ -13,14 +13,16 @@
 !! --------------------
 ! [页面规则]
 !! 以下为url参数拦截
+||*$removeparam=utm_division
+||*$removeparam=/^utm_.*/
 !! [Baidu]
 ||*baidu*$removeparam=/^r.*$/
 ||*baidu*$removeparam=/from/
 ||*baidu*$removeparam=/usm/
 ||*baidu*$removeparam=/ref/
 ||*baidu*$removeparam=/ala/
-||www.baidu.com$removeparam=/id/
-||*baidu*$removeparam=/(b|p)s/
+!||www.baidu.com^$removeparam=/id/
+||*baidu*$removeparam=/(b|p)s=/
 
 ||*baidu*$removeparam=inputT
 ||*baidu*$removeparam=aptstamp
@@ -49,12 +51,14 @@
 ||*baidu*$removeparam=f
 ||*baidu*$removeparam=ch
 ||*baidu*$removeparam=bar
-
+||*baidu*$removeparam=fixfr
 !! [Google]
 $removeparam=iflsig
 $removeparam=ved
 $removeparam=uact
 $removeparam=sclient
+$removeparam=gs_ssp
+
 !! [bing]
 ||*bing*$removeparam=form
 ||*bing*$removeparam=FORM
@@ -64,9 +68,31 @@ $removeparam=sclient
 ||*bing*$removeparam=qs
 ||*bing*$removeparam=sk
 ||*bing*$removeparam=cvid
+
+!! [CSDN]
+||csdn.net$removeparam=spm
+||csdn.net$removeparam=depth_1-utm_source
 !! --------------------
 !! 以下为广告拦截
 
 ! 2022-01-26 https://www.baidu.com
 www.baidu.com##*.ask-doctor-card
 
+! 2022-01-28 https://www.baidu.com
+www.baidu.com##.right-law_1njwm
+
+! 2022-02-15 https://wenku.baidu.com
+||wenku.baidu.com/goods/interface/getvipgoods*
+||wenku.baidu.com/coupon/interface/getvoucherdrawinfo*
+||wenku.baidu.com/xpage/form/getform*
+||wenku.baidu.com/rec/interface/getreccourses*
+||wenku.baidu.com/ndwkasp*
+||wenku.baidu.com/wza*
+||wenku.baidu.com/gsearch/rec/pctoplist*
+wenku.baidu.com##*.fixed-activity-bar
+wenku.baidu.com##*.vip-privilege-card-wrap
+wenku.baidu.com###app > .lazy-load
+wenku.baidu.com##.comment-wrapper
+wenku.baidu.com##.vip-activity-wrap-new
+wenku.baidu.com##.vip-layer-inner
+wenku.baidu.com##.pure-tool-btn.test-btn.tool-btn.full-screen
