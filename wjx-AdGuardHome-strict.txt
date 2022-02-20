@@ -1,6 +1,6 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2022-02-14 21:10:00
-! Ver.: 4.1.1
+! Update Time: 2021-02-20 20:30:00
+! Ver.: 4.1.2
 ! Update Details
 !! --------------------
 !! 更新误拦截
@@ -92,7 +92,7 @@
 !! --------------------
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 通配符拦截
-! Update Time: 2021-01-24 17:14:00
+! Update Time: 2021-02-20 20:30:00
 ! Update Details
 !! --------------------
 !! 优化通杀规则
@@ -105,12 +105,10 @@
 !! 采用本强力拦截规则的欢迎提issue报告误拦截，感激不尽
 !! --------------------
 !! [信息采集统计、日志常用]
-/^.*(collect|mmstat|report).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/$important
+/^.*(collect|mmstat|report).\w{0,16}(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/$important
+/^.*(log-|-log).\w{0,16}(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/$important
+/^.*(logapi|apilog).\w{0,16}(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/$important
 ||*lbsgw*
-||*logapi*
-||*log-*
-||*-log*
-||*apilog*
 !! [互联网追踪]
 /^.*(trace|track).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/$important
 ||*trace*^
@@ -792,6 +790,9 @@
 @@||*baidupcs*
 @@||*live-trace*
 @@||alipayobjects.com^$important
+@@||report.idqqimg.com^$important
+@@||chinacloudapi.cn^$important
+@@||d.pcs.baidu.com^$important
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则  P2P下崽器等恶心网站
 ! Update Time: 2022-02-01 04:45:00
@@ -1395,6 +1396,7 @@
 @@||a.nel.cloudflare.com^$important
 @@||cnnic.net.cn^$important
 @@||api.dmzj.com^$important
+@@||cdn.office.net^$important
 ! 【微软】
 ||settings.data.microsoft.com^$important
 ||self.events.data.microsoft.com^$important
@@ -1402,7 +1404,6 @@
 ||cxcs.microsoft.net^$important
 ||config.edge.skype.com^$important
 ||web.vortex.data.microsoft.com^$important
-||browser.pipe.aria.microsoft.com^$important
 ||v10.events.data.microsoft.com^$important
 ||watson.*.microsoft.com^$important
 ||manage.devcenter.microsoft.com^$important
