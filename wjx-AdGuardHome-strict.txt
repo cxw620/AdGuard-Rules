@@ -1,6 +1,6 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2021-02-20 20:30:00
-! Ver.: 4.1.2
+! Update Time: 2021-3-29 23:00:00
+! Ver.: 4.1.3
 ! Update Details
 !! --------------------
 !! 更新误拦截
@@ -17,10 +17,10 @@
 !! --------------------
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 最严格
-! Update Time: 2021-01-24 23:15:00
+! Update Time: 2021-3-29 23:00:00
 ! Update Details
 !! --------------------
-!! 更新天翼云等
+!! 更新误拦截
 !! --------------------
 ! Notes
 !! --------------------
@@ -57,6 +57,7 @@
 @@||*.tdnsv*.*
 @@||*.cdn.dnsv*.*
 @@||*.dsa.dnsv*.*
+@@||*.tdnsdp*.*
 @@||*ecdns.*
 @@||*.*alibabadns.*
 @@||*-adns*.*
@@ -74,6 +75,8 @@
 @@||fclouddns.net^
 @@||cdns.cn
 @@||vercel-dns.com
+@@||*onedns.net
+@@||pilidns.com
 !! [*log*]误杀
 @@||*logo*
 @@||*blog*
@@ -113,6 +116,7 @@
 /^.*(trace|track).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/$important
 ||*trace*^
 ||*track*^
+@@||*tracker*^
 !! [DNS相关（DoT）]
 ||*dot*
 !! [信息搜集分析]
@@ -1397,6 +1401,8 @@
 @@||cnnic.net.cn^$important
 @@||api.dmzj.com^$important
 @@||cdn.office.net^$important
+@@||p.data.cctv.com^$important
+@@||r.img.cctvpic.com^$important
 ! 【微软】
 ||settings.data.microsoft.com^$important
 ||self.events.data.microsoft.com^$important
