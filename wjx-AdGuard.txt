@@ -1,5 +1,5 @@
 ! Title: AdGuard拦截补充规则
-! Update Time: 2022-02-14 21:00:00
+! Update Time: 2022-4-30 23:15:00
 ! Update Details
 !! --------------------
 !! 阶段更新
@@ -109,6 +109,11 @@
 ||*/d?dn=*&id=*
 
 ! [HUAWEI]
+||*wap_ads*^$important
+||m.weathercn.com/newslist*$important
+||static.weathercn.com/*/static/js/news-list.*$important
+||m.weathercn.com/flowlink*$important
+||m.weathercn.com/indexesAjax.do*$important
 ||*weathercn*newslist*$important
 ||*weathercn*qukan*$important
 ||*weathercn*swiper*$important
@@ -134,4 +139,5 @@
 45.92.116.0/22$network
 194.28.46.0/23$network
 
+!! [其他]
 111.177.11.118$network
