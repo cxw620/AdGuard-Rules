@@ -8,3 +8,5 @@ AdGuardHome那个是给AdGuardHome用的。AdGuard那个是AdGuard客户端补�
 破坏性更新完毕. 这份规则主要是对现有规则的补充, 所以只会在发现漏杀的时候更新
 
 [推荐配合使用的拦截库](https://github.com/cxw620/AdGuard-Rules/issues/9#issuecomment-1050508451)
+
+渴求任何恶意网址\广告网址的投稿! 
