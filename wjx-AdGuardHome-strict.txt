@@ -1,6 +1,6 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2021-4-30 23:00:00
-! Ver.: 4.1.4
+! Update Time: 2021-5-21 13:28:00
+! Ver.: 4.1.5
 ! Update Details
 !! --------------------
 !! 更新误拦截及部分内容
