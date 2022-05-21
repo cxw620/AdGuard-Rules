@@ -122,7 +122,7 @@
 ||*track*^
 @@||*tracker*^
 !! [DNS相关（DoT）]
-||*dot*
+/^.*(dot).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/
 !! [信息搜集分析]
 /^.*(analy).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/$important
 ||*analy*
