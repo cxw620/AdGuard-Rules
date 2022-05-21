@@ -30,7 +30,7 @@
 !! --------------------
 ! [Blocklist 正则匹配]
 !! --------------------
-/^.*(ads|dns|log|stat|monitor).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/
+/^.*(ads|dns|dot|log|stat|monitor).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip|\.pub)$/
 /^.*(httpdns).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/
 /^.*(httpsdns).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/
 !! --------------------
@@ -121,8 +121,6 @@
 ||*trace*^
 ||*track*^
 @@||*tracker*^
-!! [DNS相关（DoT）]
-/^.*(dot).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/
 !! [信息搜集分析]
 /^.*(analy).*(\.com|\.net|\.com\.cn|\.cn|\.cc|\.club|\.xyz|\.top|\.vip)$/$important
 ||*analy*
