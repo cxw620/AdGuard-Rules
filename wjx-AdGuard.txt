@@ -1,3 +1,4 @@
+[AdGuard]
 ! Title: AdGuard拦截补充规则
 ! Update Time: 2022-4-30 23:15:00
 ! Update Details
