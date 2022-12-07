@@ -1,6 +1,6 @@
 ! Title: AdGuardHome拦截补充规则（白名单版本）
-! Update Time: 2021-5-21 13:28:00
-! Ver.: 4.1.5
+! Update Time: 2022-12-7 18:30:00
+! Ver.: 4.1.6
 ! Update Details
 !! --------------------
 !! 更新误拦截及部分内容
@@ -1284,6 +1284,7 @@
 ||usug.baidu.com^$important
 ||udpolimeok.baidu.com^$important
 ||xlab.baidu.com^$important
+||*-cu*.baidupcs.com^$important
 /^sp\d{0,2}\.baidu\.com$/$important
 @@/^t\d{1,2}\.baidu\.com$/
 !---------------------------------------------------------------
@@ -1304,6 +1305,7 @@
 ||interface.bilibili.com^$important
 ! 哔哩哔哩游戏相关，会涉及到一部分的广告
 ||biligame.com^$important
+||*.biligame.com^$important
 ! 会员购相关
 ||mall.bilibili.com^$important
 ||*mall.bilibili.com$important
@@ -1317,7 +1319,10 @@
 ||broadcast.chat.bilibili.com
 ||web-player-tracker.biliapi.net
 ||android.bugly.qq.com^$important
-||ali-*-pcdn-*.biliapi.net^$important
+||*pcdn*.biliapi.net^$important
+||mall.biligame.com^$important
+||show.bilibili.com^$important
+
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 华为
 ! Update Time: 2022-01-18 14:15:21
@@ -1463,6 +1468,7 @@
 ||*eid*jd*^$important
 ||*lbs*jd*^$important
 ||*perf*jd*^$important
+||anti-sdk-report.m.jd.com^$important
 @@||mars.jd.com^$important
 ! 【误拦截】
 @@||passport.baidu.com^$important
@@ -1507,6 +1513,50 @@
 @@||roaming.officeapps.live.com^$important
 @@||skydrive.wns.windows.com^$important
 @@||cdn.odc.officeapps.live.com^$important
+# 其他误杀
+@@||iknowstatic.jomodns.com^$important
+@@||login.microsoftonline.com^$important
+@@||graph.microsoft.com^$important
+@@||giscus.app^$important
+@@||grpc.biliapi.net^$important
+@@||*.alidns.com^$important
+@@||store-drcn.hispace.dbankcloud.cn^$important
+@@||appimg.dbankcdn.com^$important
+@@||lf3-cdn-tos.bytescm.com^$important
+@@||officeclient.microsoft.com^$important
+@@||odc.officeapps.live.com^$important
+@@||www.aqours.today^$important
+@@||himg.bdimg.com^$important
+@@||cdn.jsdelivr.net^$important
+@@||acstatic-dun.126.net^$important
+@@||update.dbankcdn.com^$important
+@@||updatessl.dbankcdn.com^$important
+@@||smarthome-drcn.dbankcdn.com^$important
+@@||browsercfg-drcn.cloud.dbankcloud.cn^$important
+@@||log.cmbchina.com^$important
+@@||ccclub.cmbchina.com^$important
+@@||zhstatic.zhihu.com^$important
+@@||g.csdnimg.cn^$important
+@@||passport.bilibili.cn^$important
+@@||biliintl.com^$important
+@@||tracker.opentrackr.org^$important
+@@||*.abcvg.info^$important
+@@||passport.biligame.com^$important
+@@||novelai.net^$important
+@@||cname.vercel-dns.com^$important
+@@||telegra.ph^$important
+@@||si.vouninked.com^$important
+@@||www.china-ipv6.cn^$important
+@@||licensing.mp.microsoft.com^$important
+@@||oauth-login-drcn.platform.dbankcloud.com^$important
+@@||terms-drcn.platform.dbankcloud.cn^$important
+@@||msch.f.360.cn^$important
+@@||ipw.cn^$important
+@@||smarthome.dbankcloud.cn^$important
+@@||connect-drcn.dbankcloud.cn^$important
+@@||hivoice-drcn.emui.dbankcloud.com^$important
+@@||h5hosting.dbankcdn.com^$important
+@@||cloudrom-global.emui.dbankcloud.com^$important
 ! P2P拦截
 ||swarmcloud.net^$important
 ||hdtvcloud.com^$important
@@ -1552,6 +1602,9 @@
 ||galaxyclouds.*$important
 !! [其他]
 ||*.uds.lenovo.com^$important
+||osfsr.lenovomm.com^$important
 ||image.pushplus.plus^$important
 ||log-stats.weathercn.com^$important
 ||dl.url.cn^$important
+@@||my-ip.io^$important
+@@||api6.my-ip.io^$important
