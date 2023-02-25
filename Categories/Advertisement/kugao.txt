@@ -1,0 +1,30 @@
+[AdGuard]
+! Category: Advertisement
+! Title: 酷告
+! Update Time: 2023-02-25 20:15:00
+! Ver.: 1.0
+! Update Details
+!! --------------------
+!! Init
+!! --------------------
+
+# 北京快友世纪科技股份有限公司
+/lnk(mi|of)\./$important
+||shenwawa.com^$important
+||kuaiyou.com^$important
+# 天津快友世纪科技有限公司
+/adv(gbid|iew|tj)/$important
+# 北京木舟科技有限公司
+||52muzhou.com^$important
+# 北京乐聚互娱科技有限公司
+/lejuhuyu/
+# 广州奇顽科技有限公司
+||qiwanyx.com^$important
+# 天津奇顽科技有限公司
+||game174.com^$important
+# 武汉易游无限科技有限公司
+||yywxgames.com^$important
+# 北京奇顽科技有限公司
+||521qw.com^$important
+# 天津奇顽科技有限公司
+||game174.com^$important

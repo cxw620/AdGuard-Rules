@@ -1,0 +1,24 @@
+[AdGuard]
+! Category: Privacy
+! Title: 友盟(umeng)
+! Update Time: 2023-02-25 19:30:00
+! Ver.: 1.0
+! Update Details
+!! --------------------
+!! Init
+!! --------------------
+
+# 北京锐讯灵通科技有限公司
+||wrating.com^
+||puata.info^
+||dratio.com^
+||uyunad.com^
+||eshiqi.com^
+||mobmore.com^
+/^.*umeng.*$/
+/^.*\.?umv?(\d){0,}\..*$/$important
+/^.*\.?umtrack(\d){0,}\..*$/$important
+# 杭州好风科技有限公司
+||d.design
+||u.design
+||duidui.design

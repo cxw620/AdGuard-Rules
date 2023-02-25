@@ -1,0 +1,112 @@
+[AdGuard]
+! Category: Junk Game
+! Title: General
+! Update Time: 2023-02-25 20:15:00
+! Ver.: 1.0
+! Update Details
+!! --------------------
+!! Init
+!! --------------------
+
+# 上海益世界信息技术集团有限公司(及其关联公司)
+## 上海益世界信息技术集团有限公司
+/(e|1)wan(sdk|game|box)?\./$important
+/(y|1)(i|-)(wangame|world|haowanjia|shijie)\./$important
+||23you.net^$important
+||u6.cn^$important
+||cwmob.com^$important
+||17papapa.com^$important
+||1gamer.cn^$important
+||92xixi.com^$important
+||123cw.cn^$important
+||sd2410.com^$important
+||rd0152.com^$important
+||3gu6.com^$important
+## 芜湖易玩网络科技有限公司
+/(youliang|qiliang)2018\./$important
+||nnsms.net^$important
+||cwmob.cn^$important
+## 芜湖益梦网络科技有限公司
+||1wdream.cn^$important
+## 芜湖益炫网络科技有限公司
+||whyxuan.cn^$important
+## 芜湖百游网络科技有限公司
+/yulingshi/$important
+/wuhubaiyou/$important
+## 广州益势网络科技有限公司
+||gzeshi.cn^$important
+## 芜湖快游网络科技有限公司
+/qi(meng|hang)game\./
+||kuaiyouya.com^$important
+||ikuaiyou.cn^$important
+## 海南益量网络科技有限公司
+||kanahat.com^$important
+||lehoadge.com^$important
+||inneam.com^$important
+||serdukrao.com^$important
+||bostril.com^$important
+||docluin.com^$important
+||jigatious.com^$important
+||kifiek.com^$important
+||gethgua.com^$important
+||dulheable.com^$important
+||othcam.com^$important
+||eufut.com^$important
+||astrilan.com^$important
+||rukold.com^$important
+||tagucud.com^$important
+||ubbebbok.com^$important
+||gidthpuce.com^$important
+||ocurdge.com^$important
+||qubbalk.com^$important
+||captcel.com^$important
+||giakuem.com^$important
+||yecre.com^$important
+||virumam.com^$important
+||sulcrelat.com^$important
+||ublese.com^$important
+||ceipord.com^$important
+||ocuayoik.com^$important
+||rapiuct.com^$important
+||mupepaek.com^$important
+||pebesh.com^$important
+||heenaiked.com^$important
+||clukewaz.com^$important
+||iyocekre.com^$important
+||xaslin.com^$important
+||laitbun.com^$important
+||takonin.com^$important
+||kungeqi.com^$important
+||surodrian.com^$important
+||scilllau.com^$important
+||sruhi.com^$important
+||guabiu.com^$important
+||nanitot.com^$important
+||demhuty.com^$important
+||wrilese.com^$important
+||sqakrosh.com^$important
+||akoul.com^$important
+||meeduclid.com^$important
+||oswil.com^$important
+||takucuge.com^$important
+||oltolyith.com^$important
+||carusot.com^$important
+||uzzotogh.com^$important
+||slubez.com^$important
+||piution.com^$important
+## 芜湖智健达网络科技有限公司
+||zhijd.com^$important
+## 益世界网络科技（上海）有限公司
+## 广州益玩网络科技有限公司
+||gzchangwan.com^$important
+||taskirty.com^$important
+||gzchangwan.cn^$important
+||dippial.com^$important
+||mepird.com^$important
+## 益世界网络科技（广东）有限公司
+||worldfun.cn^$important
+||worldfun.com^$important
+## 上海石榴网络科技有限公司
+||myshiliu.com^$important
+||bestshiliu.com^$important
+||shiliugame.cn^$important

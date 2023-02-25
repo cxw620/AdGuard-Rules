@@ -1,0 +1,78 @@
+[AdGuard]
+! Category: App
+! Title: UC
+! Update Time: 2023-02-25 20:15:00
+! Ver.: 1.0
+! Update Details
+!! --------------------
+!! Init
+!! --------------------
+
+# 广州市动景计算机科技有限公司
+||effirst.com^$important
+||minippa.cn^$important
+||uflowx.com^$important
+||ubibibi.com^$important
+||bhweapon.cn^$important
+||effirst.cn^$important
+||coolppa.cn^$important
+||tinyppa.cn^$important
+||tinypap.cn^$important
+||tinya1.cn^$important
+||ucfly.com^$important
+||blovestorm.com^$important
+||u-mob.cn^$important
+||uc123.com^$important
+||open-uc.cn^$important
+||ucdesk.cn^$important
+||myquark.cn^$important
+||tinyap2.cn^$important
+||uc.cn^$important
+||uczhibo.cn^$important
+||quark.cn^$important
+||ucweb.com^$important
+||ucweb.com.cn^$important
+||yun.cn^$important
+||ucweb.cn^$important
+||quarkfly.cn^$important
+# 广州神马移动信息科技有限公司
+||xiaoshuo1^$important-sm.com
+||transcode.cn^$important
+||alibabalabs.com^$important
+||uczzd.com.cn^$important
+||kkedulive.com^$important
+||sm-tc.cn^$important
+||uczzd.com^$important
+||xiaoshuo2-sm.com^$important
+||yisou.com^$important
+||uczzd.cn^$important
+||uczm.cn^$important
+||sm.cn^$important
+||uczzd.net^$important
+||shenma-inc.com^$important
+||kkentlive.com^$important
+# 深圳橙子互动股份有限公司
+||orangegame.cn^$important
+||msyuer.com^$important
+||wiorange.com^$important
+||cmi.ren^$important
+# 北京手游天下数字娱乐科技股份有限公司
+||gamedog.cn^$important
+||44937.com^$important
+# 深圳市乐合科技有限公司
+||360wy.cn^$important
+# 深圳市乐讯科技有限公司
+||lexungame.cn^$important
+||lexunv.com^$important
+||lexun.com^$important
+||lxyes.net^$important
+||lxyes.com^$important
+||lexun.cn^$important
+||6v.com^$important
+||lxyes.cn^$important
+||lexun.net^$important
+# 广州灵犀互娱信息技术有限公司
+||996.com^$important
+||996.com^$important
+||25pp.com^$important
+||pp.cn^$important

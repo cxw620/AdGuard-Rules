@@ -1,0 +1,28 @@
+[AdGuard]
+! Category: Advertisement
+! Title: Talkingdata
+! Update Time: 2023-02-25 23:15:00
+! Ver.: 1.0
+! Update Details
+!! --------------------
+!! Init
+!! --------------------
+
+# 北京腾云天下科技有限公司
+/talking(data|game)/$important
+/tend(data|cloud)/$important
+/lnk\d\./$important
+/brg0\./$important
+||udrig.com^$important
+||cpatrk.net^$important
+||sportxuan.com^$important
+||xdrig.com^$important
+||tddmp.com^$important
+||talkingdata.cn^$important
+||appcpa.net^$important
+||myzhongguojie.cn^$important
+||3edc.cn^$important
+# 杭州决对信息科技有限公司
+/abssqr\./$important
+# 北京无限向溯科技有限公司
+/wifipix\./$important

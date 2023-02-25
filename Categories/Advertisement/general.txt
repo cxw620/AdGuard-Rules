@@ -1,0 +1,251 @@
+[AdGuard]
+! Category: Advertisement
+! Title: General
+! Update Time: 2023-02-25 20:15:00
+! Ver.: 1.0
+! Update Details
+!! --------------------
+!! Init
+!! --------------------
+
+# ----------------------------------------
+# 广东欢太科技有限公司
+## OPPO广告, 游戏广告
+/heytap/$important
+||andes.tech^$important
+||keke.cn^$important
+||oppomobile.com^$important
+||ibreeno.com^$important
+||oppopay.com^$important
+||wanyol.com^$important
+||heytapmobi.com^$important
+||oplustrust.com^$important
+||vayol.com^$important
+||heytap.com^$important
+||familyincloud.com^$important
+||breenomeet.cc^$important
+||heytapugc.com^$important
+||ortc.cc^$important
+||omeet.cc^$important
+||oppoer.me^$important
+||oppo.mobi^$important
+||aibreeno.com^$important
+||xiaobool.com^$important
+||nearme.com.cn^$important
+# 深圳市白鹰网络科技有限公司
+## 广东欢太科技有限公司关联公司
+/hey-game/$important
+# ----------------------------------------
+# 北京小香食品科技股份有限公司
+||limei.com^$important
+||xiaoxiangmei.com^$important
+# 上海力竞广告有限公司
+||ljrtb.cn^$important
+# 北京丹枫科技有限公司
+||adxing.com^$important
+# ----------------------------------------
+# 百度
+||*91.com*^$important
+||*swan*.com^$important
+||*snguows*^$important
+||*popin*^$important
+||*mipplan.org^$important
+||*hongmeiti*^$important
+||*duapps*^$important
+||*bdeceimg*^$important
+||*vplay8*^$important
+||*fhldns*^$important
+||*mtj*js*^$important
+# ----------------------------------------
+# 深圳新度博望科技有限公司
+||juwinmedia.com^$important
+||xdplt.com^$important
+# ----------------------------------------
+# 珠海市小源科技有限公司
+## 5G广告
+||policefountain.com^$important
+||bizport.cn^$important
+||mfexcel.com^$important
+||5gimos.com^$important
+# ----------------------------------------
+# 杭州阶形网络科技有限公司
+## 珠海市小源科技有限公司关联公司, 广告SDK
+/(yizhi|jaxim|onegot)\w{0,6}\./$important
+||getanotice.com^$important
+# ----------------------------------------
+# 北京甜橙世纪科技有限公司
+/leads\w{0,6}\./$important
+||orange-tec.com^$important
+# ----------------------------------------
+# 上海采拾信息科技有限公司
+## 看起来倒闭了
+/icaishi/$important
+||zhongddi.com^$important
+||9liuda.com^$important
+||7mah2.com^$important
+# ----------------------------------------
+# 上海阅客信息科技有限公司
+## 上海采拾信息科技有限公司母公司
+||9yueke.com^$important
+||mofeeds.com^$important
+||9iwuli.com^$important
+||9icaishi.com^$important
+||wuliapi.com^$important
+# ----------------------------------------
+# 杭州爆米花科技股份有限公司
+## 垃圾视频广告等
+||401191.com^$important
+||29293.com^$important
+||611892.com^$important
+||045328.com^$important
+||921346.com^$important
+||gexings.com^$important
+||171679.com^$important
+||734122.com^$important
+||pxtadmin.com^$important
+||huahua18.com^$important
+||489167.com^$important
+||162681.com^$important
+||251674.com^$important
+||baomihua.com^$important
+||pomoho.com.cn^$important
+||pomoho.com^$important
+||baomihua.cn^$important
+||jinyaogeng.com^$important
+||826103.com^$important
+# ----------------------------------------
+# 杭州爆米花鹰眼科技有限责任公司
+## 杭州爆米花科技股份有限公司关联公司
+||yingyan2018.cn^$important
+||souid.com^$important
+||yingyan2018.com^$important
+||tuiyes.com^$important
+||yingyan2018.com.cn^$important
+||yingyan2018.net^$important
+# ----------------------------------------
+# 杭州播一播网络科技有限公司
+## 杭州爆米花科技股份有限公司关联公司
+||kktvshow.com^$important
+||wenzhiji.com^$important
+||17kuaikan.com^$important
+# ----------------------------------------
+# 广东雨林木风计算机科技有限公司
+## 也是时代的遗物了
+||111g.com^$important
+||114la.net^$important
+# ||ylmf.org^$important
+||114la.com^$important
+||114la.com.cn^$important
+||114la.org^$important
+# ||ylmf.net^$important
+||114la.cn^$important
+# ||ylmf.com^$important
+# ----------------------------------------
+# 深圳市顺企网络科技有限公司
+||shunqi.com^$important
+||shunqiwang.com^$important
+||qicou.com^$important
+||11467.com^$important
+# ----------------------------------------
+# 上海游光网络科技有限公司
+/11h5\./$important
+/h5\d{2,3}\./$important
+||zwwla.com^$important
+||wxavu.com^$important
+||vutimes.com^$important
+# ----------------------------------------
+# 泰德无限（北京）科技有限公司
+||tdwxkj.com^$important
+||7kqj.com^$important
+||k4k8.com^$important
+||exinyun.net^$important
+||7k7.com.cn^$important
+||123ch.cn^$important
+# ----------------------------------------
+# 东阳市晴皓网络科技有限公司
+## 非常垃圾广告, 短信也可加屏蔽词
+||dafapiao.cn^$important
+||12i.cn^$important
+||915.im^$important
+||54k.cn^$important
+# ----------------------------------------
+# 浙江同花顺网络科技有限公司
+||10jqka.com.cn^$important
+||0033cas.cn^$important
+||0033url.com^$important
+||8tgame.com^$important
+||kuaicha365.com^$important
+||thsnetwork.com^$important
+||ths-corp.com^$important
+||thsi.cn^$important
+||0033cas.com^$important
+||8tgame.cn^$important
+||8tgame.com.cn^$important
+# ----------------------------------------
+# 杭州同花顺记财软件有限公司
+||touzime.net^$important
+||touzime.com.cn^$important
+# ----------------------------------------
+# 浙江核新同花顺网络信息股份有限公司
+||tonghuayun.com^$important
+||tonghuayun.cn^$important
+||300033.info^$important
+||tonghuayun.com.cn^$important
+||tonghuashun.com.cn^$important
+||tonghuayun.net^$important
+# ----------------------------------------
+# 长沙联晶网络科技有限公司
+||dushuji.com^$important
+||cslj.cn^$important
+||9669.cn^$important
+||chnw.cn^$important
+# ----------------------------------------
+# 上海新数网络科技股份有限公司
+||renwogo.com^$important
+||wisedsp.net^$important
+||wiseimp.com^$important
+||woso100.com^$important
+||youhow.net^$important
+||wisemedia.cn^$important
+||renwozhe.com^$important
+||kejet.com^$important
+||datamaster.cn^$important
+||kejet.net^$important
+# ----------------------------------------
+# 上海新数科技发展有限公司
+## 上海新数网络科技股份有限公司关联
+||wisemedia.com.cn^$important
+# ----------------------------------------
+# 上海馨数软件技术有限公司
+## 上海新数网络科技股份有限公司关联
+/adpolestar\./
+# ----------------------------------------
+# 上海谦隐网络科技有限公司
+## 上海新数网络科技股份有限公司关联
+||dyzapp.com^$important
+# ----------------------------------------
+# 上海得词信息科技有限公司
+||tagui.com.cn^$important
+||decimob.com^$important
+||rpapal.com^$important
+||xiaoanzi.com^$important
+||appying.com^$important
+||wanmeiyuangong.com^$important
+||r-p-a.com^$important
+||iamworking.cn^$important
+# ----------------------------------------
+# 杭州阿里巴巴广告有限公司
+||laiwang.com^$important
+||imwukong.com^$important
+||mifenlife.com^$important
+||mifenlife.cn^$important
+||icbuscrm.com^$important
+||lstyouxuan.com^$important
+||mefenlife.com^$important
+||mefenlife.com^$important
+# ----------------------------------------
+# 
+## 
+# ----------------------------------------
+# 
+## 

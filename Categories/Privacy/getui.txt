@@ -1,0 +1,51 @@
+[AdGuard]
+! Category: Privacy
+! Title: 个推(getui)
+! Update Time: 2023-02-25 19:30:00
+! Ver.: 1.0
+! Update Details
+!! --------------------
+!! Init
+!! --------------------
+
+# 每日互动股份有限公司
+||gepush.com^$important
+||applk.cn^$important
+||igehuo.com^$important
+||gepush.com^$important
+||igetui.com^$important
+||acloud.com^$important
+||pusure.com^$important
+||lmmindex.com^$important
+||cooltui.com^$important
+||viyouhui.com^$important
+||abeacon.com^$important
+||getui.com^$important
+||fangyi.cn^$important
+||huadan.in^$important
+||geatmap.com^$important
+||geindex.com^$important
+||abeacon.cn^$important
+||getui.net^$important
+||ge.cn^$important
+||igexin.com^$important
+||12322app.com^$important
+||getui.cn^$important
+||baywest.ac^$important
+# 上海蓝豹数据科技有限公司
+||longbow.com^$important
+# 深圳市爱易讯数据有限公司
+||ieasycon.com^$important
+||ottindexs.com^$important
+||ott-indexs.com^$important
+||ottindex.com^$important
+||ott-index.com^$important
+||vinsondata.com^$important
+## 浙江有数数字科技有限公司
+||youshu.com.cn^$important
+||hsjdata.com^$important
+||youhaodata.com^$important
+||guanmingpian.com^$important
+## 浙江有数数智科技有限公司
+||ccbydt.com^$important
+||yscredit.com^$important

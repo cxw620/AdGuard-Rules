@@ -1,0 +1,17 @@
+[AdGuard]
+! Category: Privacy
+! Title: uni-AD
+! Update Time: 2023-02-25 19:30:00
+! Ver.: 1.0
+! Update Details
+!! --------------------
+!! Init
+!! --------------------
+
+# 数字天堂（北京）网络技术有限公司
+/dcad\d\d/
+||dcloud.net.cn^$important
+||mhtml5.org^$important
+||mobile3w.org^$important
+||m3w.cn^$important
+||liuyingyong.cn^$important

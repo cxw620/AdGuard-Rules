@@ -1,0 +1,38 @@
+[AdGuard]
+! Category: Spam
+! Title: General
+! Update Time: 2023-02-25 19:30:00
+! Ver.: 1.0
+! Update Details
+!! --------------------
+!! Init
+!! --------------------
+### REGEX: (^(\w{0,}\.?){0,6}\w) -> ||$1^$important
+
+# 北京深演智能科技股份有限公司
+||ideepzero.com^$important
+||rtbinchina.com^$important
+||dspinchina.com^$important
+||deepzero.com^$important
+||openap.cn^$important
+||audiencechina.com^$important
+||fangkezhaohui.com^$important
+||programmaticbuy.cn^$important
+||userback.cn^$important
+||audiencetargeting.cn^$important
+||folo8.com^$important
+||pinyouad.com^$important
+||ipinyou.com^$important
+||shishijingjia.com^$important
+||programmaticbuy.com^$important
+||folo8.cn^$important
+||audiencetargeting.com.cn^$important
+||userback.com.cn^$important
+||jiceyun.com^$important
+||deepzero.com.cn^$important
+||chinadsp.com.cn^$important
+||chinartb.cn^$important
+||userprofile.cn^$important
+||folo8.com.cn^$important
+||p0y.cn^$important
+||ipinyou.com.cn^$important

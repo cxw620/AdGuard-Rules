@@ -1,0 +1,57 @@
+[AdGuard]
+! Category: Privacy
+! Title: 51la
+! Update Time: 2023-02-25 19:30:00
+! Ver.: 1.0
+! Update Details
+!! --------------------
+!! Init
+!! --------------------
+
+# 广东万丈金数信息技术股份有限公司
+||aicheren.com^$important
+||infinitesend.com^$important
+||e-dmp.com^$important
+||vcrm.com.cn^$important
+||cf.cn^$important
+||kxz.com^$important
+||cbclub.com.cn^$important
+||3361.com^$important
+||om.com.cn^$important
+||pv.com.cn^$important
+||zaobang.com^$important
+||yolish.net^$important
+||kxz.cn^$important
+||infinite.net.cn^$important
+||shijiala.com^$important
+||vrm.cn^$important
+||huikefu.com^$important
+||yolitv.cn^$important
+||yolish.cn^$important
+||yo.com.cn^$important
+# 广州巍峨信息科技有限公司
+||dutan.com^$important
+||weirenfumu.com^$important
+||weiekeji.com^$important
+||yi114.com^$important
+||quan.mx^$important
+||dangfumu.com^$important
+||ruiche.com^$important
+||vrm2020.cn^$important
+# 广州有啦网络科技有限公司
+/51\w?\./$important
+/youla(cloud|yun|ai)/$important
+||cfinfo.net^$important
+||useredu.com^$important
+||bxuser.net^$important
+||ylyzn.cn^$important
+||bankuser.net^$important
+||sentcloud.net^$important
+||gz51la.com^$important
+||shsent.net^$important
+||ulyzn.com^$important
+||bankmsg.com^$important
+||bxpost.net^$important
+||cfuser.net^$important
+||publishmail.net^$important
+||ulyzn.cn^$important
